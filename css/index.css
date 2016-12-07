@@ -1,6 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ffcc08; }
+  background: #fff !important; }
+
+nav {
+  background: #fff !important; }
+
+a {
+  color: #141414 !important; }
+
+#logo-ca {
+  width: 50px; }
+
+footer {
+  background: black !important; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,21 @@
-$primary-color: #ffcc08;
+$fondo: #fff !important;
+$secondary-color: #141414 !important;
+
 
 body{
-    margin: 0;
-    padding: 0;
-    background: $primary-color;
+  margin: 0;
+  padding: 0;
+  background: $fondo;
+}
+nav{
+  background: $fondo;
+}
+a{
+  color: $secondary-color;
+}
+#logo-ca{
+  width: 50px;
+}
+footer{
+  background: black !important;
 }
