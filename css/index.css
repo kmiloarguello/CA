@@ -3,11 +3,27 @@ body {
   padding: 0;
   background: #fff !important; }
 
+.side-nav {
+  top: 63px; }
+
+#sidenav-overlay {
+  z-index: 0; }
+
 nav {
   background: #fff !important; }
+  nav ul.left {
+    margin-left: 30%; }
+  nav ul.right {
+    margin-right: 30%; }
 
 a {
   color: #141414 !important; }
+
+#element::-webkit-scrollbar {
+  display: none; }
+
+::-webkit-scrollbar {
+  display: none; }
 
 #logo-ca {
   width: 50px; }

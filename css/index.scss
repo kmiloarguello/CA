@@ -7,11 +7,29 @@ body{
   padding: 0;
   background: $fondo;
 }
+.side-nav{
+  top: 63px;
+}
+#sidenav-overlay{
+  z-index: 0;
+}
 nav{
   background: $fondo;
+  ul.left{
+    margin-left: 30%;
+  }
+  ul.right{
+    margin-right: 30%;
+  }
 }
 a{
   color: $secondary-color;
+}
+#element::-webkit-scrollbar { 
+  display: none; 
+}
+::-webkit-scrollbar { 
+  display: none; 
 }
 #logo-ca{
   width: 50px;
