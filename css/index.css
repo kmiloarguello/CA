@@ -1,10 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fff !important; }
+  background: #fff !important;
+  overflow-x: hidden; }
 
 .side-nav {
-  top: 63px; }
+  top: 63px;
+  width: 250px; }
+
+video.responsive-video {
+  width: 100%; }
 
 #sidenav-overlay {
   z-index: 0; }
@@ -27,6 +32,14 @@ a {
 
 #logo-ca {
   width: 50px; }
+
+.section1 .carousel-item h1 {
+  font-family: 'Questrial', sans-serif; }
+
+.section2 {
+  margin-top: 20px; }
+  .section2 ul #descripcion p {
+    padding: 0 10px 0 10px; }
 
 footer {
   background: black !important; }
