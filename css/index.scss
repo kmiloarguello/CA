@@ -1,6 +1,6 @@
 $fondo: #fff !important;
 $secondary-color: #141414 !important;
-
+$red-btn: #F44336; 
 
 body{
   margin: 0;
@@ -36,6 +36,11 @@ a{
 ::-webkit-scrollbar { 
   display: none; 
 }
+.collection{
+  .collection-item.avatar{
+    min-height: 0;
+  }
+}
 #logo-ca{
   width: 50px;
 }
@@ -56,6 +61,21 @@ a{
     }    
   }
 }
+.section4{
+  margin-top: 100px;
+  ul{
+    text-align: center;
+    li{
+      display: inline-block;
+      margin-left: 20px;
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
 footer{
   background: black !important;
+  color: $fondo;
 }

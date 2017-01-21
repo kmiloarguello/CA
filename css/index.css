@@ -30,6 +30,9 @@ a {
 ::-webkit-scrollbar {
   display: none; }
 
+.collection .collection-item.avatar {
+  min-height: 0; }
+
 #logo-ca {
   width: 50px; }
 
@@ -41,7 +44,19 @@ a {
   .section2 ul #descripcion p {
     padding: 0 10px 0 10px; }
 
+.section4 {
+  margin-top: 100px; }
+  .section4 ul {
+    text-align: center; }
+    .section4 ul li {
+      display: inline-block;
+      margin-left: 20px; }
+      .section4 ul li img {
+        width: 200px;
+        height: 200px; }
+
 footer {
-  background: black !important; }
+  background: black !important;
+  color: #fff !important; }
 
 /*# sourceMappingURL=index.css.map */

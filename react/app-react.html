@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba React</title>
+</head>
+<body>
+    <div id="anclaje"></div>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+    <script type="text/babel">
+        var contenido = 
+        <camilo>
+            <img src="../img/juliana.jpg"/>
+            <h2>Hi</h2>
+        </camilo>;
+        var anclaje = document.getElementById('anclaje');
+        ReactDOM.render(contenido,anclaje);
+    </script>
+</body>
+</html>
