@@ -13,7 +13,7 @@ body{
   width: 250px;
 }
 video.responsive-video{
-  width: 100%;
+  height: 300px;
 }
 #sidenav-overlay{
   z-index: 0;
@@ -44,6 +44,20 @@ a{
 #logo-ca{
   width: 50px;
 }
+#laptop-svg,#phone-svg{
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;  
+}
+#sombrero-svg,#experience-svg{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;  
+}
 .section1{
   .carousel-item{
     h1{
@@ -61,6 +75,10 @@ a{
     }    
   }
 }
+.see_project{
+  text-align: center;
+  margin-top: 50px;
+}
 .section4{
   margin-top: 100px;
   ul{
@@ -74,8 +92,18 @@ a{
       }
     }
   }
+
 }
 footer{
   background: black !important;
   color: $fondo;
+  ul{
+    text-align: center;
+    li{
+      text-align: center;
+      font-size: 5em;
+      margin-left: 50px;
+      display: inline-block;
+    }
+  }
 }

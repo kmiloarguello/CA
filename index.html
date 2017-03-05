@@ -6,9 +6,14 @@
     <link rel="shortcut icon" href="img/CA_web.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="theme-color" content="#000">
-    <!--Import Google Icon Font-->
+    <meta name="description" content="Portfolio of Camilo Arguello, Web Developer">
+    <meta name="keywords" content="Camilo,CamiloArguello,Camilo Arguello,Arguello,Argüello,multimedia,engineer,multimedia engineer,ingeniero en multimedia,duitama,bogota,colombia">
+    <meta name="author" content="Camilo Andrés Argüello Rincón">
+    <meta property="og:title" content="Camilo Argüello">
+    <meta property="og:image" content="https://s12.postimg.org/60hxbwx99/321.png">
+    <meta property="og:description" content="Camilo Arguello's Portfolio">     
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Questrial" rel="stylesheet">
-      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
@@ -44,34 +49,38 @@
       <div class="row">
         <div class="section1">
           <div class="carousel carousel-slider center" data-indicators="true">
-            <div class="carousel-item black-text" href="#one!">
-              <h1>Camilo Argüello</h1>
-              <p>I make beautiful things</p>
-              <!--<div class="video-container">-->
-              <!--  <iframe src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>-->
-              <!--</div>-->
-              <video id="myVideo2" class="responsive-video" autoplay muted controls loop>
-                  <!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
-                  <source src="video/material.mp4" type="video/mp4">
-                  Este navegador no soporta reproduccion de <code>video</code>
-              </video>    
-            </div>
-            
-            <div class="carousel-item amber white-text" href="#two!">
-              <h1>I make websites</h1>
-              <p class="white-text">I design and develop websites with the lastest availables technologies for your needs.</p>
-            </div>
-            <div class="carousel-item green white-text" href="#three!">
-              <h1>I make apps</h1>
-              <p class="white-text">I develop web apps, music apps, serious and fun apps. Any kind of app.</p>
-            </div>
-            <div class="carousel-item blue white-text" href="#four!">
-              <h1>I make motion design</h1>
-              <p class="white-text">I can create innovative content for you, like a motion graphics, 2D and 3D animations, illustrations, etc. It's like magic!</p>
-            </div>
-            <div class="carousel-item red white-text" href="#five!">
+            <div class="carousel-item red white-text" href="#one!">
               <h1>I make experiences</h1>
               <p class="white-text">Multimedia is about of use technologies to give a experience of life. My goal is than everyone who interact with any of my projects can remember that moment for a long time.</p>
+              <div id="experience-svg"></div>
+            </div>
+            
+            <div class="carousel-item black-text" href="#two!">
+              <h1>Camilo Argüello</h1>
+              <p>I make beautiful things</p>
+              <video id="myVideo2" class="responsive-video" autoplay muted controls loop>
+                  <source src="video/videoca1.webm" type="video/webm">
+                  <source src="video/videoca1.mp4" type="video/mp4">
+                  Este navegador no soporta reproduccion de <code>video</code>
+              </video>                 
+             
+
+            </div>
+            <div class="carousel-item amber white-text" href="#three!">
+              <h1>I make websites</h1>
+              <p class="white-text">I design and develop websites with the lastest availables technologies for your needs.</p>
+              <div id="laptop-svg"></div>      
+            </div>
+            <div class="carousel-item green white-text" href="#four!">
+              <h1>I make apps</h1>
+              <p class="white-text">I develop web apps, music apps, serious and fun apps. Any kind of app.</p>             
+            <div id="phone-svg"></div>  
+            </div>
+            <div class="carousel-item blue white-text" href="#five!">
+             
+              <h1>I make motion design</h1>
+              <p class="white-text">I can create innovative content for you, like a motion graphics, 2D and 3D animations, illustrations, etc. It's like magic!</p>
+                <div id="sombrero-svg"></div>            
             </div>
           </div>
         </div>
@@ -99,11 +108,12 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">K@PTA Website<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Website for a company</a></p>
+              <p>Website for a company</p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">K@PTA Website<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>This website was developed with technologies like SASS, Javascript and JQuery.
+              </p>
                 <div class="chip">
                   Website
                 </div>
@@ -116,6 +126,11 @@
                 <div class="chip">
                   JQuery
                 </div>
+                <div class="see_project">
+                  <a target="_blank" class="btn black white-text" href="http://kapta.biz">See Project</a>
+                  <a target="_blank" class="btn black white-text" href="https://github.com/KAPTA-BIZ/kapta-web"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+
             </div>
           </div>
           <div class="card col s12 m6 l4">
@@ -128,7 +143,7 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Adventure Machine<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>(Work in progress) The idea is to create a minimal version of Adventure Machine. For this project I've used NodeJs and ReactJs.</p>
                 <div class="chip">
                   Music app
                 </div>
@@ -144,56 +159,71 @@
                 <div class="chip">
                   Web Audio Api
                 </div>
+                <div class="see_project">
+                  <a target="_blank" class="btn black white-text" href="http://adventuremachine.herokuapp.com/">See Project</a>
+                  <a target="_blank" class="btn black white-text" href="https://github.com/kmiloarguello/adventuremachine"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>                
             </div>
           </div>
           <div class="card col s12 m6 l4">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/010.png">
+              <img class="activator" src="img/porsche.png">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Tú<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">See on Vimeo</a></p>
+              <span class="card-title activator grey-text text-darken-4">SVG<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">SVG Animation for Kapta</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Tú<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">SVG Animations<i class="material-icons right">close</i></span>
+              <p>This project was build using TweenMax to generate SVG Animations.</p>
               <div class="chip">
                 2D Animation
               </div>
               <div class="chip">
-                After Effects
+                Javascript
               </div>
               <div class="chip">
-                Character Animation
+                Svg Animation
               </div>
+              <div class="chip">
+                TweenMax
+              </div>
+                <div class="see_project">
+                  <a target="_blank" class="btn black white-text" href="http://kapta.biz/porsche">See Project</a>
+                  <a target="_blank" class="btn black white-text" href="https://github.com/KAPTA-BIZ/propuesta-porsche"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>                 
             </div>
           </div>
           <div class="card col s12 m6 l4">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/interactive_cube.png">
+              <img class="activator" src="img/motorrad.png">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Interactive Cube<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Class project</a></p>
+              <span class="card-title activator grey-text text-darken-4">Game Motorrad<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">Game for BMW Motorrad Colombia</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Interactive Cube<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Game Motorrad<i class="material-icons right">close</i></span>
+              <p>This project is a game of questions to train dealer employees in BMW.</p>
               <div class="chip">
-                Interactive
+                Game
               </div>
               <div class="chip">
-                Processing
+                Ask
               </div>
               <div class="chip">
-                Class Project
+                Compass
               </div>
               <div class="chip">
-                Cube
+                Sass
               </div>
               <div class="chip">
-                Live Action
+                Javascript
               </div>
+                <div class="see_project">
+                  <a target="_blank" class="btn black white-text" href="http://kapta.biz/game-motorrad">See Project</a>
+                  <a target="_blank" class="btn black white-text" href="https://github.com/KAPTA-BIZ/game-motorrad"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>               
             </div>
           </div>
           <div class="card col s12 m6 l4">
@@ -206,7 +236,7 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Mi compañero de Juego<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p>This is my first 3D Animation. Available soon.</p>
               <div class="chip">
                 3D Animation
               </div>
@@ -223,46 +253,43 @@
           </div>
           <div class="card col s12 m6 l4">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/010.png">
+              <img class="activator" src="img/kia.png">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
+              <span class="card-title activator grey-text text-darken-4">Car Visualization<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">360 view of Kia Niro 2017</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Car Visualization<i class="material-icons right">close</i></span>
+              <p>This project uses Javascript and Three.js to create 360 view exterior of a new KIA Niro and others cars.</p>
+              <div class="chip">
+                Javascript
+              </div>
+              <div class="chip">
+                Three.js
+              </div>
+              <div class="chip">
+                360 View
+              </div>
+              <div class="chip">
+                JQuery
+              </div>
+                <div class="see_project">
+                  <a target="_blank" class="btn black white-text" href="http://kapta.biz/app-car-kia">See Project</a>
+                  <a target="_blank" class="btn black white-text" href="https://github.com/KAPTA-BIZ/app-car-kia"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>                                                         
             </div>
           </div>            
         </div>
         <div class="section4">
           <h5 class="black-text">Tech I've used</h5>
-          <p>These are the technologies that I use Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-          sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-          magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-          quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-          ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-          dolor in hendrerit in vulputate velit esse molestie consequat,
-          vel illum dolore eu feugiat nulla facilisis at vero eros et
-          accumsan et iusto odio dignissim qui blandit praesent luptatum
-          zzril delenit augue duis dolore te feugait nulla facilisi.
-          Nam liber tempor cum soluta nobis eleifend option congue
-          nihil imperdiet doming id quod mazim placerat facer possim
-          assum. Typi non habent claritatem insitam; est usus legentis
-          in iis qui facit eorum claritatem. Investigationes
-          demonstraverunt lectores legere me lius quod ii legunt saepius.
-          Claritas est etiam processus dynamicus, qui sequitur mutationem
-          consuetudium lectorum. Mirum est notare quam littera gothica,
-          quam nunc putamus parum claram, anteposuerit litterarum formas
-          humanitatis per seacula quarta decima et quinta decima. Eodem
-          modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-          in futurum.</p>
+          <p>These are a little bit the technologies that I use to create awesome projects.</p>
           <ul>
-            <li><img class="circle responsive-img" src="img/001.png"></li>
-            <li><img class="circle responsive-img" src="img/001.png"></li>
-            <li><img class="circle responsive-img" src="img/001.png"></li>
-            <li><img class="circle responsive-img" src="img/001.png"></li>
-            <li><img class="circle responsive-img" src="img/001.png"></li>
+            <li><img class=" responsive-img" src="img/node.png"></li>
+            <li><img class="circle responsive-img" src="img/react.svg"></li>
+            <li><img class=" responsive-img" src="img/sass.svg"></li>
+            <li><img class="responsive-img" src="img/git.png"></li>
+            <li><img class="responsive-img" src="img/vue.png"></li>
           </ul>
         </div>
       </div> 
@@ -271,14 +298,14 @@
   <footer class="page-footer">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
+      <div class="col s12">
         <h5 class="white-text">Contact</h5>
-          <div class="col l4 offset-l2 s12">
+          <div class="col s12">
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+              <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/kmilo.arguello"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.linkedin.com/in/kmiloarguello"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" class="grey-text text-lighten-3" href="https://github.com/kmiloarguello"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.instagram.com/kmilo_arguello/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
           </div>
       </div>
@@ -310,7 +337,7 @@
           </div>
           <div class="row">
             <div class="col s12">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <button class="white black-text btn waves-effect waves-light" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
               </button>                
             </div>
@@ -327,7 +354,49 @@
 </footer>
   
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  
   <script type="text/javascript" src="js/index.js"></script>
+  
+  <script type="text/javascript" src="js/bodymovin.js"></script>
+  <script type="text/javascript">
+  
+        var animData = {
+            container: document.getElementById('laptop-svg'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'js/laptop.json'
+        };
+        var anim = bodymovin.loadAnimation(animData); 
+    
+        var animData2 = {
+            container: document.getElementById('phone-svg'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'js/phone.json'
+        };
+        var anim2 = bodymovin.loadAnimation(animData2);
+    
+        var animData3 = {
+            container: document.getElementById('sombrero-svg'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'js/sombrero/sombrero.json'
+        };
+        var anim3 = bodymovin.loadAnimation(animData3);
+    
+        var animData4 = {
+            container: document.getElementById('experience-svg'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'js/experience/experience.json'
+        };
+        var anim4 = bodymovin.loadAnimation(animData4);      
+  </script>
 </body>
 </html>
