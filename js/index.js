@@ -10,7 +10,31 @@ $(document).ready(function() {
   function autoplay() {
       $('.carousel').carousel('next');
       setTimeout(autoplay, 4500);
-  }  
+  }
+  
+  $(".link1").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".section1").offset().top},
+      'slow');
+  });
+
+  $(".link2").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".section2").offset().top},
+      'slow');
+  });
+
+  $(".link3").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".section3").offset().top},
+      'slow');
+  });
+
+  $(".link4").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".page-footer").offset().top},
+      'slow');
+  });  
   
 });
 
