@@ -65,6 +65,7 @@ body{
 }
 .grid, .bg{
   position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -157,6 +158,11 @@ a{
     }    
   }
 }
+.section3{
+  .card{
+    background: rgba($color: #fff, $alpha: .2);
+  }
+}
 .see_project{
   text-align: center;
   margin-top: 50px;
@@ -170,7 +176,6 @@ a{
       margin-left: 20px;
       img{
         width: 200px;
-        height: 200px;
       }
     }
   }

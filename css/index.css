@@ -40,6 +40,7 @@ body {
 
 .grid, .bg {
   position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -119,6 +120,9 @@ a {
   .section2 ul #descripcion p {
     padding: 0 10px 0 10px; }
 
+.section3 .card {
+  background: rgba(255, 255, 255, 0.2); }
+
 .see_project {
   text-align: center;
   margin-top: 50px; }
@@ -131,8 +135,7 @@ a {
       display: inline-block;
       margin-left: 20px; }
       .section4 ul li img {
-        width: 200px;
-        height: 200px; }
+        width: 200px; }
 
 footer {
   background: black !important;
