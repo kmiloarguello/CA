@@ -1,0 +1,12 @@
+:root{
+    --darkColor: #15192a;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    -ms-grid-columns: auto auto auto auto;
+    grid-gap: 1px;
+}
+.item{
+    background-color: peru;
+}

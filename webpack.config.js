@@ -21,6 +21,42 @@ module.exports = {
                         presets: ["es2015", "react"]
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    use: [
+                        {
+                            loader: "css-loader",
+                            options: {
+                                modules: true,
+                                importLoaders: 1
+                            }
+                        },
+                        'postcss-loader'
+                    ]
+                })
+            },
+            {
+                test: /\.(jpg|png|gif|svg)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 1000000,
+                        name: "img/BMW/[name].[ext]"
+                    }
+                }
+            },
+            {
+                test: /\.(mp4)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 1000000,
+                        mimetype: "video/mp4",
+                        name: "video/[name].[hash].[ext]"
+                    }
+                }
             }
         ]
     },
@@ -41,8 +77,15 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname,"src/css/materialize.min.css"),
-                to: path.resolve(__dirname,"dist/css/materialize.min.css"),
+                from: path.resolve(__dirname, "src/css/materialize.min.css"),
+                to: path.resolve(__dirname, "dist/css/materialize.min.css"),
+                toType: 'file'
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, "src/css/fontawesome-all.min.css"),
+                to: path.resolve(__dirname, "dist/css/fontawesome-all.min.css"),
                 toType: 'file'
             }
         ]),
@@ -57,6 +100,13 @@ module.exports = {
             {
                 from: path.resolve(__dirname, "src/css/fonts.css"),
                 to: path.resolve(__dirname, "dist/css/fonts.css"),
+                toType: 'file'
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, "src/js/jquery-3.1.1.min.js"),
+                to: path.resolve(__dirname, "dist/js/jquery-3.1.1.min.js"),
                 toType: 'file'
             }
         ]),
