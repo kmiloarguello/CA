@@ -110,5 +110,12 @@ module.exports = {
                 toType: 'file'
             }
         ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, "src/css/animate.css"),
+                to: path.resolve(__dirname, "dist/css/animate.css"),
+                toType: 'file'
+            }
+        ]),
     ]
 }
