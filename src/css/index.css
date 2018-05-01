@@ -1,12 +1,21 @@
 :root{
     --darkColor: #15192a;
+    --lightColor: #eee;
 }
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    -ms-grid-columns: auto auto auto auto;
-    grid-gap: 1px;
-}
-.item{
-    background-color: peru;
+#why{
+    background: var(--darkColor);
+    & h1{
+        font-size: 100px;
+        animation-duration: 2s;
+    }
+    & h2{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    & h1, & h2{
+        color: var(--lightColor);
+    }
+    & #phone{
+        transition: all 1s ease-out;
+    }
 }

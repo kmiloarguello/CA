@@ -63,10 +63,6 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("css/[name].css"),
         new webpack.ProvidePlugin({
-            "window.jQuery": "jquery",
-            "window.$": "jquery",
-            jQuery: "jquery",
-            $: "jquery",
             "window.Hammer": "Hammer"
         }),
         new HtmlWebpackPlugin({
@@ -100,13 +96,6 @@ module.exports = {
             {
                 from: path.resolve(__dirname, "src/css/fonts.css"),
                 to: path.resolve(__dirname, "dist/css/fonts.css"),
-                toType: 'file'
-            }
-        ]),
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(__dirname, "src/js/jquery-3.1.1.min.js"),
-                to: path.resolve(__dirname, "dist/js/jquery-3.1.1.min.js"),
                 toType: 'file'
             }
         ]),
