@@ -1,29 +1,25 @@
 import React, { Component } from "react";
-import "./js/materialize.min.js";
+import "../node_modules/materialize-css/dist/js/materialize.min.js";
 import WOW from "wowjs";
-import Header from "./Components/Header.jsx";
+import ScrollMagic from "scrollmagic";
+//import Header from "./Components/Header.jsx";
 import Why from "./Components/Why.jsx";
 import How from "./Components/How.jsx";
-import What from "./Components/What.jsx";
-import Footer from "./Components/Footer.jsx";
+//import What from "./Components/What.jsx";
+//import Footer from "./Components/Footer.jsx";
 import styles from "./css/index.css";
+import { data } from './data/data.js'
 
 export default class CA extends Component {
-    componentDidMount() {
-        const wow = new WOW.WOW();
-        wow.init();
-      }
-    render() {
+  componentDidMount() {
+    const wow = new WOW.WOW();
+    wow.init();
+  }
+  render() {
     return (
       <div>
-        <Header />
-        <section className="container">
-          <div className="row">
-            <Why />
-            <How />
-            <What />
-          </div>
-        </section>
+        <Why why={data.Why.info} />
+        <How />
       </div>
     );
   }

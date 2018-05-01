@@ -1,58 +1,68 @@
 import React, { Component } from "react";
+import styles from "../css/index.css";
+import phone from "../img/phone.png";
 
 export default class Why extends Component {
   componentDidMount() {
-    // $(".button-collapse").sideNav();
-    // $(".carousel.carousel-slider").carousel({ full_width: true });
+    setTimeout(() => {
+      document.getElementById(styles.phone).style.transform = "scale(1.7)";
+    }, 1500);
 
-    // $(".carousel").carousel();
-    // setInterval(function() {
-    //   $(".carousel").carousel("next");
-    // }, 5000);
+    let why = this.props.why;
+    let title = document.getElementById("title");
+    let startTime = Date.now();
+
+    var changeTitleNSubtitle = function() {
+      let elapsedTime = Date.now() - startTime;
+      let finalTime = parseInt((elapsedTime / 1000).toFixed());
+
+      if (finalTime <= why.length) {
+        console.log(finalTime-1)
+        title.innerHTML = why[finalTime - 1].title;
+      } else {
+        console.log(finalTime, why.length, why[finalTime]);
+        restartCounter();
+      }
+    };
+
+    let interval = setInterval(changeTitleNSubtitle, 2000);
+
+    function restartCounter() {
+      clearInterval(interval);
+      //interval = setInterval(changeTitleNSubtitle, 1000);
+    }
   }
+
   render() {
     return (
-      <div className="section1">
-        <div className="carousel carousel-slider center" data-indicators="true">
-          <div className="carousel-item white-text" href="#two!">
-            <h1>Camilo Argüello</h1>
-            <p>I make beautiful things</p>
-          </div>
-          <div className="carousel-item white-text" href="#three!">
-            <h1>I make websites</h1>
-            <p className="white-text">
-              I design and develop websites with the lastest availables
-              technologies for your needs.
-            </p>
-            <div id="laptop-svg" />
-          </div>
-          <div className="carousel-item white-text" href="#four!">
-            <h1>I make apps</h1>
-            <p className="white-text">
-              I develop web apps, music apps, serious and fun apps. Any kind of
-              app.
-            </p>
-            <div id="phone-svg" />
-          </div>
-          <div className="carousel-item white-text" href="#five!">
-            <h1>I make motion design</h1>
-            <p className="white-text">
-              I can create innovative content for you, like a motion graphics,
-              2D and 3D animations, illustrations, etc. It's like magic!
-            </p>
-            <div id="sombrero-svg" />
-          </div>
-          <div className="carousel-item white-text" href="#one!">
-            <h1>I make experiences</h1>
-            <p className="white-text">
-              Multimedia is about of use technologies to give a experience of
-              life. My goal is than everyone who interact with any of my
-              projects can remember that moment for a long time.
-            </p>
-            <div id="experience-svg" />
+      <section id={styles.why}>
+        <div className="container">
+          <div className="row">
+            <div className="col s12 m7">
+              <div className="valign-wrapper" style={{ height: "80vh" }}>
+                <div>
+                  <h1 id="title" className="wow infinite fadeInUp">
+                   
+                  </h1>
+                  <h2 className="wow bounceInRight">
+                    {this.props.why[0].subtitle}
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="col m5">
+              <div className="valign-wrapper" style={{ height: "100vh" }}>
+                <img
+                  id={styles.phone}
+                  className="wow fadeInUp"
+                  src={phone}
+                  alt="phone"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
