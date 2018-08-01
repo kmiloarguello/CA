@@ -18,6 +18,7 @@ export default class CA extends Component {
     return (
       <div>
         <Header />
+        <Why />
       </div>
     );
   }
