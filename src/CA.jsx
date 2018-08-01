@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import "../node_modules/materialize-css/dist/js/materialize.min.js";
 import WOW from "wowjs";
-import ScrollMagic from "scrollmagic";
-//import Header from "./Components/Header.jsx";
+
+import Header from "./Components/Header.jsx";
 import Why from "./Components/Why.jsx";
 import How from "./Components/How.jsx";
 //import What from "./Components/What.jsx";
@@ -18,8 +17,7 @@ export default class CA extends Component {
   render() {
     return (
       <div>
-        <Why why={data.Why.info} />
-        <How />
+        <Header />
       </div>
     );
   }
