@@ -1,0 +1,21 @@
+:root{
+    --darkColor: #15192a;
+    --lightColor: #eee;
+}
+#why{
+    background: var(--darkColor);
+    & h1{
+        font-size: 100px;
+        animation-duration: 2s;
+    }
+    & h2{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    & h1, & h2{
+        color: var(--lightColor);
+    }
+    & #phone{
+        transition: all 1s ease-out;
+    }
+}

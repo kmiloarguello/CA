@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      <%= htmlWebpackPlugin.options.title || 'KIA' %>
+    </title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <% if (!htmlWebpackPlugin.files.favicon) { %>
+      <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon%>" type="image/x-icon">
+    <% } %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link type="text/css" href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+  </head>
+  <body>
+    <main id="root"></main>
+  </body>
+</html>
