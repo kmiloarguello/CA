@@ -2,8 +2,10 @@
 @import "./header.css";
 @import "./why.css";
 
-*{
+*,body{
     box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 main{
     display: grid;

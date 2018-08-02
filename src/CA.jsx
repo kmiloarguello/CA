@@ -17,7 +17,7 @@ export default class CA extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header data={data}/>
         <Why />
       </div>
     );

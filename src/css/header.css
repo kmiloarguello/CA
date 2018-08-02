@@ -1,7 +1,14 @@
-nav{
-    display: grid;
-    background-color: aquamarine;
-    & h1 {
-        color: blue;
-    }
+nav {
+  display: grid;
+  grid-template-columns: minmax(auto, 80%);
+  justify-content: center;
+
+  box-shadow: 0 4px 2px -2px var(--grayColor);
+  & h1 {
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+  & img {
+      width: 100px;
+  }
 }

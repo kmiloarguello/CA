@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import CALogo from "../img/logo-camilo-arguello.png";
 
 export default class Header extends Component {
   render() {
+    const data = this.props.data
     return (
       <nav>
-        <h1>Holi</h1>
+        <img src={data.PersonalInfo.logo} alt={"Logo of Camilo Arguello"} />
+        <h1>Camilo Argüello</h1>
       </nav>
     );
   }

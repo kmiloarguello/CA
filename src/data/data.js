@@ -1,4 +1,7 @@
+import CALogo from "../img/logo-camilo-arguello.png";
+
 const data = {
+
   Why: {
     info: [
       {
@@ -23,7 +26,8 @@ const data = {
     name: "Camilo Argüello",
     age: 24,
     email: "contact@camiloarguello.xyz",
-    tel: 573208563431
+    tel: 573208563431,
+    logo: CALogo
   }
 };
 
