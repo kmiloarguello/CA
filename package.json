@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "webpack-serve --open --config ./webpack.dev.js",
+    "dev": "webpack-serve --open --hmr --reload --config ./webpack.dev.js",
     "prod": "webpack --config ./webpack.prod.js -p --progress"
   },
   "repository": {

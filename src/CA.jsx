@@ -17,8 +17,10 @@ export default class CA extends Component {
   render() {
     return (
       <div>
-        <Header data={data}/>
-        <Why />
+        <h1>Title</h1>
+        <button className="ok">Yes!</button>
+        {/*<Header data={data}/>
+        <Why />*/}
       </div>
     );
   }
