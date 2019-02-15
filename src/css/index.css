@@ -1,6 +1,7 @@
 @import "./variables.css";
 @import "./header.css";
 @import "./why.css";
+@import "./how.css";
 
 *,body{
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 }
 main{
     display: grid;
-    background: linear-gradient(90deg, yellow,red);
+    background: white;
 }
 button{
     padding: .3em .8em;

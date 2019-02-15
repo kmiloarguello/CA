@@ -4,8 +4,8 @@ import WOW from "wowjs";
 import Header from "./Components/Header.jsx";
 import Why from "./Components/Why.jsx";
 import How from "./Components/How.jsx";
-//import What from "./Components/What.jsx";
-//import Footer from "./Components/Footer.jsx";
+import What from "./Components/What.jsx";
+import Footer from "./Components/Footer.jsx";
 import styles from "./css/index.css";
 import { data } from './data/data.js'
 
@@ -17,10 +17,14 @@ export default class CA extends Component {
   render() {
     return (
       <div>
-        <h1>Title</h1>
-        <button className="ok">Yes!</button>
-        {/*<Header data={data}/>
-        <Why />*/}
+        <Header data={data}/>
+        <Why data={data.Why} />
+        <How data={data.How} />
+        {/* 
+     
+        
+        <What />
+        <Footer /> */}
       </div>
     );
   }
