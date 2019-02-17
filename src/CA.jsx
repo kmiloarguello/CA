@@ -18,7 +18,7 @@ export default class CA extends Component {
     return (
       <div>
         <Header data={data}/>
-        <Why data={data.Why} />
+        <Why data={data} />
         <How data={data.How} />
         {/* 
      

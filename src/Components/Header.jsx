@@ -1,27 +1,25 @@
 import React, { Component } from "react";
 
 export default class Header extends Component {
+  renderMenu(){
+    const { menu } = this.props.data.Header;
+    return menu.map((item,index) => {
+      return(
+        <li key={index}>
+          <a href={item.href}>{item.title}</a>
+        </li>)
+    })
+  }
   render() {
-    const data = this.props.data;
+    const { name, logo } = this.props.data.PersonalInfo;
     return (
       <nav>
         <ul>
           <li>
-            <img src={data.PersonalInfo.logo} alt={"Logo of Camilo Arguello"} />
-            <h1>Camilo Argüello</h1>
+            <img src={logo} alt={"Logo of " + name} />
+            <h1>{name}</h1>
           </li>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About me</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          {this.renderMenu()}
         </ul>
       </nav>
     );

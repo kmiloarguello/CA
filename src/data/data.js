@@ -9,48 +9,80 @@ import daftpunk from "../img/work/daftpunk.png";
 import mostromedia from "../img/work/mostromedia2019.png"
 
 const data = {
+  Header: {
+    menu: [
+      {title: "Home", href:"#"}, 
+      {title: "About me", href:"#"},
+      {title: "Projects", href:"#"},
+      {title: "Contact", href:"#"}
+    ]
+  },
   Why: {
     img: CAprofile,
-    alt: "Camilo Arguello"
+    section1: `Hey! Thank you for checking out my portfolio. I hope you like what
+    you see in this site. Be sure to look around and check out my
+    projects while you're here!`,
+    section2: `My name is Camilo Arguello and I'm from Colombia and I am
+    Multimedia Engineer. I love the programming, special effects and
+    2D/3D animation. I´ve always loved solving problems, especially to
+    design innovate and interactive contents, whether of computer
+    graphics, animation, programming to deliver a memorable
+    experience. Also with a great ability to learn new technologies,
+    with a extensive leadership. I've always been fascinated with the
+    idea of generating interactive content that provide a lifetime
+    experience. I am currently working on web development, making
+    applications and websites.`,
+    section3: `I'm currently available for full-time job, so I you want to work
+    with me or contract me, just put in contact with me and I can
+    start anytime.`
   },
   How: {
     work: [
       {
         image: kapta01,
-        alt:"Landing"
-      },
-      {
-        image: motoe4plus,
-        alt: "Tshirt"
+        alt:"Landing",
+        level: 1
       },
       {
         image: daftpunk,
-        alt: "house"
+        alt: "house",
+        level: 2
+      },
+      {
+        image: motoe4plus,
+        alt: "Tshirt",
+        level: 3
       },
       {
         image: mostromedia,
-        alt:"Landing"
+        alt:"Landing",
+        level: 4
       },
-      {
-        image: tshirt,
-        alt: "Tshirt"
-      },
-      {
-        image: house,
-        alt: "house"
-      },
-      {
-        image: landing,
-        alt:"Landing"
-      },
-      {
-        image: tshirt,
-        alt: "Tshirt"
-      },
-      {
-        image: house,
-        alt: "house"
-      }
+      // {
+      //   image: tshirt,
+      //   alt: "Tshirt",
+      //   level: 1
+      // },
+      // {
+      //   image: house,
+      //   alt: "house",
+      //   level: 2
+      // },
+      // {
+      //   image: landing,
+      //   alt:"Landing",
+      //   level: 3
+      // },
+      // {
+      //   image: tshirt,
+      //   alt: "Tshirt",
+      //   level: 1
+      // },
+      // {
+      //   image: house,
+      //   alt: "house",
+      //   level: 2
+      // }
     ]
   },
   What: {
@@ -75,6 +107,7 @@ const data = {
   },
   PersonalInfo: {
     name: "Camilo Argüello",
+    job: "Developer and future scientist",
     age: 24,
     email: "contact@camiloarguello.xyz",
     tel: 573208563431,
