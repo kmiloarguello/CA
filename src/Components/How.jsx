@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
 
+
 Array.prototype.randomArray = function(){
   return this[Math.floor(Math.random()*this.length)];
 }
@@ -10,7 +11,7 @@ export default class How extends Component {
     const { work } = this.props.data; 
     // TODO: Random without repeat
     return work.map((elem,index) => {
-      return <Portfolio key={index}  work={elem} />
+      return <Portfolio key={index} index={index} work={elem} onClick={this.props.onClick} />
     });
   }
   render() {
@@ -27,16 +28,13 @@ class Portfolio extends Component{
   constructor(props){
     super(props);
   }
-  activateModal(){
-    console.log("Hi");
-  }
   render(){
-    const { work } = this.props;
-
+    const { work,index } = this.props;
     return (
       <div 
+        data-index={index}
         className={"item level-" + work.level} 
-        onClick={() => this.activateModal()}
+        onClick={this.props.onClick}
         >
         <img src={work.image} alt={work.alt} />
       </div>

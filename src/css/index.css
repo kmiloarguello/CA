@@ -30,7 +30,7 @@ button.ok{
     background-color: #6b0;
 }
 
-.modal-overlay {
+.modalOverlay {
     position: fixed;
     z-index: 999;
     top: -25%;

@@ -41,7 +41,25 @@ const data = {
       {
         image: kapta01,
         alt:"Landing",
-        level: 1
+        level: 1,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
       },
       {
         image: daftpunk,
