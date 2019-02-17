@@ -47,8 +47,8 @@ const data = {
           description: "Website for K@PTA Company",
           images: [
             {
-              image: "",
-              alt: ""
+              image: kapta01,
+              alt: "Descripcion de imagen"
             },
             {
               image: "",
@@ -64,17 +64,79 @@ const data = {
       {
         image: daftpunk,
         alt: "house",
-        level: 2
+        level: 2,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: daftpunk,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: motoe4plus,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: mostromedia,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+          ],
+        }
       },
       {
         image: motoe4plus,
         alt: "Tshirt",
-        level: 3
+        level: 3,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
       },
       {
         image: mostromedia,
         alt:"Landing",
-        level: 4
+        level: 4,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
       },
       // {
       //   image: tshirt,

@@ -3,47 +3,143 @@
 @import "./why.css";
 @import "./how.css";
 
-*,body{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-main{
-    display: grid;
-    background: white;
+main {
+  display: grid;
+  background: white;
 }
-button{
-    padding: .3em .8em;
-    border: 1px solid rgba(0,0,0,.1);
-    background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
-    border-radius: .2em;
-    box-shadow: 0 .05em .25em rgba(0,0,0,.5);
-    color: white;
-    text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-    font-size: 125%;
-    line-height: 1.5;
+button {
+  padding: 0.3em 0.8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #58a linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -0.05em 0.05em rgba(0, 0, 0, 0.5);
+  font-size: 125%;
+  line-height: 1.5;
 }
-button.cancel{
-    background-color: #c00;
+button.cancel {
+  background-color: #c00;
 }
-button.ok{
-    background-color: #6b0;
+button.ok {
+  background-color: #6b0;
+}
+.modal {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.modalOverlay {
+  position: fixed;
+  z-index: 999;
+  top: -25%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+  will-change: opacity;
+  opacity: 0.5;
 }
 
-.modalOverlay {
-    position: fixed;
-    z-index: 999;
-    top: -25%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 125%;
-    width: 100%;
-    background: #000;
-    display: none;
-    will-change: opacity;
-    &.active{
-        display: block;
-        opacity: 0.5;
+.overlayContent {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  min-height: initial;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  padding: 50px;
+  overflow-y: scroll;
+  height: 100%;
+
+  & .containerImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40%);
+    justify-content: center;
+    grid-gap: 50px;
+    margin-top: 50px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
+
+    & .image1 {
+      grid-row-end: span 1;
+    }
+    & .image2 {
+      grid-row-end: span 2;
+    }
+    & .image3 {
+      grid-row-end: span 3;
+    }
+    & .image4 {
+      grid-row-end: span 4;
+    }
+    & .image5 {
+      grid-row-end: span 5;
+    }
+    & .image6 {
+      grid-row-end: span 6;
+    }
+  }
 }
+
+.closeModal {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    background: #fff;
+    z-index: 1001;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      margin-top: -1px;
+      background: #000;
+    }
+    &::before {
+      transform: rotate(45deg);
+      transition: all ease .2s;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      transition: all ease .2s;
+    }
+    &:hover{
+        &:before, &:after{
+            background: var(--grayColor);
+        }
+        &:before{
+            transform: rotate(-45deg);
+        }
+        &:after{
+            transform: rotate(45deg);
+        }
+    }
+  }

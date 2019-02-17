@@ -15,7 +15,7 @@ export default class CA extends Component {
   constructor(){
     super();
     this.state = {
-      modalActive : false
+      modalActive : ""
     }
     this.detail = {};
   }
@@ -26,7 +26,7 @@ export default class CA extends Component {
   activateModal(e){
 
     this.setState({
-      modalActive : true
+      modalActive : "active"
     })
 
     let elem = e.target.closest(".item");
@@ -34,6 +34,11 @@ export default class CA extends Component {
 
     this.detail = data.How.work[attr].detail;
 
+  }
+  closeModal(){
+    this.setState({
+      modalActive : ""
+    })
   }
   render() {
     return (
@@ -48,7 +53,10 @@ export default class CA extends Component {
         
         <What />
         <Footer /> */}
-        <Overlay modalActive={this.state.modalActive} />
+        <Overlay 
+          modalActive={this.state.modalActive}
+          detail={this.detail}
+          onClick={() => this.closeModal()} />
       </div>
     );
   }
