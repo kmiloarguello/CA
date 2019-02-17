@@ -31,6 +31,7 @@ const Overlay = ({ modalActive, detail, onClick }) => {
             </div>
         )
     }else{
+        document.body.style.overflow = "auto";
         return "";
     }
 

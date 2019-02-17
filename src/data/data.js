@@ -138,31 +138,206 @@ const data = {
           ],
         }
       },
-      // {
-      //   image: tshirt,
-      //   alt: "Tshirt",
-      //   level: 1
-      // },
-      // {
-      //   image: house,
-      //   alt: "house",
-      //   level: 2
-      // },
-      // {
-      //   image: landing,
-      //   alt:"Landing",
-      //   level: 3
-      // },
-      // {
-      //   image: tshirt,
-      //   alt: "Tshirt",
-      //   level: 1
-      // },
-      // {
-      //   image: house,
-      //   alt: "house",
-      //   level: 2
-      // }
+      {
+        image: kapta01,
+        alt:"Landing",
+        level: 1,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
+      },
+      {
+        image: daftpunk,
+        alt: "house",
+        level: 2,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: daftpunk,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: motoe4plus,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: mostromedia,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+          ],
+        }
+      },
+      {
+        image: motoe4plus,
+        alt: "Tshirt",
+        level: 3,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
+      },
+      {
+        image: mostromedia,
+        alt:"Landing",
+        level: 4,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
+      },
+      {
+        image: kapta01,
+        alt:"Landing",
+        level: 1,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
+      },
+      {
+        image: daftpunk,
+        alt: "house",
+        level: 2,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: daftpunk,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: motoe4plus,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: mostromedia,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+          ],
+        }
+      },
+      {
+        image: motoe4plus,
+        alt: "Tshirt",
+        level: 3,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
+      },
+      {
+        image: mostromedia,
+        alt:"Landing",
+        level: 4,
+        detail: {
+          title: "K@PTA México",
+          description: "Website for K@PTA Company",
+          images: [
+            {
+              image: kapta01,
+              alt: "Descripcion de imagen"
+            },
+            {
+              image: "",
+              alt: ""
+            },
+            {
+              image: "",
+              alt: ""
+            }
+          ],
+        }
+      },
     ]
   },
   What: {
