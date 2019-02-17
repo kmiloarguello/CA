@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
 
-
 Array.prototype.randomArray = function(){
   return this[Math.floor(Math.random()*this.length)];
 }
@@ -33,7 +32,7 @@ class Portfolio extends Component{
     return (
       <div 
         data-index={index}
-        className={"item level-" + work.level} 
+        className={"item level-" + work.level + " wow fadeInUp"} 
         onClick={this.props.onClick}
         >
         <img src={work.image} alt={work.alt} />

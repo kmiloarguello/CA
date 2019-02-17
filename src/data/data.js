@@ -314,30 +314,7 @@ const data = {
             }
           ],
         }
-      },
-      {
-        image: mostromedia,
-        alt:"Landing",
-        level: 4,
-        detail: {
-          title: "K@PTA México",
-          description: "Website for K@PTA Company",
-          images: [
-            {
-              image: kapta01,
-              alt: "Descripcion de imagen"
-            },
-            {
-              image: "",
-              alt: ""
-            },
-            {
-              image: "",
-              alt: ""
-            }
-          ],
-        }
-      },
+      }
     ]
   },
   What: {

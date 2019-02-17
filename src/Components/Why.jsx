@@ -6,7 +6,7 @@ export default class Why extends Component {
     const { img,section1,section2,section3 } = this.props.data.Why;
     const { name,job } = this.props.data.PersonalInfo;
     return (
-      <div id={styles.why}>
+      <section id={styles.why}>
         <ul className="collection">
           <li className={styles.avatar}>
             <img src={img} alt={name} className={styles.circle} />
@@ -23,7 +23,7 @@ export default class Why extends Component {
             <p>{section3}</p>
           </li>
         </ul>
-      </div>
+      </section>
     );
   }
 }
