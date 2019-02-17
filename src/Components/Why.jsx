@@ -1,50 +1,28 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
-import phone from "../img/phone.png";
-import landing from "../img/landing.jpg";
-import tshirt from "../img/tshirt.jpg";
-import house from "../img/house.jpg";
 
 export default class Why extends Component {
   render() {
+    const { img,section1,section2,section3 } = this.props.data.Why;
+    const { name,job } = this.props.data.PersonalInfo;
     return (
       <section id={styles.why}>
-        <div className="item level-1">
-          <img src={landing} alt="" />
-        </div>
-        <div className="item level-2">
-          <img src={tshirt} alt="" />
-        </div>
-        <div className="item level-3">
-          <img src={house} alt="" />
-        </div>
-        <div className="item level-1">
-          <img src={landing} alt="" />
-        </div>
-        <div className="item level-2">
-          <img src={tshirt} alt="" />
-        </div>
-        <div className="item level-3">
-          <img src={house} alt="" />
-        </div>
-        <div className="item level-1">
-          <img src={landing} alt="" />
-        </div>
-        <div className="item level-2">
-          <img src={tshirt} alt="" />
-        </div>
-        <div className="item level-3">
-          <img src={house} alt="" />
-        </div>
-        <div className="item level-1">
-          <img src={landing} alt="" />
-        </div>
-        <div className="item level-2">
-          <img src={tshirt} alt="" />
-        </div>
-        <div className="item level-3">
-          <img src={house} alt="" />
-        </div>
+        <ul className="collection">
+          <li className={styles.avatar}>
+            <img src={img} alt={name} className={styles.circle} />
+            <div className={styles.titleContainer}>
+              <h1 className={styles.title}>
+                <b>{name}</b>
+              </h1>
+              <h2>{job}</h2>
+            </div>
+          </li>
+          <li className={styles.description}>
+            <p>{section1}</p>
+            <p>{section2}</p>
+            <p>{section3}</p>
+          </li>
+        </ul>
       </section>
     );
   }
