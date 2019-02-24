@@ -81,7 +81,7 @@
     border-radius: 100px;
     z-index: 100;
     transform: translateX(-50%);
-    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.70);
 
     &:hover{
       background: var(--highlightColor);

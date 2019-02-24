@@ -62,6 +62,11 @@ footer{
             }
             
         }
+        & .information{
+            & a{
+                display: block;
+            }
+        }
         & p, & a{
             font-family: "Roboto", Arial, Helvetica, sans-serif;
             font-weight: 300;

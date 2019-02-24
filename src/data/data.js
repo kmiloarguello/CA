@@ -17,10 +17,10 @@ import iconCosmos from "../img/motivation/cosmos.png";
 const data = {
   Header: {
     menu: [
-      {title: "Home", href:"#"}, 
-      {title: "Motivation", href:"#"},
-      {title: "Work", href:"#"},
-      {title: "Contact", href:"#"}
+      {title: "Home", href:"#home"}, 
+      {title: "Motivation", href:"#motivation"},
+      {title: "Work", href:"#work"},
+      {title: "Contact", href:"#contact"}
     ]
   },
   Why: {
@@ -411,27 +411,27 @@ const data = {
       {
         icon: iconScience,
         title: "Science",
-        subtitle: "I make beautiful things."
+        subtitle: "Learning everyday about the knowledge of humanity."
       },
       {
         icon: iconComputer,
-        title: "Applied Maths",
-        subtitle: "I develop websites, mobile apps."
+        title: "Coding",
+        subtitle: "I write code which create solutions for real life problems."
       },
       {
         icon: iconFilm,
         title: "VFX",
-        subtitle: "Passionate with new ways of knowledge."
+        subtitle: "One of my dreams is become a visual-artist."
       },
       {
         icon: iconEducation,
         title: "Teaching",
-        subtitle: "#untilTheEnd"
+        subtitle: "Professor by passion."
       },
       {
         icon: iconCosmos,
         title: "Cosmos",
-        subtitle: "Cosmos I love"
+        subtitle: "The curiosity about new ways to understand our universe."
       }
     ]
   },
@@ -439,7 +439,7 @@ const data = {
     name: "Camilo Argüello",
     job: "Developer and future scientist",
     age: 24,
-    email: "contact@camiloarguello.xyz",
+    email: "camilo.arguello.rincon@gmail.xyz",
     tel: 573208563431,
     logo: CALogo,
     logoWhite: CALogoWhite

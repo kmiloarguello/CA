@@ -22,7 +22,7 @@
     & .containerImages{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
 
         & .conticons{
             padding: 50px;
@@ -31,6 +31,7 @@
             }
             & h3{
                 font-family: "Muli", Arial, Helvetica, sans-serif;
+                margin: 10px 0;
             }
             & p{
                 font-family: "Roboto", Arial, Helvetica, sans-serif;

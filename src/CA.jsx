@@ -43,7 +43,7 @@ export default class CA extends Component {
   render() {
     return (
       <div>
-        <div className={styles.containerhome}>
+        <div id="why-cont" className={styles.containerhome}>
           <Header data={data}/>
           <Why data={data}  />
           <div className="bg-container"></div>
