@@ -9,7 +9,7 @@ export default class How extends Component {
     return info.map((elem,i) => {
       return (
         <div key={i} className={styles.conticons}>
-          <img src={reactIcon} />
+          <img src={elem.icon} />
           <h3>{elem.title}</h3>
           <p>{elem.subtitle}</p>
         </div>

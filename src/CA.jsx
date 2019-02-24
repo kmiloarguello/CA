@@ -46,6 +46,7 @@ export default class CA extends Component {
         <div className={styles.containerhome}>
           <Header data={data}/>
           <Why data={data}  />
+          <div className="bg-container"></div>
         </div>
         <How 
           data={data.How}

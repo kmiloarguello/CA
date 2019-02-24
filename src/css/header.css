@@ -3,6 +3,9 @@ nav {
   grid-template-columns: minmax(auto, 90%);
   justify-content: center;
   font-family: "Muli", Arial, Helvetica, sans-serif;
+  height: 100px;
+  position: relative;
+  z-index: 15;
   & ul{
     display: grid;
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;

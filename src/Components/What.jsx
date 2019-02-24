@@ -6,6 +6,21 @@ Array.prototype.randomArray = function(){
 }
 
 export default class What extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      maxHeight : 1600
+    }
+  }
+  loadMoreItems(){
+    
+    this.setState({
+      maxHeight: this.state.maxHeight + 800
+    })
+  
+    let cont = document.getElementsByClassName(styles.containerImages)[1];
+    cont.style.maxHeight = this.state.maxHeight + "px";
+  }
   randomWorks() {
     const { work } = this.props.data; 
     // TODO: Random without repeat
@@ -23,7 +38,7 @@ export default class What extends Component {
         <div className={styles.containerImages}>
           {this.randomWorks()}
         </div>
-        <button className="btn load-more"><span>Load More</span></button>
+        <button onClick={() => this.loadMoreItems()} className="btn load-more"><span>Load More</span></button>
       </section>
     );
   }

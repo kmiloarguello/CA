@@ -41,6 +41,7 @@
     justify-content: center;
     max-height: 800px;
     overflow-y: hidden;
+    transition: all ease 1s;
 
     & .item {
       border-radius: 10px;

@@ -11,12 +11,11 @@ export default class Header extends Component {
     })
   }
   render() {
-    const { name, logo } = this.props.data.PersonalInfo;
+    const { name, logoWhite } = this.props.data.PersonalInfo;
     return (
       <nav>
         <ul>
           <li>
-            <img src={logo} alt={"Logo of " + name} />
             <h1>{name}</h1>
           </li>
           {this.renderMenu()}
