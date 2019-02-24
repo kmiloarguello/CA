@@ -442,7 +442,8 @@ const data = {
     email: "camilo.arguello.rincon@gmail.xyz",
     tel: 573208563431,
     logo: CALogo,
-    logoWhite: CALogoWhite
+    logoWhite: CALogoWhite,
+    "cv": "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf"
   },
   Legal: {
     legal: `I'm currently available for full-time job, so I you want to work

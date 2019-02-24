@@ -5,7 +5,7 @@ import iconLinkedin from "../img/social/linkedin.svg";
 
 export default class Footer extends Component{
     render(){
-        const { logo, name, email} = this.props.data.PersonalInfo;
+        const { logo, name, email, cv} = this.props.data.PersonalInfo;
         const { legal } = this.props.data.Legal;
         return(
             <footer id="footer" className="page-footer">
@@ -31,7 +31,7 @@ export default class Footer extends Component{
                     <div className={styles.information}>
                         <h2>Contact</h2>
                         <a href={"mailto:" + email +  "?Subject=Hello"} target="_top">{email}</a>
-                        <a href="javascript:window.print()">Curriculum Vitae</a>
+                        <a href={cv} target="_blank">Curriculum Vitae</a>
                     </div>
                     <div className={styles.structure}>
                         <h2>Sitemap</h2>
