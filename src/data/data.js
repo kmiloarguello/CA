@@ -19,24 +19,14 @@ const data = {
   },
   Why: {
     img: CAprofile,
-    section1: `Hey! Thank you for checking out my portfolio. I hope you like what
-    you see in this site. Be sure to look around and check out my
-    projects while you're here!`,
-    section2: `My name is Camilo Arguello and I'm from Colombia and I am
-    Multimedia Engineer. I love the programming, special effects and
-    2D/3D animation. I´ve always loved solving problems, especially to
-    design innovate and interactive contents, whether of computer
-    graphics, animation, programming to deliver a memorable
-    experience. Also with a great ability to learn new technologies,
-    with a extensive leadership. I've always been fascinated with the
-    idea of generating interactive content that provide a lifetime
-    experience. I am currently working on web development, making
-    applications and websites.`,
+    section1: `Science and technology`,
+    section2: `I'm creative and ingenious person, who uses the technology to bring life beaty and powerfull ideas.`,
     section3: `I'm currently available for full-time job, so I you want to work
     with me or contract me, just put in contact with me and I can
     start anytime.`
   },
-  How: {
+  What: {
+    title: "Work made",
     work: [
       {
         image: kapta01,
@@ -317,7 +307,8 @@ const data = {
       }
     ]
   },
-  What: {
+  How: {
+    title: "Motivations",
     info: [
       {
         title: "01",

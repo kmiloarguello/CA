@@ -32,7 +32,7 @@ export default class CA extends Component {
     let elem = e.target.closest(".item");
     let attr = parseInt(elem.getAttribute("data-index"));
 
-    this.detail = data.How.work[attr].detail;
+    this.detail = data.What.work[attr].detail;
 
   }
   closeModal(){
@@ -43,12 +43,17 @@ export default class CA extends Component {
   render() {
     return (
       <div>
-        <Header data={data}/>
-        <Why data={data}  />
-        <How 
+        <div className={styles.containerhome}>
+          <Header data={data}/>
+          <Why data={data}  />
+        </div>
+        
+        {/*  */}
+        {/* <How 
           data={data.How}
-          onClick={e => this.activateModal(e)} />
-        <What />
+           />
+        <What data={data.What}
+          onClick={e => this.activateModal(e)} /> */}
         {/* 
         <Footer /> */}
         <Overlay 

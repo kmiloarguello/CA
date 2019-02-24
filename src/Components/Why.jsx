@@ -7,7 +7,18 @@ export default class Why extends Component {
     const { name,job } = this.props.data.PersonalInfo;
     return (
       <section id={styles.why}>
-        <ul className="collection">
+
+        <h1>{section1}</h1>
+        <h2>{section2}</h2>
+
+        <div className={styles.containerbtn}>
+          <button className="btn"><span>Contact me</span></button>
+          <button className="btn focus">Find out more</button>
+        </div>
+        
+        <img src={img} alt={name} className={styles.circle} />
+
+        {/* <ul className="collection">
           <li className={styles.avatar}>
             <img src={img} alt={name} className={styles.circle} />
             <div className={styles.titleContainer}>
@@ -18,11 +29,10 @@ export default class Why extends Component {
             </div>
           </li>
           <li className={styles.description}>
-            <p>{section1}</p>
             <p>{section2}</p>
             <p>{section3}</p>
           </li>
-        </ul>
+        </ul> */}
       </section>
     );
   }

@@ -9,7 +9,8 @@ module.exports = {
           "500 medium": [],
           "600 bold": [],
           "700 black": []
-        }
+        },
+        muli: ['google']
       }
     }),
     require("postcss-cssnext")({

@@ -1,4 +1,8 @@
 nav {
+  display: grid;
+  grid-template-columns: minmax(auto, 90%);
+  justify-content: center;
+  font-family: "Muli", Arial, Helvetica, sans-serif;
   & ul{
     display: grid;
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;
@@ -18,6 +22,7 @@ nav {
       & a{
         text-decoration: none;
         color: var(--darkColor);
+        font-weight: 300;
         &:hover{
           color: var(--grayColor);
         }
@@ -25,7 +30,6 @@ nav {
     }
   }
   
-  box-shadow: 0 4px 2px -2px var(--grayColor);
   & h1 {
     font-weight: 300;
     font-size: 1.5em;
