@@ -1,8 +1,21 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
 import juliana from "../img/juliana.jpg";
+import reactIcon from "../img/motivation/react.svg";
 
 export default class How extends Component {
+  renderIcons(){
+    const { info } = this.props.data;
+    return info.map((elem,i) => {
+      return (
+        <div key={i} className={styles.conticons}>
+          <img src={reactIcon} />
+          <h3>{elem.title}</h3>
+          <p>{elem.subtitle}</p>
+        </div>
+      )
+    })
+  }
   render() {
     const { title } = this.props.data;
     return (
@@ -11,13 +24,7 @@ export default class How extends Component {
           <h2>{title}</h2>
         </div>
         <div className={styles.containerImages}>
-
-          <img src={juliana} />
-          <img src={juliana} />
-          <img src={juliana} />
-          <img src={juliana} />
-          <img src={juliana} />
-
+          {this.renderIcons()}
         </div>
       </section>
     );

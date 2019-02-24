@@ -47,15 +47,12 @@ export default class CA extends Component {
           <Header data={data}/>
           <Why data={data}  />
         </div>
-        
-        {/*  */}
-        {/* <How 
+        <How 
           data={data.How}
            />
         <What data={data.What}
-          onClick={e => this.activateModal(e)} /> */}
-        {/* 
-        <Footer /> */}
+          onClick={e => this.activateModal(e)} /> 
+        <Footer data={data} />
         <Overlay 
           modalActive={this.state.modalActive}
           detail={this.detail}

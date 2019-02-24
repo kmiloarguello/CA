@@ -1,7 +1,28 @@
 #what {
+  position: relative;
+  background: linear-gradient(to bottom, var(--greenSoftColor), var(--darkColor) );
+
+  &:before{
+    content: '';
+    background-size: 3000px 172px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-image: url("../img/svg/curve2.svg");
+    height: 172px;
+    top: -155px;
+  }
+
   & h2 {
     font-size: 30px;
     font-weight: lighter;
+    font-family: "Muli", Arial, Helvetica, sans-serif;
+    color: var(--lightColor);
   }
   & #phone {
     transition: all 1s ease-out;
@@ -18,12 +39,15 @@
     grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 10px;
     justify-content: center;
+    max-height: 800px;
+    overflow-y: hidden;
 
     & .item {
       border-radius: 10px;
       box-shadow: var(--boxShadow);
       cursor: pointer;
       transition: all ease 0.2s;
+      background: white;
 
       &:hover {
         box-shadow: var(--boxHighlight);
@@ -47,6 +71,20 @@
     }
     & .level-4 {
       grid-row-end: span 4;
+    }
+  }
+  & .load-more{
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    border-radius: 100px;
+    z-index: 100;
+    transform: translateX(-50%);
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+
+    &:hover{
+      background: var(--highlightColor);
+      color: var(--lightColor);
     }
   }
 }

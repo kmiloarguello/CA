@@ -28,6 +28,7 @@
         margin: auto;
         display: block;
         box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+        z-index: 100;
     }
 
     & .containerbtn{

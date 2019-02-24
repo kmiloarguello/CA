@@ -20,13 +20,13 @@ const data = {
   Why: {
     img: CAprofile,
     section1: `Science and technology`,
-    section2: `I'm creative and ingenious person, who uses the technology to bring life beaty and powerfull ideas.`,
+    section2: `I'm a creative and ingenious person, who uses the technology to bring life beaty and powerfull ideas.`,
     section3: `I'm currently available for full-time job, so I you want to work
     with me or contract me, just put in contact with me and I can
     start anytime.`
   },
   What: {
-    title: "Work made",
+    title: "Work",
     work: [
       {
         image: kapta01,
@@ -311,20 +311,24 @@ const data = {
     title: "Motivations",
     info: [
       {
-        title: "01",
+        title: "Science",
         subtitle: "I make beautiful things."
       },
       {
-        title: "02",
+        title: "Applied Maths",
         subtitle: "I develop websites, mobile apps."
       },
       {
-        title: "03",
+        title: "VFX",
         subtitle: "Passionate with new ways of knowledge."
       },
       {
-        title: "04",
+        title: "Teaching",
         subtitle: "#untilTheEnd"
+      },
+      {
+        title: "Cosmos",
+        subtitle: "Cosmos I love"
       }
     ]
   },
@@ -335,6 +339,11 @@ const data = {
     email: "contact@camiloarguello.xyz",
     tel: 573208563431,
     logo: CALogo
+  },
+  Legal: {
+    legal: `I'm currently available for full-time job, so I you want to work
+    with me or contract me, just put in contact with me and I can
+    start anytime.`
   }
 };
 

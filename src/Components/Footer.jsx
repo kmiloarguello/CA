@@ -1,34 +1,53 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import styles from "../css/index.css";
+import iconGithub from "../img/social/github.svg";
+import iconLinkedin from "../img/social/linkedin.svg";
 
 export default class Footer extends Component{
     render(){
+        const { logo, name } = this.props.data.PersonalInfo;
+        const { legal } = this.props.data.Legal;
         return(
             <footer className="page-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col s12">
-                            <h5 className="white-text">Contact</h5>
-                            <div className="col s12">
-                                <ul>
-                                    <li><a target="_blank" className="grey-text text-lighten-3" href="https://www.facebook.com/kmilo.arguello"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a target="_blank" className="grey-text text-lighten-3" href="https://www.linkedin.com/in/kmiloarguello"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a target="_blank" className="grey-text text-lighten-3" href="https://github.com/kmiloarguello"><i className="fa fa-github" aria-hidden="true"></i></a></li>
-                                    <li><a target="_blank" className="grey-text text-lighten-3" href="https://www.instagram.com/kmilo_arguello/"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <div className="row">
-                            <h5>Write me</h5>
-                            <a className="white-text" href="mailto:contact@camiloarguello.xyz?Subject=Hello" target="_top">contact@camiloarguello.xyz</a>
-                        </div>
+                <div className={styles.contFooter}>
+                    <div className={styles.social}>
+                        <img className={styles.logo} src={logo} alt={"Logo of " + name} />
+                        <p>{legal}</p>
+                        <ul>
+                            <li>
+                                <a target="_blank" className={styles.linkedinicon} href="https://www.linkedin.com/in/kmiloarguello">
+                                    <img src={iconLinkedin} alt="Linkedin icon"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" className={styles.githubicon} href="https://github.com/kmiloarguello">
+                                <img src={iconGithub} alt="Github icon"/>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div className={styles.information}>
+                        <h2>Contact</h2>
+                        <a href="mailto:camilo.arguello.rincon@gmail.com?Subject=Hello" target="_top">camilo.arguello.rincon@gmail.com</a>
+                    </div>
+                    <div className={styles.structure}>
+                        <h2>Sitemap</h2>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#motivations">Motivations</a></li>
+                            <li><a href="#work">Work</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div className="footer-copyright">
-                    <div className="container center">
-                        © 2017 Camilo Arguello
-    </div>
+                <hr />
+                <div className={styles.copyright}>
+                    <small>
+                        © {new Date().getFullYear()} Camilo Arguello
+                    </small>
                 </div>
+
             </footer>
 
 

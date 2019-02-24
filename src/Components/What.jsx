@@ -23,6 +23,7 @@ export default class What extends Component {
         <div className={styles.containerImages}>
           {this.randomWorks()}
         </div>
+        <button className="btn load-more"><span>Load More</span></button>
       </section>
     );
   }

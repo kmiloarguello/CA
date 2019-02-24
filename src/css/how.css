@@ -1,11 +1,45 @@
 #how {
+    position: relative;
+    background: white;
+
+    &:before{
+        content: "";
+        background-size: 3000px 172px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-image: url("../img/svg/curve.svg");
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        visibility: visible;
+        z-index: 10;
+        height: 172px;
+        top: -171px;
+
+    }
 
     & .containerImages{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        & img{
-            width: 100%;
-        } 
+        margin-bottom: 50px;
+
+        & .conticons{
+            padding: 50px;
+            & h3,& p{
+                text-align: center;
+            }
+            & h3{
+                font-family: "Muli", Arial, Helvetica, sans-serif;
+            }
+            & p{
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                font-size: .8em;
+            }
+            & img{
+                width: 100%;
+            } 
+        }
     }
     & .containerTitle {
         display: grid;
@@ -15,6 +49,7 @@
         & h2{
             font-size: 30px;
             font-weight: lighter;
+            font-family: "Muli", Arial, Helvetica, sans-serif;
         }
     }
 }
