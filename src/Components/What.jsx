@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
+import PropTypes from 'prop-types';
 
 Array.prototype.randomArray = function(){
   return this[Math.floor(Math.random()*this.length)];
@@ -44,6 +45,9 @@ export default class What extends Component {
   }
 }
 
+What.propTypes = {
+  data: PropTypes.object
+}
 
 class Portfolio extends Component{
   constructor(props){
@@ -61,4 +65,9 @@ class Portfolio extends Component{
       </div>
     );
   }
+}
+
+Portfolio.propTypes = {
+  index: PropTypes.number,
+  work: PropTypes.object
 }

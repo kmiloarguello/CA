@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
+import PropTypes from 'prop-types';
 import juliana from "../img/juliana.jpg";
 import reactIcon from "../img/motivation/react.svg";
 
@@ -29,4 +30,10 @@ export default class How extends Component {
       </section>
     );
   }
+}
+
+How.propTypes = {
+  data : PropTypes.object,
+  info: PropTypes.array,
+  title: PropTypes.string
 }

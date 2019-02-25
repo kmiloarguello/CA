@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "../css/index.css";
-import smoothScroll from "./Scroll.js"
+import smoothScroll from "./Scroll.js";
+import PropTypes from 'prop-types';
 
 export default class Why extends Component {
   scrollToWork(){
@@ -8,7 +9,7 @@ export default class Why extends Component {
     smoothScroll(document.getElementById('what'));
   }
   render() {
-    const { img,section1,section2,section3 } = this.props.data.Why;
+    const { img,section1,section2 } = this.props.data.Why;
     const { name,email } = this.props.data.PersonalInfo;
     return (
       <section id={styles.why}>
@@ -25,4 +26,9 @@ export default class Why extends Component {
       </section>
     );
   }
+}
+
+Why.propTypes = {
+  data: PropTypes.object,
+  Why: PropTypes.object
 }

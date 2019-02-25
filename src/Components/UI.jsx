@@ -1,12 +1,13 @@
 import styles from "../css/index.css";
 import React from "react";
+import PropTypes from 'prop-types';
 
 const Overlay = ({ modalActive, detail, onClick }) => {
 
     if(modalActive){
         const { title, description, images } = detail;
-
         document.body.style.overflow = "hidden";
+
         return (
             <div className={styles.modal + " " + modalActive}>
                 <span className={styles.closeModal} onClick={onClick}></span>
@@ -16,12 +17,14 @@ const Overlay = ({ modalActive, detail, onClick }) => {
                         {
                             images.map((image,index) => {
                                 return (
-                                    <img 
-                                        key={index} 
-                                        className={"image" + (index + 1)} 
-                                        src={image.image} 
-                                        alt={image.alt} />
-                                    )
+                                    <div key={index} >
+                                        <img 
+                                            className={"image" + (index + 1)} 
+                                            src={image.image} 
+                                            alt={image.alt} />
+                                        <p>{image.alt}</p>
+                                    </div>
+                                )
                             })
                         }
                     </div>
@@ -36,6 +39,11 @@ const Overlay = ({ modalActive, detail, onClick }) => {
     }    
 };
 
+Overlay.propTypes = {
+    modalActive: PropTypes.string,
+    detail: PropTypes.object,
+    onClick: PropTypes.func
+}
 
 module.exports = {
     Overlay

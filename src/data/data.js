@@ -31,6 +31,7 @@ const data = {
     with me or contract me, just put in contact with me and I can
     start anytime.`
   },
+  // TODO: Crear la info de todos los proyectos
   What: {
     title: "Work",
     work: [
@@ -44,15 +45,15 @@ const data = {
           images: [
             {
               image: kapta01,
-              alt: "Descripcion de imagen"
+              alt: "Descripcion de imagen 1"
             },
             {
-              image: "",
-              alt: ""
+              image: kapta01,
+              alt: "Descripcion de imagen 2"
             },
             {
-              image: "",
-              alt: ""
+              image: kapta01,
+              alt: "Descripcion de imagen 3"
             }
           ],
         }
@@ -421,7 +422,7 @@ const data = {
       {
         icon: iconFilm,
         title: "VFX",
-        subtitle: "One of my dreams is become a visual-artist."
+        subtitle: "One of my dreams is to become into a visual-artist."
       },
       {
         icon: iconEducation,
