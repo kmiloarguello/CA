@@ -6,7 +6,7 @@ import Why from "./Components/Why.jsx";
 import How from "./Components/How.jsx";
 import What from "./Components/What.jsx";
 import Footer from "./Components/Footer.jsx";
-import styles from "./css/index.css";
+import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
 import { Overlay } from "./Components/UI.jsx";
 

@@ -1,4 +1,4 @@
-import styles from "../css/index.css";
+import styles from "../css/index.pcss";
 import React from "react";
 import PropTypes from 'prop-types';
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "../css/index.css";
+import styles from "../css/index.pcss";
 import PropTypes from 'prop-types';
 
 Array.prototype.randomArray = function(){

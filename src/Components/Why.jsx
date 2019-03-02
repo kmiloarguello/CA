@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "../css/index.css";
+import styles from "../css/index.pcss";
 import smoothScroll from "./Scroll.js";
 import PropTypes from 'prop-types';
 

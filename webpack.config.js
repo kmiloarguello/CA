@@ -22,7 +22,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.(pcss|css)$/,
         use: ExtractTextPlugin.extract({
           use: [
             {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from "../css/index.css";
+import styles from "../css/index.pcss";
 import iconGithub from "../img/social/github.svg";
 import iconLinkedin from "../img/social/linkedin.svg";
 
