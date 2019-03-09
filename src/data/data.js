@@ -1,18 +1,32 @@
+/**
+ * Personal Info
+ */
 import CALogo from "../img/logo-camilo-arguello.png";
 import CALogoWhite from "../img/logo-camilo-arguello-white.png";
 import CAprofile from '../img/camilo-arguello-pf.jpg';
-import landing from "../img/landing.jpg";
-import tshirt from "../img/tshirt.jpg";
-import house from "../img/house.jpg";
+
+/**
+ * Projects
+ */
 import kapta01 from "../img/work/kapta01.jpg";
+// Subprojects
+import kaptamexico001 from "../img/work/projects/kaptamexico/kaptamexico0001.jpg";
+import kaptamexico002 from "../img/work/projects/kaptamexico/kaptamexico0002.jpg";
+
 import motoe4plus from "../img/work/moto-e4-plus.png";
 import daftpunk from "../img/work/daftpunk.png";
 import mostromedia from "../img/work/mostromedia2019.png";
+
+/**
+ * Icons
+ */
 import iconScience from "../img/motivation/physics.png";
 import iconComputer from "../img/motivation/computer.png";
 import iconFilm from "../img/motivation/film.png";
 import iconEducation from "../img/motivation/education.png";
 import iconCosmos from "../img/motivation/cosmos.png";
+import iconGithub from "../img/social/github.svg";
+import iconLinkedin from "../img/social/linkedin.svg";
 
 const data = {
   Header: {
@@ -24,6 +38,7 @@ const data = {
     ]
   },
   Why: {
+    title: "Home",
     img: CAprofile,
     section1: `Science and technology`,
     section2: `I'm a creative and ingenious person, who uses the technology to bring life beaty and powerfull ideas.`,
@@ -41,19 +56,15 @@ const data = {
         level: 1,
         detail: {
           title: "K@PTA México",
-          description: "Website for K@PTA Company",
+          description: "Website for K@PTA Company In K@PTA, I developed different sites such presentations website for Mexico",
           images: [
             {
-              image: kapta01,
-              alt: "Descripcion de imagen 1"
+              image: kaptamexico001,
+              alt: "Show the company as a <b>modern business</b> was the main goal. The desktop site was focused on keep the correct spaces and alignments to feel a clean but corporate site."
             },
             {
-              image: kapta01,
+              image: kaptamexico002,
               alt: "Descripcion de imagen 2"
-            },
-            {
-              image: kapta01,
-              alt: "Descripcion de imagen 3"
             }
           ],
         }
@@ -444,15 +455,19 @@ const data = {
     tel: 573208563431,
     logo: CALogo,
     logoWhite: CALogoWhite,
-    "cv": "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf"
+    cv: "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf",
+    linkedin : "https://www.linkedin.com/in/kmiloarguello",
+    github: "https://github.com/kmiloarguello"
   },
   Legal: {
     legal: `I'm currently available for full-time job, so I you want to work
     with me or contract me, just put in contact with me and I can
     start anytime.`
+  },
+  AdditionalIcons: {
+    iconGithub,
+    iconLinkedin
   }
 };
 
-module.exports = {
-  data
-};
+module.exports = { data };

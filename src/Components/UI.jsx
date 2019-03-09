@@ -6,6 +6,8 @@ const Overlay = ({ modalActive, detail, onClick }) => {
 
     if(modalActive){
         const { title, description, images } = detail;
+
+        console.log(description);
         document.body.style.overflow = "hidden";
 
         return (
@@ -22,7 +24,9 @@ const Overlay = ({ modalActive, detail, onClick }) => {
                                             className={"image" + (index + 1)} 
                                             src={image.image} 
                                             alt={image.alt} />
-                                        <p>{image.alt}</p>
+                                        
+                                        {/* Render string with HTML */}
+                                        <p dangerouslySetInnerHTML={{ __html: image.alt }}></p> 
                                     </div>
                                 )
                             })
@@ -45,6 +49,4 @@ Overlay.propTypes = {
     onClick: PropTypes.func
 }
 
-module.exports = {
-    Overlay
-}
+module.exports = { Overlay };

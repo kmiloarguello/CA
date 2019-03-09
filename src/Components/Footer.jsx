@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import styles from "../css/index.pcss";
-import iconGithub from "../img/social/github.svg";
-import iconLinkedin from "../img/social/linkedin.svg";
 
 export default class Footer extends Component{
+    renderSiteMap(){
+        const { menu } = this.props.data.Header;
+        return menu.map((elem, index) => {
+            return (
+                <li key={index}>
+                    <a href={elem.href}>{elem.title}</a>
+                </li>
+            )
+        })
+    }
     render(){
-        const { logo, name, email, cv} = this.props.data.PersonalInfo;
+        const { logo, name, email, cv, linkedin, github} = this.props.data.PersonalInfo;
         const { legal } = this.props.data.Legal;
+        const { iconGithub, iconLinkedin } = this.props.data.AdditionalIcons;
+
         return(
             <footer id="footer" className="page-footer">
 
@@ -16,17 +26,16 @@ export default class Footer extends Component{
                         <p>{legal}</p>
                         <ul>
                             <li>
-                                <a target="_blank" className={styles.linkedinicon} href="https://www.linkedin.com/in/kmiloarguello">
+                                <a href={linkedin} target="_blank" className={styles.linkedinicon}>
                                     <img src={iconLinkedin} alt="Linkedin icon"/>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" className={styles.githubicon} href="https://github.com/kmiloarguello">
+                                <a href={github} target="_blank" className={styles.githubicon}>
                                 <img src={iconGithub} alt="Github icon"/>
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                     <div className={styles.information}>
                         <h2>Contact</h2>
@@ -36,9 +45,7 @@ export default class Footer extends Component{
                     <div className={styles.structure}>
                         <h2>Sitemap</h2>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#motivations">Motivations</a></li>
-                            <li><a href="#work">Work</a></li>
+                            {this.renderSiteMap()}
                         </ul>
                     </div>
                 </div>
@@ -48,10 +55,7 @@ export default class Footer extends Component{
                         © {new Date().getFullYear() + " " + name} 
                     </small>
                 </div>
-
             </footer>
-
-
         )
     }
 }
