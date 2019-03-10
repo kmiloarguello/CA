@@ -3,3 +3,6 @@
 /dist/
 *.zip
 *.psd
+*.ai
+src/img/work/sources/
+src/img/motivation/sources/

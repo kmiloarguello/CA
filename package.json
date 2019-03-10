@@ -1,6 +1,6 @@
 {
   "name": "ca",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Portfolio",
   "main": "index.js",
   "scripts": {
@@ -83,6 +83,7 @@
   "dependencies": {
     "babel-plugin-dynamic-import-node": "^2.0.0",
     "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.7.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "wowjs": "^1.1.3"

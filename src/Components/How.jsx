@@ -1,42 +1,39 @@
 import React, { Component } from "react";
-import styles from "../css/index.css";
-
-Array.prototype.randomArray = function(){
-  return this[Math.floor(Math.random()*this.length)];
-}
+import styles from "../css/index.pcss";
+import PropTypes from 'prop-types';
+import juliana from "../img/juliana.jpg";
+import reactIcon from "../img/motivation/react.svg";
 
 export default class How extends Component {
-  randomWorks() {
-    const { work } = this.props.data; 
-    // TODO: Random without repeat
-    return work.map((elem,index) => {
-      return <Portfolio key={index} index={index} work={elem} onClick={this.props.onClick} />
-    });
+  renderIcons(){
+    const { info } = this.props.data;
+    return info.map((elem,i) => {
+      return (
+        <div key={i} className={styles.conticons}>
+          <img src={elem.icon} />
+          <h3>{elem.title}</h3>
+          <p>{elem.subtitle}</p>
+        </div>
+      )
+    })
   }
   render() {
+    const { title } = this.props.data;
     return (
-      <section id={styles.how}>
-        {this.randomWorks()}
+      <section id={styles.how} className="section3">
+        <div className={styles.containerTitle}>
+          <h2>{title}</h2>
+        </div>
+        <div className={styles.containerImages}>
+          {this.renderIcons()}
+        </div>
       </section>
     );
   }
 }
 
-
-class Portfolio extends Component{
-  constructor(props){
-    super(props);
-  }
-  render(){
-    const { work,index } = this.props;
-    return (
-      <div 
-        data-index={index}
-        className={"item level-" + work.level + " wow fadeInUp"} 
-        onClick={this.props.onClick}
-        >
-        <img src={work.image} alt={work.alt} />
-      </div>
-    );
-  }
+How.propTypes = {
+  data : PropTypes.object,
+  info: PropTypes.array,
+  title: PropTypes.string
 }

@@ -1,0 +1,104 @@
+footer{
+    position: relative;
+    background: #EEE;
+    display: grid;
+    grid-template-columns: minmax(auto, 90%);
+    justify-content: center;
+
+    @media (--small){
+        padding: 20px 0;
+    }
+
+    &:before{
+        content: '';
+        background-size: 3000px 108px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        visibility: visible;
+        z-index: 10;
+        background-image: url("../img/svg/curve3.svg");
+        height: 108px;
+        top: -108px;
+        
+        @media (--small){
+            background-image: none;
+        }
+    }
+
+    & .contFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+        margin-bottom: 20px;
+
+        @media (--small){
+            grid-template-columns: 1fr;
+        }
+        & h2{
+            font-family: "Muli", Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+        & .social{
+            & .logo{
+                width: 50px;
+            }
+            & ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                & li{
+                    justify-self: left;
+                    & a{
+                        & img{
+                            width: 50px;
+                        }
+                    }
+                    &:first-child{
+                        justify-self: right;
+                        & img{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+
+            & img{
+                width: 100px;
+            }
+            
+        }
+        & .information{
+            & a{
+                display: block;
+            }
+        }
+        & p, & a{
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: var(--darkColor);
+            font-size: .8em;
+        }
+        & .structure{
+            & ul{
+                list-style: none; 
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    & .copyright{
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        margin: 20px 0;
+    }
+}

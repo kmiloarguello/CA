@@ -1,0 +1,67 @@
+#how {
+    position: relative;
+    background: white;
+
+    &:before{
+        content: "";
+        background-size: 3000px 172px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-image: url("../img/svg/curve.svg");
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        visibility: visible;
+        z-index: 10;
+        height: 172px;
+        top: -171px;
+
+        @media (--small){
+            background-image: none;
+        }
+
+    }
+
+    & .containerImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 100px;
+
+        & .conticons{
+            padding: 50px;
+            & h3,& p{
+                text-align: center;
+            }
+            & h3{
+                font-family: "Muli", Arial, Helvetica, sans-serif;
+                margin: 10px 0;
+            }
+            & p{
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                font-size: .8em;
+            }
+            & img{
+                height: 100px;
+                display: block;
+                margin: auto;
+            } 
+        }
+
+        @media (--small){
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+    & .containerTitle {
+        display: grid;
+        grid-template-columns: minmax(auto, 90%);
+        justify-content: center;
+        padding: 30px 0;
+        & h2{
+            font-size: 30px;
+            font-weight: lighter;
+            font-family: "Muli", Arial, Helvetica, sans-serif;
+        }
+    }
+}
