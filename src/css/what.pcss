@@ -49,9 +49,37 @@
       cursor: pointer;
       transition: all ease 0.2s;
       background: white;
+      position: relative;
+      
+
+      & .itemLevelFocus{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0,0,0,.4);
+        z-index: 1;
+        border-radius: 10px;
+        transition: all ease .3s;
+        padding: 5px 10px;
+        opacity: 0;
+
+        & p{
+          font-size: 1.1em;
+          font-weight: lighter;
+          font-family: "Muli", Arial, Helvetica, sans-serif;
+          color: var(--lightColor);
+          text-align: left;
+        }
+      }
 
       &:hover {
         box-shadow: var(--boxHighlight);
+        & > .itemLevelFocus{
+          height: 100px;
+          opacity: 1;
+        }
       }
 
       & img {

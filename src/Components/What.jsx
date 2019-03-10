@@ -29,6 +29,12 @@ export default class What extends Component {
       return <Portfolio key={index} index={index} work={elem} onClick={this.props.onClick} />
     });
   }
+  renderLoadMoreButton(){
+    const { work } = this.props.data; 
+    if(work.length >= 8){
+      return <button onClick={() => this.loadMoreItems()} className="btn load-more"><span>Load More</span></button>
+    }
+  }
   render() {
     const { title } = this.props.data;
     return (
@@ -39,7 +45,7 @@ export default class What extends Component {
         <div className={styles.containerImages}>
           {this.randomWorks()}
         </div>
-        <button onClick={() => this.loadMoreItems()} className="btn load-more"><span>Load More</span></button>
+        {this.renderLoadMoreButton()}
       </section>
     );
   }
@@ -50,8 +56,9 @@ What.propTypes = {
 }
 
 class Portfolio extends Component{
-  constructor(props){
-    super(props);
+  renderDetailOnHover(event){
+    let element = event.target;
+
   }
   render(){
     const { work,index } = this.props;
@@ -60,7 +67,11 @@ class Portfolio extends Component{
         data-index={index}
         className={"item level-" + work.level + " wow fadeInUp"} 
         onClick={this.props.onClick}
+        onMouseEnter={e => this.renderDetailOnHover(e)}
         >
+        <div className={styles.itemLevelFocus}>
+          <p>{work.alt}</p>
+        </div>
         <img src={work.image} alt={work.alt} />
       </div>
     );

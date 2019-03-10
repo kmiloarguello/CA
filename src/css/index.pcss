@@ -133,6 +133,9 @@ button.ok {
     outline: 1px solid slategrey;
   }
 
+  @media (--small){
+    width: 90%;
+  }
 
   & .containerModalOverview{
     background-position: center;
@@ -140,6 +143,12 @@ button.ok {
     min-height: 200px;
     height: 20%;
     overflow: hidden;
+
+    @media (--small){
+      background-size: cover;
+      height: 50%;
+    }
+    
 
     &::after {
       content: "";
@@ -166,15 +175,18 @@ button.ok {
       & p{
         color: var(--lightColor);
         text-align: left;
-        max-width: 90%;
       }
 
       & .detailsProjectAction{
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        /* max-width: 90%; */
         margin: 10px 0;
+
+        @media (--small){
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+        }
 
         & .chips{
           justify-self: start;
@@ -215,7 +227,11 @@ button.ok {
     grid-gap: 50px;
     margin-top: 50px;
 
-    & img {
+    @media (--small){
+      grid-gap: 10px;
+    }
+
+    & img, & video {
       width: 100%;
       height: auto;
       object-fit: cover;

@@ -19,7 +19,7 @@ class Overlay extends Component{
         let renderSeeProjectButton, renderRepositoryButton;
         const { linkProject, chips, linkRepository } = this.props.detail;
         if(linkProject){
-            renderSeeProjectButton = <a href={linkProject} target="_blank" className={styles.btn}>See Project</a>
+            renderSeeProjectButton = <a href={linkProject} target="_blank" className={styles.btn}>Visit Site</a>
         }
         if(linkRepository){
             renderRepositoryButton = <a href={linkRepository} target="_blank" className={styles.btn}>See Repository</a>
@@ -36,11 +36,45 @@ class Overlay extends Component{
             </div>
         )
     }
+    renderVideoDetails(index){
+        const { video } = this.props.detail;
+        if(video){
+            return (
+                <video controls={true} key={"video-" + index}>
+                    <source src={video} type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            )
+        }
+    }
+    renderImagesDetails(){
+        const { images } = this.props.detail;
+        return (
+            images.map((image,index) => {
+                return (
+                    <React.Fragment>
+
+                            <div className={"itemImage" + (index + 1)}  key={index} >
+                                <img 
+                                    className={"image" + (index + 1)} 
+                                    src={image.image} 
+                                    alt={image.alt} />
+                                    
+                                {/* Render string with HTML */}
+                                <p dangerouslySetInnerHTML={{ __html: image.alt }}></p> 
+                            </div>
+                            {this.renderVideoDetails(index)}
+
+                    </React.Fragment>
+                )
+            })
+        )
+    }
     render(){
 
         const modalActive = this.props.modalActive;
         if(modalActive){
-            const { title, description, images } = this.props.detail;
+            const { title, description } = this.props.detail;
             const onClick = this.props.onClick;
             document.body.style.overflow = "hidden";
             document.getElementById("root").classList.add("active-modal");
@@ -58,21 +92,7 @@ class Overlay extends Component{
                                 </div>
                             </div>
                             <div className={styles.containerImages}>
-                                {
-                                    images.map((image,index) => {
-                                        return (
-                                            <div className={"itemImage" + (index + 1)}  key={index} >
-                                                <img 
-                                                    className={"image" + (index + 1)} 
-                                                    src={image.image} 
-                                                    alt={image.alt} />
-                                                
-                                                {/* Render string with HTML */}
-                                                <p dangerouslySetInnerHTML={{ __html: image.alt }}></p> 
-                                            </div>
-                                        )
-                                    })
-                                }
+                                { this.renderImagesDetails() }
                             </div>
                         </div>
                         <div className={styles.modalOverlay} onClick={onClick} />

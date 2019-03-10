@@ -27,6 +27,27 @@ import mostromedia from "../img/work/mostromedia2019.png";
 import mostromedia001 from "../img/work/projects/mostromedia/mostromedia0001.jpg";
 import mostromedia003 from "../img/work/projects/mostromedia/mostromedia0003.jpg";
 
+import dashboard from "../img/work/kapta02.jpg";
+import dashboard001 from "../img/work/projects/dashboard/kaptadashboard0001.jpg";
+
+import escamiloarguello from "../img/work/projects/escamiloarguello/escamilo001.jpg";
+import escamiloarguello002 from "../img/work/projects/escamiloarguello/escamilo002.gif";
+import escamiloarguello003 from "../img/work/projects/escamiloarguello/escamilo003.gif";
+import escamiloarguello004 from "../img/work/projects/escamiloarguello/escamilo004.jpg";
+import escamiloarguello005 from "../img/work/projects/escamiloarguello/escamilo005.gif";
+
+import tiendasjumbo from "../img/work/projects/tiendasjumbo/tiendasjumbo.jpg";
+import tiendasjumbo001 from "../img/work/projects/tiendasjumbo/tiendasjumbo0001.jpg";
+import tiendasjumbo002 from "../img/work/projects/tiendasjumbo/tiendasjumbo0002.jpg";
+import tiendasjumbo003 from "../img/work/projects/tiendasjumbo/tiendasjumbo0003.jpg";
+import tiendasjumbo004 from "../img/work/projects/tiendasjumbo/tiendasjumbo0004.jpg";
+
+import kaptainteriortrims001 from "../img/work/projects/kaptainteriortrims/interiortrims001.jpg";
+import kaptainteriortrims002 from "../img/work/projects/kaptainteriortrims/interiortrims002.jpg";
+
+import propulsion from "../img/work/projects/propulsion/propulsion0001.jpg";
+import propulsion002 from "../img/work/projects/propulsion/bmw-carmp4.mp4";
+
 /**
  * Icons
  */
@@ -60,31 +81,7 @@ const data = {
   What: {
     title: "Work",
     work: [
-      {
-        image: kapta01,
-        alt:"Website for K@PTA Mexico",
-        level: 1,
-        detail: {
-          title: "K@PTA Mexico",
-          description: "Website for K@PTA Company In Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
-          chips: ["Reactjs", "node", "Html"],
-          linkProject: "https://kaptamexico.biz",
-          images: [
-            {
-              image: kaptamexico001,
-              alt: "K@PTA reflects in desktop site as a <b>modern business</b>."
-            },
-            {
-              image: kaptamexico002,
-              alt: "Information about the company in mobile"
-            },
-            {
-              image: kaptamexico003,
-              alt: "Use the corporate identity manual to reflects the company in a website"
-            }
-          ],
-        }
-      },
+      
       {
         image: daftpunk,
         alt: "Musical web application of Daft punk's song",
@@ -116,9 +113,9 @@ const data = {
         }
       },
       {
-        image: motoe4plus,
-        alt: "Tshirt",
-        level: 3,
+        image: motoe4plus002,
+        alt: "Layout of new Moto e4 plus website.",
+        level: 1,
         detail: {
           title: "Moto e4 Plus",
           description: "Layout of new website of Moto e4 Plus, which cover the main characteristics in estetics, design and ergonomy. Also its functionalities with the camera, battery and touch ID.",
@@ -128,15 +125,15 @@ const data = {
           images: [
             {
               image: motoe4plus001,
-              alt: "Descripcion de imagen"
+              alt: "The development was mobile first using Css grid."
             },
             {
               image: motoe4plus002,
-              alt: ""
+              alt: "UI adaptable to each device."
             },
             {
               image: motoe4plus003,
-              alt: ""
+              alt: "No-library slider with transitions and click events."
             },
             {
               image: motoe4plus,
@@ -145,29 +142,193 @@ const data = {
           ],
         }
       },
+
+
       {
-        image: mostromedia,
-        alt:"Landing",
-        level: 4,
+        image: mostromedia001,
+        alt:"Website of Mostro Media",
+        level: 1,
         detail: {
-          title: "K@PTA México",
-          description: "Website for K@PTA Company",
+          title: "Mostro Media",
+          description: "Website for Mostro Media Company",
           chips: ["Wordpress"],
           linkProject: "https://mostromedia.com",
           images: [
             {
               image: mostromedia001,
-              alt: "Descripcion de imagen"
+              alt: "Mostro represents <b>innovation and creativity</b>."
+            },
+            {
+              image: mostromedia,
+              alt: "The whole site was a proof of a <b>high experience design</b>."
             },
             {
               image: mostromedia003,
+              alt: "Mostro <b>boots</b> many companies in the digital world."
+            }
+          ],
+        }
+      },
+
+      {
+        image: tiendasjumbo002,
+        alt: "Tiendas Jumbo Colombia",
+        level: 1,
+        detail: {
+          title: "Tiendas Jumbo Colombia",
+          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors.",
+          chips: ["Sass", "Javascript", "Vtex"],
+          linkProject: "https://www.tiendasjumbo.co",
+          images: [
+            {
+              image: tiendasjumbo001,
               alt: ""
             },
             {
-              image: "",
+              image: tiendasjumbo002,
+              alt: ""
+            },
+            {
+              image: tiendasjumbo003,
+              alt: ""
+            },
+            {
+              image: tiendasjumbo004,
+              alt: ""
+            },
+            {
+              image: tiendasjumbo,
               alt: ""
             }
           ],
+        }
+      },
+
+
+      {
+        image: escamiloarguello005,
+        alt: "My last portfolio",
+        level: 1,
+        detail: {
+          title: "My last portfolio",
+          description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
+          chips: ["Jquery", "Css", "Javascript"],
+          linkProject: "/harder-better",
+          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          images: [
+            {
+              image: escamiloarguello005,
+              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+            },
+            {
+              image: escamiloarguello,
+              alt: "The colors were inspired on <a href='https://coldplay.com' target='_blank'>Coldplay</a> albums."
+            },
+            {
+              image: escamiloarguello004,
+              alt: "My skills were only focused on 3D modeling and animation, nevertheless today I focused on coding."
+            },
+            {
+              image: escamiloarguello003,
+              alt: "Gifs for title section animation."
+            },
+            {
+              image: escamiloarguello002,
+              alt: "Gifs for title section animation."
+            },
+          ],
+        }
+      },
+
+      
+      {
+        image: kapta01,
+        alt:"Website for K@PTA Mexico",
+        level: 1,
+        detail: {
+          title: "K@PTA Mexico",
+          description: "Website for K@PTA Company In Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
+          chips: ["Reactjs", "node", "Html"],
+          linkProject: "https://kaptamexico.biz",
+          images: [
+            {
+              image: kaptamexico001,
+              alt: "K@PTA reflects in desktop site as a <b>modern business</b>."
+            },
+            {
+              image: kaptamexico002,
+              alt: "Information about the company in mobile"
+            },
+            {
+              image: kaptamexico003,
+              alt: "Use the corporate identity manual to reflects the company in a website"
+            }
+          ],
+        }
+      },
+
+      {
+        image: kaptainteriortrims001,
+        alt: "Application for BMW Training course",
+        level: 2,
+        detail: {
+          title: "Interior Trims - BMW",
+          description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
+          chips: ["Jquery", "Css", "Javascript"],
+          linkProject: "/harder-better",
+          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          images: [
+            {
+              image: kaptainteriortrims001,
+              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+            },
+            {
+              image: kaptainteriortrims002,
+              alt: "The colors were inspired on <a href='https://coldplay.com' target='_blank'>Coldplay</a> albums."
+            }
+          ]
+        }
+      },
+
+      {
+        image: dashboard,
+        alt: "Web Application for K@PTA",
+        level: 1,
+        detail: {
+          title: "Dashboard of Results K@PTA",
+          description: "Web Application for K@PTA",
+          chips: ["NodeJS", "Express", "MongoDB"],
+          images: [
+            {
+              image: dashboard001,
+              alt: "A modern platform to manage the <b>internal evaluation results</b>."
+            },
+            {
+              image: dashboard,
+              alt: "Use the <b>ClassMarker API</b> to handle the results and to create graphs and tables."
+            }
+          ],
+        }
+      },
+      
+      
+      {
+        image: propulsion,
+        alt: "My last portfolio",
+        level: 1,
+        detail: {
+          title: "Propulsion",
+          description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
+          chips: ["Jquery", "Css", "Javascript"],
+          linkProject: "/harder-better",
+          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          images: [
+            {
+              image: propulsion,
+              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+            }
+          ],
+          video: propulsion002
         }
       }
     ]
