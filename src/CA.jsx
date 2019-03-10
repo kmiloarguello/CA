@@ -1,14 +1,53 @@
 import React, { Component } from "react";
 import WOW from "wowjs";
+import Loadable from "react-loadable";
 
 import Header from "./Components/Header.jsx";
+import ABTest from "./Components/ABTest.jsx";
 import Why from "./Components/Why.jsx";
 import How from "./Components/How.jsx";
 import What from "./Components/What.jsx";
 import Footer from "./Components/Footer.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
-import { Overlay } from "./Components/UI.jsx";
+import Overlay from "./Components/UI.jsx";
+
+function Loading() {
+  return <div>Loading...</div>;
+}
+
+const AsyncAB = Loadable({
+  loader: () => ABTest,
+  loading: Loading
+});
+
+const AsyncWhy = Loadable({
+  loader: () => Why,
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncHow = Loadable({
+  loader: () => How,
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncWhat = Loadable({
+  loader: () => What,
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncFooter = Loadable({
+  loader: () => Footer,
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncOverlay = Loadable({
+  loader: () => Overlay,
+  loading: "Loading",
+  timeout: 20000
+});
+
+
 
 
 export default class CA extends Component {
@@ -68,19 +107,19 @@ export default class CA extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment> 
+        <AsyncAB />
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
-          <Why data={data}  />
+          <AsyncWhy data={data} />
           <div className="bg-container"></div>
         </div>
-         <How 
-          data={data.How}
-           />
-          
-        <What data={data.What}
+        <AsyncHow 
+        data={data.How}
+        />  
+        <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} /> 
-        <Footer data={data} />
+        <AsyncFooter data={data} />
         <Overlay 
           modalActive={this.state.modalActive}
           detail={this.detail}

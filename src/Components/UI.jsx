@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const modalRoot = document.getElementById('modal-root');
 
-class Overlay extends Component{
+export default class Overlay extends Component{
     shouldComponentUpdate(nextProps, nextState){
         if(nextProps.modalActive){
             setTimeout(() => {
@@ -135,4 +135,3 @@ Overlay.propTypes = {
     onClick: PropTypes.func
 }
 
-module.exports = { Overlay };

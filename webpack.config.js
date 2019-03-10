@@ -7,7 +7,8 @@ module.exports = {
   entry: ["babel-polyfill", path.resolve(__dirname, "src/index.js")],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "js/[name].js"
+    filename: "js/[name].js",
+    chunkFilename: 'js/[name].bundle.js'
   },
   module: {
     rules: [
