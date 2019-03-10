@@ -64,7 +64,11 @@ const data = {
             },
             {
               image: kaptamexico002,
-              alt: "Descripcion de imagen 2"
+              alt: "On mobile the goal is to show in a effective way the information."
+            },
+            {
+              image: kapta01,
+              alt: ""
             }
           ],
         }

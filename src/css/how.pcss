@@ -17,6 +17,10 @@
         height: 172px;
         top: -171px;
 
+        @media (--small){
+            background-image: none;
+        }
+
     }
 
     & .containerImages{
@@ -42,6 +46,11 @@
                 display: block;
                 margin: auto;
             } 
+        }
+
+        @media (--small){
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         }
     }
     & .containerTitle {

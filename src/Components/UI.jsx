@@ -14,12 +14,17 @@ const Overlay = ({ modalActive, detail, onClick }) => {
             <div className={styles.modal + " " + modalActive}>
                 <span className={styles.closeModal} onClick={onClick}></span>
                 <div className={styles.overlayContent}>
-                    <h2>{title}</h2>
+                    <div className={styles.containerModalOverview}>
+                        <div className={styles.containerTitleModal}>
+                            <h2>{title}</h2>
+                            <p>Quia facere eos officia inventore. Aut voluptates distinctio reprehenderit aut explicabo. Nemo occaecati commodi numquam voluptate occaecati nostrum. Sed consequatur dolor veritatis quos doloribus. Doloremque ut voluptatibus optio nemo est nostrum similique ratione. Consectetur doloribus rerum debitis velit.</p>
+                        </div>
+                    </div>
                     <div className={styles.containerImages}>
                         {
                             images.map((image,index) => {
                                 return (
-                                    <div key={index} >
+                                    <div className={"itemImage" + (index + 1)}  key={index} >
                                         <img 
                                             className={"image" + (index + 1)} 
                                             src={image.image} 

@@ -19,6 +19,10 @@ footer{
         background-image: url("../img/svg/curve3.svg");
         height: 108px;
         top: -108px;
+        
+        @media (--small){
+            background-image: none;
+        }
     }
 
     & .contFooter{
@@ -26,6 +30,10 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
         margin-bottom: 20px;
+
+        @media (--small){
+            grid-template-columns: 1fr;
+        }
         & h2{
             font-family: "Muli", Arial, Helvetica, sans-serif;
             font-size: 1.1em;
