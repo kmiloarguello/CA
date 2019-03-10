@@ -31,7 +31,6 @@ export default class CA extends Component {
     this.mediaScreen.addListener(e => this.updateScreenWidth(e));    
   }
   updateScreenWidth(e){
-
     if (e.matches) {
       this.setState({
         isMobile: true
@@ -90,3 +89,5 @@ export default class CA extends Component {
     );
   }
 }
+
+

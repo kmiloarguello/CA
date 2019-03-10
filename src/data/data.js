@@ -12,6 +12,7 @@ import kapta01 from "../img/work/kapta01.jpg";
 // Subprojects
 import kaptamexico001 from "../img/work/projects/kaptamexico/kaptamexico0001.jpg";
 import kaptamexico002 from "../img/work/projects/kaptamexico/kaptamexico0002.jpg";
+import kaptamexico003 from "../img/work/projects/kaptamexico/kaptamexico0003.jpg";
 
 import motoe4plus from "../img/work/moto-e4-plus.png";
 import daftpunk from "../img/work/daftpunk.png";
@@ -52,34 +53,38 @@ const data = {
     work: [
       {
         image: kapta01,
-        alt:"Landing",
+        alt:"Website for K@PTA Mexico",
         level: 1,
         detail: {
-          title: "K@PTA México",
-          description: "Website for K@PTA Company In K@PTA, I developed different sites such presentations website for Mexico",
+          title: "K@PTA Mexico",
+          description: "Website for K@PTA Company In Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
+          chips: ["Reactjs", "node", "Html"],
+          linkProject: "https://kaptamexico.biz",
           images: [
             {
               image: kaptamexico001,
-              alt: "Show the company as a <b>modern business</b> was the main goal. The desktop site was focused on keep the correct spaces and alignments to feel a clean but corporate site."
+              alt: "K@PTA reflects in desktop site as a <b>modern business</b>."
             },
             {
               image: kaptamexico002,
-              alt: "On mobile the goal is to show in a effective way the information."
+              alt: "Information about the company in mobile"
             },
             {
-              image: kapta01,
-              alt: ""
+              image: kaptamexico003,
+              alt: "Use the corporate identity manual to reflects the company in a website"
             }
           ],
         }
       },
       {
         image: daftpunk,
-        alt: "house",
+        alt: "Musical web application of Daft punk's song",
         level: 2,
         detail: {
-          title: "K@PTA México",
-          description: "Website for K@PTA Company",
+          title: "Harder Better",
+          description: "Musical web application of Daft punk's song using Web Audio API and Vanilla Js",
+          chips: ["VanilaJS", "Web Audio Api", "Daft Punk"],
+          linkProject: "/harder-better",
           images: [
             {
               image: kapta01,

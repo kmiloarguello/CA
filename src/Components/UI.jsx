@@ -1,52 +1,109 @@
 import styles from "../css/index.pcss";
-import React from "react";
+import React, {Component} from "react";
+import ReactDOM from "react-dom";
 import PropTypes from 'prop-types';
 
-const Overlay = ({ modalActive, detail, onClick }) => {
+const modalRoot = document.getElementById('modal-root');
 
-    if(modalActive){
-        const { title, description, images } = detail;
-
-        console.log(description);
-        document.body.style.overflow = "hidden";
-
+class Overlay extends Component{
+    shouldComponentUpdate(nextProps, nextState){
+        if(nextProps.modalActive){
+            setTimeout(() => {
+                document.getElementsByClassName(styles.containerModalOverview)[0]
+                    .style.backgroundImage = 'url("' + nextProps.detail.images[0].image + '")';
+            }, 50);
+        }
+        return true;
+    }
+    renderDetailsAction(){
+        let renderSeeProjectButton;
+        const { linkProject, chips } = this.props.detail;
+        if(linkProject){
+            renderSeeProjectButton = <a href={linkProject} target="_blank" className={styles.btn}>See Project</a>
+        }
         return (
-            <div className={styles.modal + " " + modalActive}>
-                <span className={styles.closeModal} onClick={onClick}></span>
-                <div className={styles.overlayContent}>
-                    <div className={styles.containerModalOverview}>
-                        <div className={styles.containerTitleModal}>
-                            <h2>{title}</h2>
-                            <p>Quia facere eos officia inventore. Aut voluptates distinctio reprehenderit aut explicabo. Nemo occaecati commodi numquam voluptate occaecati nostrum. Sed consequatur dolor veritatis quos doloribus. Doloremque ut voluptatibus optio nemo est nostrum similique ratione. Consectetur doloribus rerum debitis velit.</p>
-                        </div>
-                    </div>
-                    <div className={styles.containerImages}>
-                        {
-                            images.map((image,index) => {
-                                return (
-                                    <div className={"itemImage" + (index + 1)}  key={index} >
-                                        <img 
-                                            className={"image" + (index + 1)} 
-                                            src={image.image} 
-                                            alt={image.alt} />
-                                        
-                                        {/* Render string with HTML */}
-                                        <p dangerouslySetInnerHTML={{ __html: image.alt }}></p> 
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                    <p>{description}</p>
+            <div className={styles.detailsProjectAction}>
+                <div className={styles.chips}>
+                    { chips.map((chip,i) => <span key={i} className={styles.chip}>{chip}</span>) }
                 </div>
-                <div className={styles.modalOverlay} />
+                <div className={styles.seeProject}>
+                    { renderSeeProjectButton }
+                </div>
             </div>
         )
-    }else{
-        document.body.style.overflow = "auto";
-        return "";
-    }    
-};
+    }
+    render(){
+
+        const modalActive = this.props.modalActive;
+        if(modalActive){
+            const { title, description, images } = this.props.detail;
+            const onClick = this.props.onClick;
+            document.body.style.overflow = "hidden";
+            document.getElementById("root").classList.add("active-modal");
+ 
+            return (
+                <RenderOverlay>
+                    <div className={styles.modal + " " + modalActive}>
+                        <span className={styles.closeModal} onClick={onClick}></span>
+                        <div className={styles.overlayContent}>
+                            <div className={styles.containerModalOverview}>
+                                <div className={styles.containerTitleModal}>
+                                    <h2>{title}</h2>
+                                    <p>{description}</p>
+                                    {this.renderDetailsAction()}
+                                </div>
+                            </div>
+                            <div className={styles.containerImages}>
+                                {
+                                    images.map((image,index) => {
+                                        return (
+                                            <div className={"itemImage" + (index + 1)}  key={index} >
+                                                <img 
+                                                    className={"image" + (index + 1)} 
+                                                    src={image.image} 
+                                                    alt={image.alt} />
+                                                
+                                                {/* Render string with HTML */}
+                                                <p dangerouslySetInnerHTML={{ __html: image.alt }}></p> 
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                        <div className={styles.modalOverlay} />
+                    </div>
+                </RenderOverlay>
+            )
+        }else{
+            document.body.style.overflow = "auto";
+            document.getElementById("root").classList.remove("active-modal");
+            return "";
+        }
+    }
+}
+
+class RenderOverlay extends Component{
+    constructor(props) {
+        super(props);
+        this.el = document.createElement('div');
+      }
+    
+      componentDidMount() {
+        modalRoot.appendChild(this.el);
+      }
+    
+      componentWillUnmount() {
+        modalRoot.removeChild(this.el);
+      }
+      
+      render() {
+        return ReactDOM.createPortal(
+          this.props.children,
+          this.el,
+        );
+      }    
+}
 
 Overlay.propTypes = {
     modalActive: PropTypes.string,

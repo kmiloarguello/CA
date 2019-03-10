@@ -103,6 +103,10 @@ button.ok {
   opacity: 0.5;
 }
 
+.active-modal{
+  filter: blur(4px);
+}
+
 .overlayContent {
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
@@ -117,7 +121,7 @@ button.ok {
   min-height: initial;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
   overflow-y: scroll;
-  height: 100%;
+  height: 95%;
   font-family: "Muli", Arial, Helvetica, sans-serif;
 
   &::-webkit-scrollbar {
@@ -131,18 +135,28 @@ button.ok {
 
 
   & .containerModalOverview{
-    background-image: url("../img/work/projects/kaptamexico/kaptamexico0001.jpg");
     background-position: center;
     position: relative;
     min-height: 200px;
     height: 20%;
     overflow: hidden;
-    
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.35);
+    }
+
     & .containerTitleModal{
       position: absolute;
       left: 10%;
       bottom: 10%;
       word-wrap: break-word;
+      z-index: 1;
       
       & h2{
         font-size: 2em;
@@ -152,10 +166,46 @@ button.ok {
       & p{
         color: var(--lightColor);
         text-align: left;
+        max-width: 90%;
+      }
+
+      & .detailsProjectAction{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        align-items: center;
+        max-width: 90%;
+        margin: 10px 0;
+
+        & .chips{
+          justify-self: start;
+          & .chip{
+            display: inline-block;
+            height: 32px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--darkColor);
+            line-height: 32px;
+            padding: 0 12px;
+            border-radius: 16px;
+            background-color: var(--grayColor);
+            margin-bottom: 5px;
+            margin-right: 5px;
+          }
+        }
+        & .seeProject{
+          justify-self: end;
+          & .btn{
+            padding: 10px 20px;
+            &:hover{
+              background: rgba(0,0,0,0);
+              border: 1px solid var(--lightColor);
+              color: var(--lightColor);
+            }
+          }
+        }
       }
     }
   }
-
 
   & .containerImages {
     display: grid;
