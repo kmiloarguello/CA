@@ -16,10 +16,13 @@ class Overlay extends Component{
         return true;
     }
     renderDetailsAction(){
-        let renderSeeProjectButton;
-        const { linkProject, chips } = this.props.detail;
+        let renderSeeProjectButton, renderRepositoryButton;
+        const { linkProject, chips, linkRepository } = this.props.detail;
         if(linkProject){
             renderSeeProjectButton = <a href={linkProject} target="_blank" className={styles.btn}>See Project</a>
+        }
+        if(linkRepository){
+            renderRepositoryButton = <a href={linkRepository} target="_blank" className={styles.btn}>See Repository</a>
         }
         return (
             <div className={styles.detailsProjectAction}>
@@ -28,6 +31,7 @@ class Overlay extends Component{
                 </div>
                 <div className={styles.seeProject}>
                     { renderSeeProjectButton }
+                    { renderRepositoryButton }
                 </div>
             </div>
         )
@@ -71,7 +75,7 @@ class Overlay extends Component{
                                 }
                             </div>
                         </div>
-                        <div className={styles.modalOverlay} />
+                        <div className={styles.modalOverlay} onClick={onClick} />
                     </div>
                 </RenderOverlay>
             )
