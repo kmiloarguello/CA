@@ -3,11 +3,6 @@ import WOW from "wowjs";
 import Loadable from "react-loadable";
 
 import Header from "./Components/Header.jsx";
-import ABTest from "./Components/ABTest.jsx";
-import Why from "./Components/Why.jsx";
-import How from "./Components/How.jsx";
-import What from "./Components/What.jsx";
-import Footer from "./Components/Footer.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
 import Overlay from "./Components/UI.jsx";
@@ -16,33 +11,29 @@ function Loading() {
   return <div>Loading...</div>;
 }
 
-const AsyncAB = Loadable({
-  loader: () => ABTest,
-  loading: Loading
-});
 
 const AsyncWhy = Loadable({
-  loader: () => Why,
+  loader: () => import("./Components/Why.jsx"),
   loading: Loading,
   timeout: 20000
 });
 const AsyncHow = Loadable({
-  loader: () => How,
+  loader: () => import("./Components/How.jsx"),
   loading: Loading,
   timeout: 20000
 });
 const AsyncWhat = Loadable({
-  loader: () => What,
+  loader: () => import("./Components/What.jsx"),
   loading: Loading,
   timeout: 20000
 });
 const AsyncFooter = Loadable({
-  loader: () => Footer,
+  loader: () => import("./Components/Footer.jsx"),
   loading: Loading,
   timeout: 20000
 });
 const AsyncOverlay = Loadable({
-  loader: () => Overlay,
+  loader: () => import("./Components/UI.jsx"),
   loading: "Loading",
   timeout: 20000
 });
@@ -108,7 +99,6 @@ export default class CA extends Component {
   render() {
     return (
       <React.Fragment> 
-        <AsyncAB />
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={data} />
