@@ -5,7 +5,6 @@ import Loadable from "react-loadable";
 import Header from "./Components/Header.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
-import Overlay from "./Components/UI.jsx";
 
 function Loading(props) {
   if (props.error) {
@@ -62,8 +61,6 @@ const AsyncOverlay = Loadable({
   loading: "Loading",
   timeout: 20000
 });
-
-
 
 
 export default class CA extends Component {
@@ -136,7 +133,7 @@ export default class CA extends Component {
         <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} /> 
         <AsyncFooter data={data} />
-        <Overlay 
+        <AsyncOverlay 
           modalActive={this.state.modalActive}
           detail={this.detail}
           onClick={() => this.closeModal()} />
