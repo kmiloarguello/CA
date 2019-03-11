@@ -1,14 +1,66 @@
 import React, { Component } from "react";
 import WOW from "wowjs";
+import Loadable from "react-loadable";
 
 import Header from "./Components/Header.jsx";
-import Why from "./Components/Why.jsx";
-import How from "./Components/How.jsx";
-import What from "./Components/What.jsx";
-import Footer from "./Components/Footer.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
-import { Overlay } from "./Components/UI.jsx";
+
+function Loading(props) {
+  if (props.error) {
+    return (
+      <div className={styles.container_loader}>
+        <div className={styles.error}>
+          Lo sentimos hubo un error!
+          <br />
+          <button onClick={props.retry}>Reintentar</button>
+        </div>
+      </div>
+    );
+  } else if (props.timedOut) {
+    return (
+      <div className={styles.container_loader}>
+        <div className={styles.error}>
+          Esta sección está tomando demasiado tiempo para cargar...
+          <br />
+          <button onClick={props.retry}>Reintentar</button>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.container_loader}>
+        <div className={styles.loader} />
+      </div>
+    );
+  }
+}
+
+const AsyncWhy = Loadable({
+  loader: () => import("./Components/Why.jsx"),
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncHow = Loadable({
+  loader: () => import("./Components/How.jsx"),
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncWhat = Loadable({
+  loader: () => import("./Components/What.jsx"),
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncFooter = Loadable({
+  loader: () => import("./Components/Footer.jsx"),
+  loading: Loading,
+  timeout: 20000
+});
+const AsyncOverlay = Loadable({
+  loader: () => import("./Components/UI.jsx"),
+  loading: "Loading",
+  timeout: 20000
+});
 
 
 export default class CA extends Component {
@@ -22,6 +74,7 @@ export default class CA extends Component {
     this.mediaScreen = null;
   }
   componentDidMount() {
+    document.getElementById("first-loader").style.display = "none";
     const wow = new WOW.WOW();
     wow.init();
 
@@ -68,20 +121,19 @@ export default class CA extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment> 
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
-          <Why data={data}  />
+          <AsyncWhy data={data} />
           <div className="bg-container"></div>
         </div>
-         <How 
-          data={data.How}
-           />
-          
-        <What data={data.What}
+        <AsyncHow 
+        data={data.How}
+        />  
+        <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} /> 
-        <Footer data={data} />
-        <Overlay 
+        <AsyncFooter data={data} />
+        <AsyncOverlay 
           modalActive={this.state.modalActive}
           detail={this.detail}
           onClick={() => this.closeModal()} />
