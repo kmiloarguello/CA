@@ -7,10 +7,35 @@ import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
 import Overlay from "./Components/UI.jsx";
 
-function Loading() {
-  return <div>Loading...</div>;
+function Loading(props) {
+  if (props.error) {
+    return (
+      <div className={styles.container_loader}>
+        <div className={styles.error}>
+          Lo sentimos hubo un error!
+          <br />
+          <button onClick={props.retry}>Reintentar</button>
+        </div>
+      </div>
+    );
+  } else if (props.timedOut) {
+    return (
+      <div className={styles.container_loader}>
+        <div className={styles.error}>
+          Esta sección está tomando demasiado tiempo para cargar...
+          <br />
+          <button onClick={props.retry}>Reintentar</button>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.container_loader}>
+        <div className={styles.loader} />
+      </div>
+    );
+  }
 }
-
 
 const AsyncWhy = Loadable({
   loader: () => import("./Components/Why.jsx"),
