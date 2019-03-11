@@ -77,6 +77,7 @@ export default class CA extends Component {
     this.mediaScreen = null;
   }
   componentDidMount() {
+    document.getElementById("first-loader").style.display = "none";
     const wow = new WOW.WOW();
     wow.init();
 
