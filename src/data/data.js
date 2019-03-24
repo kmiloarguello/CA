@@ -246,7 +246,7 @@ const data = {
         level: 1,
         detail: {
           title: "K@PTA Mexico",
-          description: "Website for K@PTA Company In Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
+          description: "Website for K@PTA company In Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
           chips: ["Reactjs", "node", "Html"],
           linkProject: "https://kaptamexico.biz",
           images: [
