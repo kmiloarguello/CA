@@ -117,7 +117,7 @@ const data = {
         level: 1,
         detail: {
           title: "Moto e4 Plus",
-          description: "Layout of new website of Moto e4 Plus, which cover the main characteristics in estetics, design and ergonomy. Also its functionalities with the camera, battery and touch ID.",
+          description: "Layout of new website of Moto e4 Plus, which cover the main characteristics in aesthetics, design and ergonomic. Also its functionalities with the camera, battery and touch ID.",
           chips: ["ReactJs", "Jest", "Webpack", "PostCSS"],
           linkProject: "/moto-e4-plus",
           linkRepository: "https://github.com/kmiloarguello/moto-e4-plus",
@@ -136,7 +136,7 @@ const data = {
             },
             {
               image: motoe4plus,
-              alt: "All the content and images used was only for non-commercial purposes and they are property of Motorola."
+              alt: "All the content and images used were only for non-commercial purposes and they are property of Motorola."
             }
           ],
         }
@@ -149,7 +149,7 @@ const data = {
         level: 1,
         detail: {
           title: "Mostro Media",
-          description: "Website for Mostro Media Company",
+          description: "Website for Mostro Media company. The goal was to show the company as modern for the new customers.",
           chips: ["Wordpress"],
           linkProject: "https://mostromedia.com",
           images: [
@@ -175,29 +175,29 @@ const data = {
         level: 1,
         detail: {
           title: "Tiendas Jumbo Colombia",
-          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors.",
+          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors in Colombia and over the world.",
           chips: ["Sass", "Javascript", "Vtex"],
           linkProject: "https://www.tiendasjumbo.co",
           images: [
             {
               image: tiendasjumbo001,
-              alt: ""
+              alt: "This is the new home of the store."
             },
             {
               image: tiendasjumbo002,
-              alt: ""
+              alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
             },
             {
               image: tiendasjumbo003,
-              alt: ""
+              alt: "I've worked on different landings such the special for Samsung S10."
             },
             {
               image: tiendasjumbo004,
-              alt: ""
+              alt: "Each development is mobile first."
             },
             {
               image: tiendasjumbo,
-              alt: ""
+              alt: "The site is growing every day with new features and I am the head of each development."
             }
           ],
         }
