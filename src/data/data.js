@@ -72,12 +72,11 @@ const data = {
     title: "Home",
     img: CAprofile,
     section1: `Science and technology`,
-    section2: `I'm a creative and ingenious person, who uses the technology to bring life beaty and powerfull ideas.`,
+    section2: `I'm a creative and ingenious person, who uses the technology to bring life to beaty and powerfull ideas.`,
     section3: `I'm currently available for full-time job, so I you want to work
     with me or contract me, just put in contact with me and I can
     start anytime.`
   },
-  // TODO: Crear la info de todos los proyectos
   What: {
     title: "Work",
     work: [
@@ -137,7 +136,7 @@ const data = {
             },
             {
               image: motoe4plus,
-              alt: ""
+              alt: "All the content and images used was only for non-commercial purposes and they are property of Motorola."
             }
           ],
         }
@@ -273,18 +272,16 @@ const data = {
         level: 2,
         detail: {
           title: "Interior Trims - BMW",
-          description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
-          chips: ["Jquery", "Css", "Javascript"],
-          linkProject: "/harder-better",
-          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          description: "It was an application to one company that I've worked for. The objective was to simulate an interior environment and select key points with specific information for technician people.",
+          chips: ["React", "A-frame"],
           images: [
             {
               image: kaptainteriortrims001,
-              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+              alt: "Interior Trims - BMW"
             },
             {
               image: kaptainteriortrims002,
-              alt: "The colors were inspired on <a href='https://coldplay.com' target='_blank'>Coldplay</a> albums."
+              alt: "All the content is property of K@PTA."
             }
           ]
         }
@@ -295,9 +292,9 @@ const data = {
         alt: "Web Application for K@PTA",
         level: 1,
         detail: {
-          title: "Dashboard of Results K@PTA",
+          title: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve in BMW and KAPTA Technologies.",
           description: "Web Application for K@PTA",
-          chips: ["NodeJS", "Express", "MongoDB"],
+          chips: ["NodeJS", "Express", "MongoDB", "Server-side-rendering"],
           images: [
             {
               image: dashboard001,
@@ -305,7 +302,7 @@ const data = {
             },
             {
               image: dashboard,
-              alt: "Use the <b>ClassMarker API</b> to handle the results and to create graphs and tables."
+              alt: "It uses the <b>ClassMarker API</b> to handle the results and to create graphs and tables."
             }
           ],
         }
@@ -314,18 +311,16 @@ const data = {
       
       {
         image: propulsion,
-        alt: "My last portfolio",
+        alt: "BMW Technician application",
         level: 1,
         detail: {
-          title: "Propulsion",
-          description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
-          chips: ["Jquery", "Css", "Javascript"],
-          linkProject: "/harder-better",
-          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          title: "Powertrain",
+          description: "Mobile/desktop/Web application for BMW. The development was at my previous company K@PTA. The goal was to simulate how different scenarios and engine configurations affects the acceleration in vehicles.",
+          chips: ["Cordova", "React", "Electron"],
           images: [
             {
               image: propulsion,
-              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+              alt: "All the content is property of K@PTA."
             }
           ],
           video: propulsion002
@@ -349,12 +344,12 @@ const data = {
       {
         icon: iconFilm,
         title: "VFX",
-        subtitle: "One of my dreams is to become into a visual-artist."
+        subtitle: "One of my dreams is to become a visual-artist."
       },
       {
         icon: iconEducation,
         title: "Teaching",
-        subtitle: "Professor by passion."
+        subtitle: "I am professor by passion."
       },
       {
         icon: iconCosmos,
