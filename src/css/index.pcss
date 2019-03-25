@@ -5,6 +5,7 @@
 @import "./how.pcss";
 @import "./what.pcss";
 @import "./footer.pcss";
+@import "./modal.pcss";
 
 *,
 body {
@@ -19,7 +20,7 @@ main {
 }
 
 .containerhome{
-  background: linear-gradient(to bottom, #B721FF, #2AF598 );
+  background: linear-gradient(to bottom, var(--firstGradColor), var(--secondGradColor) );
 	background-size: 100%;
   background-repeat: no-repeat;
 
@@ -30,7 +31,7 @@ main {
     bottom: 0;
     width: 100%;
     z-index: -1;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
+    background: linear-gradient(to right bottom, var(--darkGradColor), var(--blueSoftGradColor) 75%);
   }
 
   & .bg-container{
@@ -66,7 +67,7 @@ main {
   transition: all ease .2s;
 
   &.focus{
-    background: #ffcc08;
+    background: var(--highlightColor);
     color: white;
   }
   &:hover{
@@ -84,222 +85,3 @@ button.cancel {
 button.ok {
   background-color: #6b0;
 }
-.modal {
-  display: none;
-  &.active {
-    display: block;
-  }
-}
-.modalOverlay {
-  position: fixed;
-  z-index: 999;
-  top: -25%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 125%;
-  width: 100%;
-  background: #000;
-  will-change: opacity;
-  opacity: 0.5;
-}
-
-.active-modal{
-  filter: blur(4px);
-}
-
-.overlayContent {
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  min-height: initial;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
-  overflow-y: scroll;
-  height: 95%;
-  font-family: "Muli", Arial, Helvetica, sans-serif;
-
-  &::-webkit-scrollbar {
-    width: .7em;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #ddd;
-    outline: 1px solid slategrey;
-  }
-
-  @media (--small){
-    width: 90%;
-  }
-
-  & .containerModalOverview{
-    background-position: center;
-    position: relative;
-    min-height: 200px;
-    height: 20%;
-    overflow: hidden;
-
-    @media (--small){
-      background-size: cover;
-      height: 50%;
-    }
-    
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,.35);
-    }
-
-    & .containerTitleModal{
-      position: absolute;
-      left: 10%;
-      bottom: 10%;
-      word-wrap: break-word;
-      z-index: 1;
-      
-      & h2{
-        font-size: 2em;
-        margin: 10px 0;
-      }
-      & h2,
-      & p{
-        color: var(--lightColor);
-        text-align: left;
-      }
-
-      & .detailsProjectAction{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        margin: 10px 0;
-
-        @media (--small){
-          grid-template-columns: 1fr;
-          grid-gap: 20px;
-        }
-
-        & .chips{
-          justify-self: start;
-          & .chip{
-            display: inline-block;
-            height: 32px;
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--darkColor);
-            line-height: 32px;
-            padding: 0 12px;
-            border-radius: 16px;
-            background-color: var(--grayColor);
-            margin-bottom: 5px;
-            margin-right: 5px;
-          }
-        }
-        & .seeProject{
-          justify-self: center;
-          & .btn{
-            padding: 10px;
-            margin: 0 5px;
-            &:hover{
-              background: rgba(0,0,0,0);
-              border: 1px solid var(--lightColor);
-              color: var(--lightColor);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  & .containerImages {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 40%);
-    justify-content: center;
-    grid-gap: 50px;
-    margin-top: 50px;
-
-    @media (--small){
-      grid-gap: 10px;
-    }
-
-    & img, & video {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    & .itemImage1 {
-      grid-row-end: span 1;
-    }
-    & .itemImage2 {
-      grid-row-end: span 2;
-    }
-    & .itemImage3 {
-      grid-row-end: span 3;
-    }
-    & .itemImage4 {
-      grid-row-end: span 4;
-    }
-    & .itemImage5 {
-      grid-row-end: span 5;
-    }
-    & .itemImage6 {
-      grid-row-end: span 6;
-    }
-  }
-}
-
-.closeModal {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: fixed;
-    right: 5%;
-    top: 5%;
-    background: #fff;
-    z-index: 1001;
-    cursor: pointer;
-    border-radius: 5px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 50%;
-      top: 50%;
-      left: 25%;
-      margin-top: -1px;
-      background: #000;
-    }
-    &::before {
-      transform: rotate(45deg);
-      transition: all ease .2s;
-    }
-    &::after {
-      transform: rotate(-45deg);
-      transition: all ease .2s;
-    }
-    &:hover{
-        &:before, &:after{
-            background: var(--grayColor);
-        }
-        &:before{
-            transform: rotate(-45deg);
-        }
-        &:after{
-            transform: rotate(45deg);
-        }
-    }
-  }

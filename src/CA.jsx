@@ -6,6 +6,12 @@ import Header from "./Components/Header.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
 
+
+Array.prototype.randomArray = function(){
+  return this[Math.floor(Math.random()*this.length)];
+}
+
+
 function Loading(props) {
   if (props.error) {
     return (
@@ -66,15 +72,24 @@ const AsyncOverlay = Loadable({
 export default class CA extends Component {
   constructor(){
     super();
+
+    console.log(data)
     this.state = {
       modalActive : "",
-      isMobile: false
+      isMobile: false,
+      firstColor: data.ColorPalettes[0].firstColor,
+      secondColor: data.ColorPalettes[0].secondColor,
+      thirdColor: data.ColorPalettes[0].thirdColor,
+      fourthColor: data.ColorPalettes[0].fourthColor,
     }
     this.detail = {};
     this.mediaScreen = null;
   }
   componentDidMount() {
     document.getElementById("first-loader").style.display = "none";
+
+    this.radomGradients();
+
     const wow = new WOW.WOW();
     wow.init();
 
@@ -112,6 +127,28 @@ export default class CA extends Component {
       modalActive : ""
     });
   }
+  radomGradients(){
+    let currentPalette = data.ColorPalettes.randomArray(); 
+
+    this.setState({
+      firstColor: currentPalette.firstColor,
+      secondColor: currentPalette.secondColor,
+      thirdColor: currentPalette.thirdColor,
+      fourthColor: currentPalette.fourthColor,
+    })
+  }
+  renderGradients(){
+    return (
+      <style jsx="true">{`
+        :root{
+          --firstGradColor: ${this.state.firstColor};
+          --secondGradColor: ${this.state.secondColor};
+          --thirdGradColor: ${this.state.thirdColor};
+          --fourthGradColor: ${this.state.fourthColor};
+        }
+      `}</style>
+    )
+  }
   renderHeader(){
     if(this.state.isMobile){
       return 
@@ -121,7 +158,8 @@ export default class CA extends Component {
   }
   render() {
     return (
-      <React.Fragment> 
+      <React.Fragment>
+        {this.renderGradients()} 
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={data} />

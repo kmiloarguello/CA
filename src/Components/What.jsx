@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import styles from "../css/index.pcss";
 import PropTypes from 'prop-types';
 
-Array.prototype.randomArray = function(){
-  return this[Math.floor(Math.random()*this.length)];
-}
-
 export default class What extends Component {
   constructor(props){
     super(props);

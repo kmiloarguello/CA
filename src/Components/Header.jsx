@@ -25,23 +25,26 @@ export default class Header extends Component {
     }
   }
   scrollOnLoad(){
-    switch (window.location.hash) {
-      case "#home":
-        smoothScroll(document.getElementById('why-cont'))
-        break;
-      case "#motivation":
-        smoothScroll(document.getElementById('how'))
-        break;
-      case "#work":
-        smoothScroll(document.getElementById('what'))
-        break;
-      case "#contact":
-        smoothScroll(document.getElementById('footer'))
-        break;
-      default:
-        smoothScroll(document.getElementById('why-cont'))
-        break;
-    }
+    
+    setTimeout(() => {
+      switch (window.location.hash) {
+        case "#home":
+          smoothScroll(document.getElementById('why-cont'))
+          break;
+        case "#motivation":
+          smoothScroll(document.getElementById('how'))
+          break;
+        case "#work":
+          smoothScroll(document.getElementById('what'))
+          break;
+        case "#contact":
+          smoothScroll(document.getElementById('footer'))
+          break;
+        default:
+          smoothScroll(document.getElementById('why-cont'))
+          break;
+      }
+    }, 100);
   }
   renderMenu(){
     const { menu } = this.props.data.Header;
