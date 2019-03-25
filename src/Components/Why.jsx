@@ -16,12 +16,12 @@ export default class Why extends Component {
 
         <h1>{section1}</h1>
         <h2>{section2}</h2>
-
+  
         <div className={styles.containerbtn}>
           <button className="btn" onClick={() => window.location.href='mailto:' + email +'?Subject=Hello'} target="_top"><span>Contact me</span></button>
           <button className="btn focus" onClick={() => this.scrollToWork()}><span>Find out more</span></button>
         </div>
-        
+      
         <img src={img} alt={name} className={styles.circle} />
       </section>
     );

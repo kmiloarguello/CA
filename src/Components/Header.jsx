@@ -59,12 +59,12 @@ export default class Header extends Component {
     const { name, logoWhite } = this.props.data.PersonalInfo;
     return (
       <nav>
-        <ul>
+        {/* <ul>
           <li>
             <h1>{name}</h1>
           </li>
           {this.renderMenu()}
-        </ul>
+        </ul> */}
       </nav>
     );
   }

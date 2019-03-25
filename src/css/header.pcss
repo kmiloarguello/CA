@@ -7,7 +7,7 @@ nav {
   position: relative;
   z-index: 15;
   
-  @media only screen and (min-width:0\0){
+  @media (--ie){
     grid-column: 1;
   }
 
@@ -16,14 +16,14 @@ nav {
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;
     list-style: none;
 
-    @media only screen and (min-width:0\0){
+    @media (--ie){
       width: 100vw;
     }
 
     & li{
       align-self: center;
 
-      @media only screen and (min-width:0\0){
+      @media (--ie){
       display: inline-block;
     }
 
