@@ -10,10 +10,6 @@
     position: relative;
     z-index: 20;
 
-    @media (--ie){
-        grid-columns: 1;
-    }
-
     & h1, & h2{
         color:  var(--lightColor);
         text-align: center;
@@ -90,10 +86,6 @@
         list-style-type: none;
         grid-template-columns: 40% 1fr;
         padding: 0;
-
-        @media (--ie){
-            grid-columns: 1fr 1fr;
-        }
 
         & li.avatar{
             display: grid;

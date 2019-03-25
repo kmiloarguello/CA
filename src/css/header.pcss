@@ -18,20 +18,27 @@ nav {
 
     @media (--ie){
       width: 100vw;
+      display: block;
+      padding: 20px 100px 0 50px;
     }
 
     & li{
       align-self: center;
 
       @media (--ie){
-      display: inline-block;
-    }
+        display: inline-block;
+        margin: 0 10px;
+      }
 
       &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4),
       &:nth-child(5){
         justify-self: center;
+        
+        @media (--ie){
+          float: right;
+        }
       }
       & h1 {
         font-weight: 300;
