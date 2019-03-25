@@ -5,6 +5,11 @@ footer{
     grid-template-columns: minmax(auto, 90%);
     justify-content: center;
 
+     @media (--ie){
+         display: block;
+         margin: 2000px auto auto;
+     }
+
     @media (--small){
         padding: 20px 0;
     }
@@ -35,6 +40,11 @@ footer{
         grid-gap: 50px;
         margin-bottom: 20px;
 
+        @media (--ie){
+            display: block;
+            text-align: center;
+        }
+
         @media (--small){
             grid-template-columns: 1fr;
         }
@@ -43,6 +53,13 @@ footer{
             font-size: 1.1em;
         }
         & .social{
+
+            @media (--ie){
+                display: inline-block;
+                width: 30%;
+                margin: 10px;
+            }
+
             & .logo{
                 width: 50px;
             }
@@ -53,8 +70,21 @@ footer{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 justify-items: center;
+
+                @media (--ie){
+                    display: block;
+                }
+
                 & li{
                     justify-self: left;
+
+                    @media (--ie){
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                    }
+
                     & a{
                         & img{
                             width: 50px;
@@ -75,8 +105,23 @@ footer{
             
         }
         & .information{
+            @media (--ie){
+                display: inline-block;
+                margin: 10px;
+            }
             & a{
                 display: block;
+            }
+        }
+        & .structure{
+            @media (--ie){
+                display: inline-block;
+                margin: 10px;
+            }
+            & ul{
+                list-style: none; 
+                padding: 0;
+                margin: 0;
             }
         }
         & p, & a{
@@ -85,13 +130,6 @@ footer{
             text-decoration: none;
             color: var(--darkColor);
             font-size: .8em;
-        }
-        & .structure{
-            & ul{
-                list-style: none; 
-                padding: 0;
-                margin: 0;
-            }
         }
     }
 

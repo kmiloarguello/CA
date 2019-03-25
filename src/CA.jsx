@@ -162,18 +162,18 @@ export default class CA extends Component {
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={data} />
-          {/* <div className="bg-container"></div> */}
+          <div className="bg-container"></div>
         </div>
         <AsyncHow 
         data={data.How}
         />
         <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} /> 
-        {/* <AsyncFooter data={data} /> */}
-        {/* <AsyncOverlay 
+        <AsyncFooter data={data} />
+        <AsyncOverlay 
           modalActive={this.state.modalActive}
           detail={this.detail}
-          onClick={() => this.closeModal()} /> */}
+          onClick={() => this.closeModal()} />
       </React.Fragment>
     );
   }

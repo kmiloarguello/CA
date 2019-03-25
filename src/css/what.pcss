@@ -129,6 +129,10 @@
     transform: translateX(-50%);
     box-shadow: 0 3px 26px 0 rgba(0,0,0,0.70);
 
+    @media (--ie){
+      bottom: 40%;
+    }
+
     &:hover{
       background: var(--highlightColor);
       color: var(--lightColor);
