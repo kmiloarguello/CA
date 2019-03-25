@@ -167,8 +167,8 @@ export default class CA extends Component {
         <AsyncHow 
         data={data.How}
         />
-        {/* <AsyncWhat data={data.What}
-          onClick={e => this.activateModal(e)} />  */}
+        <AsyncWhat data={data.What}
+          onClick={e => this.activateModal(e)} /> 
         {/* <AsyncFooter data={data} /> */}
         {/* <AsyncOverlay 
           modalActive={this.state.modalActive}
