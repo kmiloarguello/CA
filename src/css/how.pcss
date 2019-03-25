@@ -2,6 +2,11 @@
     position: relative;
     background: white;
 
+    @media (--ie){
+        margin: 500px auto auto;
+        padding: 0 50px;
+    }
+
     &:before{
         content: "";
         background-size: 3000px 172px;
@@ -27,9 +32,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin-bottom: 100px;
+        @media (--ie){
+            display: block;
+            text-align: center;
+         
+        }
 
         & .conticons{
             padding: 50px;
+
+            @media (--ie){
+                display: inline-block;
+                padding: 10px;
+                width: 20%;
+            }
+
             & h3,& p{
                 text-align: center;
             }

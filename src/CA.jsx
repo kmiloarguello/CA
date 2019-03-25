@@ -164,9 +164,9 @@ export default class CA extends Component {
           <AsyncWhy data={data} />
           {/* <div className="bg-container"></div> */}
         </div>
-        {/* <AsyncHow 
+        <AsyncHow 
         data={data.How}
-        />   */}
+        />
         {/* <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} />  */}
         {/* <AsyncFooter data={data} /> */}
