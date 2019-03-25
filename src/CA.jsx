@@ -73,7 +73,6 @@ export default class CA extends Component {
   constructor(){
     super();
 
-    console.log(data)
     this.state = {
       modalActive : "",
       isMobile: false,
@@ -151,7 +150,7 @@ export default class CA extends Component {
   }
   renderHeader(){
     if(this.state.isMobile){
-      return 
+      return;
     }else{
       return <Header data={data}/>
     }
@@ -163,18 +162,18 @@ export default class CA extends Component {
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={data} />
-          <div className="bg-container"></div>
+          {/* <div className="bg-container"></div> */}
         </div>
-        <AsyncHow 
+        {/* <AsyncHow 
         data={data.How}
-        />  
-        <AsyncWhat data={data.What}
-          onClick={e => this.activateModal(e)} /> 
-        <AsyncFooter data={data} />
-        <AsyncOverlay 
+        />   */}
+        {/* <AsyncWhat data={data.What}
+          onClick={e => this.activateModal(e)} />  */}
+        {/* <AsyncFooter data={data} /> */}
+        {/* <AsyncOverlay 
           modalActive={this.state.modalActive}
           detail={this.detail}
-          onClick={() => this.closeModal()} />
+          onClick={() => this.closeModal()} /> */}
       </React.Fragment>
     );
   }

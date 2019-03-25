@@ -6,13 +6,26 @@ nav {
   height: 100px;
   position: relative;
   z-index: 15;
+  
+  @media only screen and (min-width:0\0){
+    grid-column: 1;
+  }
+
   & ul{
     display: grid;
     grid-template-columns: 50% 1fr 1fr 1fr 1fr;
     list-style: none;
 
+    @media only screen and (min-width:0\0){
+      width: 100vw;
+    }
+
     & li{
       align-self: center;
+
+      @media only screen and (min-width:0\0){
+      display: inline-block;
+    }
 
       &:nth-child(2),
       &:nth-child(3),
