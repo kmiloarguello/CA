@@ -24,6 +24,10 @@ main {
 	background-size: 100%;
   background-repeat: no-repeat;
 
+  @media (--ie){
+    background: linear-gradient(to bottom, #B724FF, #2AF598 );
+  }
+
   &:before{
     content:'';
     position: fixed;
@@ -84,7 +88,7 @@ main {
 
 
 button.cancel {
-  background-color:red;
+  background-color: red;
 }
 button.ok {
   background-color: #6b0;

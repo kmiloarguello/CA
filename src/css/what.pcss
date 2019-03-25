@@ -2,6 +2,11 @@
   position: relative;
   background: linear-gradient(to bottom, var(--thirdGradColor), var(--fourthGradColor) );
 
+  @media (--ie){
+    margin: 800px auto auto; 
+    background: linear-gradient(to bottom, #38e1a2, #000000 );
+  }
+
   &:before{
     content: '';
     background-size: 3000px 172px;
@@ -20,10 +25,6 @@
     top: -155px;
   }
 
-  #curve2-path{
-    fill: var(--thirdGradColor);
-  }
-
   & h2 {
     font-size: 30px;
     font-weight: lighter;
@@ -38,6 +39,10 @@
     grid-template-columns: minmax(auto, 90%);
     justify-content: center;
     padding: 30px 0;
+
+    @media (--ie){
+      margin-left: 50px;
+    }
   }
   & .containerImages {
     margin-top: 20px;
@@ -49,6 +54,12 @@
     overflow-y: hidden;
     transition: all ease 1s;
 
+    @media (--ie){
+      position: relative;
+      display: block;
+      padding: 0 50px;
+    }
+
     & .item {
       border-radius: 10px;
       box-shadow: var(--boxShadow);
@@ -57,6 +68,12 @@
       background: white;
       position: relative;
       
+      @media (--ie){
+        width: 300px;
+        height: auto;
+        display: inline-block;
+        margin: 10px;
+      }
 
       & .itemLevelFocus{
         position: absolute;
@@ -116,6 +133,10 @@
     z-index: 100;
     transform: translateX(-50%);
     box-shadow: 0 3px 26px 0 rgba(0,0,0,0.70);
+
+    @media (--ie){
+      bottom: 40%;
+    }
 
     &:hover{
       background: var(--highlightColor);

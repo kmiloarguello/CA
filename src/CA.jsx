@@ -73,7 +73,6 @@ export default class CA extends Component {
   constructor(){
     super();
 
-    console.log(data)
     this.state = {
       modalActive : "",
       isMobile: false,
@@ -151,7 +150,7 @@ export default class CA extends Component {
   }
   renderHeader(){
     if(this.state.isMobile){
-      return 
+      return;
     }else{
       return <Header data={data}/>
     }
@@ -167,7 +166,7 @@ export default class CA extends Component {
         </div>
         <AsyncHow 
         data={data.How}
-        />  
+        />
         <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} /> 
         <AsyncFooter data={data} />

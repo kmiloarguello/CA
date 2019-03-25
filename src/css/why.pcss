@@ -1,3 +1,7 @@
+#why-cont{
+    position: relative;
+}
+
 #why {
     padding: 50px 0; 
     display: grid;
@@ -9,12 +13,20 @@
     & h1, & h2{
         color:  var(--lightColor);
         text-align: center;
+
+        @media (--ie){
+            width: 100vw;
+        }
     }
 
     & h1{
         font-size: 3em;
         font-family: "Muli", Arial, Helvetica, sans-serif;
         font-weight: 600;
+
+        @media (--ie){
+            margin-top: -70px;
+        }
     }
     & h2{
         font-weight: 300;
@@ -30,6 +42,10 @@
         display: block;
         box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
         z-index: 100;
+
+        @media (--ie){
+            margin: 150px auto auto;
+        }
     }
 
     & .containerbtn{
@@ -41,12 +57,25 @@
         margin: 50px 0;
         font-family: "Muli", Arial, Helvetica, sans-serif;
 
+        @media (--ie){
+            display: block;
+            margin: 70px auto auto;
+            text-align: center;
+        }
+
         @media (--small){
             grid-template-columns: auto;
             justify-content: initial;
 
             & .btn{
                 width: 100%;
+            }
+        }
+
+        & .btn{
+            @media (--ie){
+                display: inline-block;
+                margin: 0 10px;
             }
         }
     
@@ -57,6 +86,7 @@
         list-style-type: none;
         grid-template-columns: 40% 1fr;
         padding: 0;
+
         & li.avatar{
             display: grid;
             grid-template-columns: 40% 1fr;
@@ -64,6 +94,7 @@
             & .circle{
                 margin: 20px;
                 width: 200px;
+                
             }
             & h2{
                 font-weight: 300;

@@ -20,7 +20,7 @@ export default class How extends Component {
   render() {
     const { title } = this.props.data;
     return (
-      <section id={styles.how} className="section3">
+      <section id={styles.how}>
         <div className={styles.containerTitle}>
           <h2>{title}</h2>
         </div>

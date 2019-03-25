@@ -64,7 +64,7 @@ export default class Header extends Component {
             <h1>{name}</h1>
           </li>
           {this.renderMenu()}
-        </ul>
+        </ul> 
       </nav>
     );
   }
