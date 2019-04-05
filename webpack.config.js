@@ -4,11 +4,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: ["babel-polyfill", path.resolve(__dirname, "src/index.js")],
+  entry: {
+    index: ["babel-polyfill", path.resolve(__dirname, "src/index.js")],
+    sw: path.resolve(__dirname, "src/sw/service-worker.js")
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/[name].js",
-    chunkFilename: 'js/[name].bundle.js'
+    chunkFilename: "js/[name].bundle.js"
   },
   module: {
     rules: [
@@ -31,7 +34,7 @@ module.exports = {
               options: {
                 modules: true,
                 importLoaders: 1,
-                localIdentName: '[local]'
+                localIdentName: "[local]"
               }
             },
             "postcss-loader"

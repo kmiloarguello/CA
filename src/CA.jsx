@@ -95,7 +95,19 @@ export default class CA extends Component {
     this.mediaScreen = window.matchMedia("(max-width: 600px)");
     
     this.updateScreenWidth(this.mediaScreen);
-    this.mediaScreen.addListener(e => this.updateScreenWidth(e));    
+    this.mediaScreen.addListener(e => this.updateScreenWidth(e));
+    
+    
+    if ('serviceWorker' in navigator) {
+      self.addEventListener('load', function() {
+        navigator.serviceWorker.register('/files/service-worker.js',{scope: '/'} ).then(function(registration) {
+  
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });      
+      });
+    }
+
   }
   updateScreenWidth(e){
     if (e.matches) {

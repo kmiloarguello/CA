@@ -1,0 +1,18 @@
+{
+    "author": "Camilo Arguello",
+    "name": "Camilo Arguello | Portfolio",
+    "manifest_version": 1,
+    "version": "versionString",
+    "short_name": "CA",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#141414",
+    "lang": "es",
+    "description": "I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas. Camilo Arguello",
+    "icons": [{
+      "src": "/img/icon-logo-camilo-arguello.png",
+      "sizes": "192x192",
+       "type": "image/png"
+    }],
+    "theme_color": "#000"
+  }
