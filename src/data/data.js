@@ -41,6 +41,8 @@ import tiendasjumbo001 from "../img/work/projects/tiendasjumbo/tiendasjumbo0001.
 import tiendasjumbo002 from "../img/work/projects/tiendasjumbo/tiendasjumbo0002.jpg";
 import tiendasjumbo003 from "../img/work/projects/tiendasjumbo/tiendasjumbo0003.jpg";
 import tiendasjumbo004 from "../img/work/projects/tiendasjumbo/tiendasjumbo0004.jpg";
+import tiendasjumbo007 from "../img/work/projects/tiendasjumbo/tiendasjumbo0007.jpg";
+import tiendasjumbo008 from "../img/work/projects/tiendasjumbo/tiendasjumbo0008.jpg";
 
 import kaptainteriortrims001 from "../img/work/projects/kaptainteriortrims/interiortrims001.jpg";
 import kaptainteriortrims002 from "../img/work/projects/kaptainteriortrims/interiortrims002.jpg";
@@ -73,7 +75,7 @@ const data = {
     img: CAprofile,
     section1: `Science and technology`,
     section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas.`,
-    section3: `I'm currently available for full-time job, so I you want to work
+    section3: `I'm currently available for full-time job in Paris France, so I you want to work
     with me or contract me, just put in contact with me and I can
     start anytime.`
   },
@@ -141,7 +143,44 @@ const data = {
           ],
         }
       },
-
+      
+      {
+        image: tiendasjumbo002,
+        alt: "Tiendas Jumbo Colombia",
+        level: 1,
+        detail: {
+          title: "Tiendas Jumbo Colombia",
+          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors in Colombia and over the world.",
+          chips: ["Javascript", "Sass", "Vtex" , "ES6"],
+          linkProject: "https://www.tiendasjumbo.co",
+          images: [
+            {
+              image: tiendasjumbo001,
+              alt: "This is the new home of the store."
+            },
+            {
+              image: tiendasjumbo007,
+              alt: "We developed the structure for services such as \"Jumbo al auto\" and \"Recogida en Tienda\" with the whole user experience including in Checkout v5. This has been my favorite development ever, due to the complexity and multiple UX flows. I'm proud of this work."
+            },
+            {
+              image: tiendasjumbo008,
+              alt: "The user now has the option to choose between pickup it's products or waiting for them in its house."
+            },
+            {
+              image: tiendasjumbo002,
+              alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
+            },
+            {
+              image: tiendasjumbo003,
+              alt: "I've worked on different landings such the special for Samsung S10."
+            },
+            {
+              image: tiendasjumbo004,
+              alt: "Each development is mobile first."
+            }
+          ],
+        }
+      },
 
       {
         image: mostromedia001,
@@ -169,40 +208,7 @@ const data = {
         }
       },
 
-      {
-        image: tiendasjumbo002,
-        alt: "Tiendas Jumbo Colombia",
-        level: 1,
-        detail: {
-          title: "Tiendas Jumbo Colombia",
-          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors in Colombia and over the world.",
-          chips: ["Sass", "Javascript", "Vtex"],
-          linkProject: "https://www.tiendasjumbo.co",
-          images: [
-            {
-              image: tiendasjumbo001,
-              alt: "This is the new home of the store."
-            },
-            {
-              image: tiendasjumbo002,
-              alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
-            },
-            {
-              image: tiendasjumbo003,
-              alt: "I've worked on different landings such the special for Samsung S10."
-            },
-            {
-              image: tiendasjumbo004,
-              alt: "Each development is mobile first."
-            },
-            {
-              image: tiendasjumbo,
-              alt: "The site is growing every day with new features and I am the head of each development."
-            }
-          ],
-        }
-      },
-
+      
 
       {
         image: escamiloarguello005,

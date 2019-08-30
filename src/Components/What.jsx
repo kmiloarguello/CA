@@ -6,17 +6,85 @@ export default class What extends Component {
   constructor(props){
     super(props);
     this.state = {
-      maxHeight : 1600
+      paddingBottom : 100,
+      maxHeight: 1600
     }
   }
+
+  getResolutionKey() {
+      let resKey;
+      let curResolution = window.innerWidth;
+
+      let resolutionMap = {
+          "xsmall": {
+              "min": 0,
+              // //
+
+              "max": 760
+
+          },
+          // "small": {
+          // 	"min": 481,
+          // 	"max": 959
+          // },
+          "medium": {
+              "min": 761,
+              "max": 1024
+          },
+          "large": {
+              "min": 1025,
+              "max": 1280
+          },
+          "xlarge": {
+              "min": 1281,
+              "max": 9999
+          }
+      }
+
+      if (curResolution < 500) {
+          curResolution = 320;
+      }
+
+      for (let resolution in resolutionMap) {
+          if (resolutionMap[resolution].min <= curResolution && resolutionMap[resolution].max >= curResolution) {
+              resKey = resolution;
+          }
+      }
+
+      return resKey;
+  }
+
+  isMobile() {
+    return this.getResolutionKey() == "xsmall";
+
+  }
+
+  // Moves the button to load more work items
   loadMoreItems(){
+
+    if(this.isMobile()){
+
+      this.setState({
+        maxHeight: this.state.maxHeight + 800
+      });
     
-    this.setState({
-      maxHeight: this.state.maxHeight + 800
-    })
-  
-    let cont = document.getElementsByClassName(styles.containerImages)[1];
-    cont.style.maxHeight = this.state.maxHeight + "px";
+      let cont = document.getElementsByClassName(styles.containerImages)[1];
+      cont.style.maxHeight = this.state.maxHeight + "px";
+
+      let buttonLoadMore = document.getElementsByClassName("load-more")[0];
+      buttonLoadMore.style.bottom = 2 + "%";
+
+    }else{
+
+      this.setState({
+        paddingBottom: this.state.paddingBottom + 100
+      });
+    
+      let cont = document.getElementsByClassName(styles.containerImages)[1];
+      cont.style.paddingBottom = this.state.paddingBottom + "px";
+
+    }
+    
   }
   randomWorks() {
     const { work } = this.props.data; 
