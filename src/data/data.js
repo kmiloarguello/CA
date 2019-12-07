@@ -3,7 +3,8 @@
  */
 import CALogo from "../img/logo-camilo-arguello.png";
 import CALogoWhite from "../img/logo-camilo-arguello-white.png";
-import CAprofile from '../img/camilo-arguello-pf.jpg';
+//import CAprofile from '../img/camilo-arguello-pf.jpg';
+import CAprofile from "../img/Juli-et-moi.jpg";
 
 /**
  * Projects
@@ -67,6 +68,15 @@ import iconCosmos from "../img/motivation/cosmos.png";
 import iconGithub from "../img/social/github.svg";
 import iconLinkedin from "../img/social/linkedin.svg";
 
+
+/**
+ * Deezer Images
+ */
+
+import iconBestSong from "../img/deezer/myDeezerInstaCard-track.png"
+import iconBestGroup from "../img/deezer/myDeezerInstaCard-artist.png"
+
+
 const data = {
   Header: {
     menu: [
@@ -80,9 +90,9 @@ const data = {
     title: "Home",
     img: CAprofile,
     section1: `Science and technology`,
-    section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas.`,
-    section3: `I'm currently available for full-time job in Paris France, so I you want to work
-    with me or contract me, just put in contact with me and I can
+    section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
+    section3: `I'm currently available for a full-time job, so If you want to work
+    with me, just put in contact with me and I can
     start anytime.`
   },
   What: {
@@ -405,9 +415,9 @@ const data = {
   PersonalInfo: {
     name: "Camilo Argüello",
     job: "Developer and future scientist",
-    age: 24,
+    age: 26,
     email: "camilo.arguello.rincon@gmail.xyz",
-    tel: 573208563431,
+    tel: 10010101,
     logo: CALogo,
     logoWhite: CALogoWhite,
     cv: "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf",
@@ -415,9 +425,25 @@ const data = {
     github: "https://github.com/kmiloarguello"
   },
   Legal: {
-    legal: `I'm currently available for full-time job, so I you want to work
-    with me or contract me, just put in contact with me and I can
+    legal: `I'm currently available for a full-time job, so If you want to work
+    with me, just put in contact with me and I can
     start anytime.`
+  },
+  Deezer: {
+    title: "Here is my favorite music of 2019",
+    favorites:[
+      
+      {
+        title:"The XX",
+        image: iconBestGroup,
+        description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+      },
+      {
+        title:"On Hold - The XX",
+        image: iconBestSong,
+        description:"Imagine living in Paris with the fashion, the culture, the beauty, passion, and love. It's the perfection combined into a song. This is my favorite song for 2019."
+      }
+    ] 
   },
   AdditionalIcons: {
     iconGithub,

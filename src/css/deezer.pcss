@@ -1,0 +1,67 @@
+#deezer {
+    position: relative;
+    background: white;
+
+    @media (--ie){
+        margin: 500px auto auto;
+        padding: 0 50px;
+    }
+    & .containerImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 100px;
+        @media (--ie){
+            display: block;
+            text-align: center;
+        }
+
+        & .conticons{
+            padding: 50px;
+
+            @media (--ie){
+                display: inline-block;
+                padding: 10px;
+                width: 20%;
+            }
+
+            & h3,& p{
+                text-align: center;
+            }
+            & h3{
+                font-family: "Muli", Arial, Helvetica, sans-serif;
+                margin: 10px 0;
+            }
+            & p{
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                font-weight: lighter;
+                padding: 0 50px;
+            
+            }
+            & img{
+                height: 350px;
+                display: block;
+                margin: auto;
+                border-radius: 20px;
+                box-shadow: 0 3px 26px 0 rgba(0,0,0,0.40);
+
+            } 
+        }
+
+        @media (--small){
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    & .containerTitle {
+        display: grid;
+        grid-template-columns: minmax(auto, 90%);
+        justify-content: center;
+        padding: 30px 0;
+        & h2{
+            font-size: 30px;
+            font-weight: lighter;
+            font-family: "Muli", Arial, Helvetica, sans-serif;
+        }
+    }
+}
