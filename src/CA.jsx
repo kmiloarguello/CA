@@ -67,6 +67,14 @@ const AsyncOverlay = Loadable({
   loading: "Loading",
   timeout: 20000
 });
+////////////////////////////// FOR DEEZER //////////////////////////////
+const AsyncDeezer = Loadable({
+  loader: () => import("./Components/Deezer.jsx"),
+  loading: Loading,
+  timeout: 20000
+});
+////////////////////////////// END FOR DEEZER //////////////////////////////
+
 
 
 export default class CA extends Component {
@@ -179,6 +187,7 @@ export default class CA extends Component {
         <AsyncHow 
         data={data.How}
         />
+        <AsyncDeezer data={data.Deezer}/>
         <AsyncWhat data={data.What}
           onClick={e => this.activateModal(e)} /> 
         <AsyncFooter data={data} />

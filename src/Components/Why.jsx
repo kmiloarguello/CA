@@ -23,6 +23,7 @@ export default class Why extends Component {
         </div>
       
         <img src={img} alt={name} className={styles.circle} />
+        <p>Memories from a happier time.</p>
       </section>
     );
   }

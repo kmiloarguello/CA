@@ -3,7 +3,8 @@
  */
 import CALogo from "../img/logo-camilo-arguello.png";
 import CALogoWhite from "../img/logo-camilo-arguello-white.png";
-import CAprofile from '../img/camilo-arguello-pf.jpg';
+//import CAprofile from '../img/camilo-arguello-pf.jpg';
+import CAprofile from "../img/Juli-et-moi.jpg";
 
 /**
  * Projects
@@ -36,11 +37,19 @@ import escamiloarguello003 from "../img/work/projects/escamiloarguello/escamilo0
 import escamiloarguello004 from "../img/work/projects/escamiloarguello/escamilo004.jpg";
 import escamiloarguello005 from "../img/work/projects/escamiloarguello/escamilo005.gif";
 
+import descubriendobogicon from "../img/work/projects/descubriendobog/pieza2.png"
+import descubriendobog1 from "../img/work/projects/descubriendobog/googleplay-1.jpg"
+import descubriendobog2 from "../img/work/projects/descubriendobog/googleplay-2.jpg"
+import descubriendobog3 from "../img/work/projects/descubriendobog/googleplay-3.jpg"
+import descubriendobog4 from "../img/work/projects/descubriendobog/googleplay-4.jpg"
+
 import tiendasjumbo from "../img/work/projects/tiendasjumbo/tiendasjumbo.jpg";
 import tiendasjumbo001 from "../img/work/projects/tiendasjumbo/tiendasjumbo0001.jpg";
 import tiendasjumbo002 from "../img/work/projects/tiendasjumbo/tiendasjumbo0002.jpg";
 import tiendasjumbo003 from "../img/work/projects/tiendasjumbo/tiendasjumbo0003.jpg";
 import tiendasjumbo004 from "../img/work/projects/tiendasjumbo/tiendasjumbo0004.jpg";
+import tiendasjumbo007 from "../img/work/projects/tiendasjumbo/tiendasjumbo0007.jpg";
+import tiendasjumbo008 from "../img/work/projects/tiendasjumbo/tiendasjumbo0008.jpg";
 
 import kaptainteriortrims001 from "../img/work/projects/kaptainteriortrims/interiortrims001.jpg";
 import kaptainteriortrims002 from "../img/work/projects/kaptainteriortrims/interiortrims002.jpg";
@@ -59,6 +68,15 @@ import iconCosmos from "../img/motivation/cosmos.png";
 import iconGithub from "../img/social/github.svg";
 import iconLinkedin from "../img/social/linkedin.svg";
 
+
+/**
+ * Deezer Images
+ */
+
+import iconBestSong from "../img/deezer/myDeezerInstaCard-track.png"
+import iconBestGroup from "../img/deezer/myDeezerInstaCard-artist.png"
+
+
 const data = {
   Header: {
     menu: [
@@ -72,9 +90,9 @@ const data = {
     title: "Home",
     img: CAprofile,
     section1: `Science and technology`,
-    section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas.`,
-    section3: `I'm currently available for full-time job, so I you want to work
-    with me or contract me, just put in contact with me and I can
+    section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
+    section3: `I'm currently available for a full-time job, so If you want to work
+    with me, just put in contact with me and I can
     start anytime.`
   },
   What: {
@@ -141,7 +159,44 @@ const data = {
           ],
         }
       },
-
+      
+      {
+        image: tiendasjumbo002,
+        alt: "Tiendas Jumbo Colombia",
+        level: 1,
+        detail: {
+          title: "Tiendas Jumbo Colombia",
+          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors in Colombia and over the world.",
+          chips: ["Javascript", "Sass", "Vtex" , "ES6"],
+          linkProject: "https://www.tiendasjumbo.co",
+          images: [
+            {
+              image: tiendasjumbo001,
+              alt: "This is the new home of the store."
+            },
+            {
+              image: tiendasjumbo007,
+              alt: "We developed the structure for services such as \"Jumbo al auto\" and \"Recogida en Tienda\" with the whole user experience including in Checkout v5. This has been my favorite development ever, due to the complexity and multiple UX flows. I'm proud of this work."
+            },
+            {
+              image: tiendasjumbo008,
+              alt: "The user now has the option to choose between pickup it's products or waiting for them in its house."
+            },
+            {
+              image: tiendasjumbo002,
+              alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
+            },
+            {
+              image: tiendasjumbo003,
+              alt: "I've worked on different landings such the special for Samsung S10."
+            },
+            {
+              image: tiendasjumbo004,
+              alt: "Each development is mobile first."
+            }
+          ],
+        }
+      },
 
       {
         image: mostromedia001,
@@ -169,40 +224,7 @@ const data = {
         }
       },
 
-      {
-        image: tiendasjumbo002,
-        alt: "Tiendas Jumbo Colombia",
-        level: 1,
-        detail: {
-          title: "Tiendas Jumbo Colombia",
-          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors in Colombia and over the world.",
-          chips: ["Sass", "Javascript", "Vtex"],
-          linkProject: "https://www.tiendasjumbo.co",
-          images: [
-            {
-              image: tiendasjumbo001,
-              alt: "This is the new home of the store."
-            },
-            {
-              image: tiendasjumbo002,
-              alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
-            },
-            {
-              image: tiendasjumbo003,
-              alt: "I've worked on different landings such the special for Samsung S10."
-            },
-            {
-              image: tiendasjumbo004,
-              alt: "Each development is mobile first."
-            },
-            {
-              image: tiendasjumbo,
-              alt: "The site is growing every day with new features and I am the head of each development."
-            }
-          ],
-        }
-      },
-
+      
 
       {
         image: escamiloarguello005,
@@ -212,8 +234,8 @@ const data = {
           title: "My last portfolio",
           description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
           chips: ["Jquery", "Css", "Javascript"],
-          linkProject: "/harder-better",
-          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          linkProject: "https://es.camiloarguello.xyz",
+          linkRepository: "https://github.com/kmiloarguello/kmiloarguello.github.io/tree/master/spanish",
           images: [
             {
               image: escamiloarguello005,
@@ -235,6 +257,38 @@ const data = {
               image: escamiloarguello002,
               alt: "Gifs for title section animation."
             },
+          ],
+        }
+      },
+
+
+      {
+        image: descubriendobogicon,
+        alt: "Descubriendo Bogotá videogame",
+        level: 2,
+        detail: {
+          title: "Descubriendo Bogotá",
+          description: "Videogame developed for the IDPC Bogotá - Colombia.",
+          chips: ["Videogame", "Unity", "C#","Firebase","AR"],
+          linkProject: "https://play.google.com/store/apps/details?id=com.mostromedia.descubriendobogota",
+          linkRepository: "https://github.com/MostroMedia/DescubriendoBogota",
+          images: [
+            {
+              image: descubriendobog1,
+              alt: "I was a head developer on the project. My role was to stablish the game structure, design the logic and code in C#."
+            },
+            {
+              image: descubriendobog2,
+              alt: "We created a complete stack of animations for each character using Unity and Photoshop."
+            },
+            {
+              image: descubriendobog3,
+              alt: "The design and game rules were defined to create a good user experience."
+            },
+            {
+              image: descubriendobog4,
+              alt: "For the interaction and Augmented Reality. We used the powerful of Vuforia engine for tracking and 3D Handle."
+            }
           ],
         }
       },
@@ -361,9 +415,9 @@ const data = {
   PersonalInfo: {
     name: "Camilo Argüello",
     job: "Developer and future scientist",
-    age: 24,
+    age: 26,
     email: "camilo.arguello.rincon@gmail.xyz",
-    tel: 573208563431,
+    tel: 10010101,
     logo: CALogo,
     logoWhite: CALogoWhite,
     cv: "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf",
@@ -371,9 +425,25 @@ const data = {
     github: "https://github.com/kmiloarguello"
   },
   Legal: {
-    legal: `I'm currently available for full-time job, so I you want to work
-    with me or contract me, just put in contact with me and I can
+    legal: `I'm currently available for a full-time job, so If you want to work
+    with me, just put in contact with me and I can
     start anytime.`
+  },
+  Deezer: {
+    title: "Here is my favorite music of 2019",
+    favorites:[
+      
+      {
+        title:"The XX",
+        image: iconBestGroup,
+        description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+      },
+      {
+        title:"On Hold - The XX",
+        image: iconBestSong,
+        description:"Imagine living in Paris with the fashion, the culture, the beauty, passion, and love. It's the perfection combined into a song. This is my favorite song for 2019."
+      }
+    ] 
   },
   AdditionalIcons: {
     iconGithub,
