@@ -7,7 +7,7 @@ export default class Deezer extends Component{
         return favorites.map((elem,i) => {
           return (
             <div key={i} className={styles.conticons}>
-              <img src={elem.image} />
+              <img src={elem.image} alt={elem.title} />
               <h3>{elem.title}</h3>
               <p>{elem.description}</p>
             </div>
