@@ -254,30 +254,30 @@ const data = {
 
       {
         image: descubriendobogicon,
-        alt: "Descubriendo Bogotá",
-        level: 1,
+        alt: "Descubriendo Bogotá videogame",
+        level: 2,
         detail: {
           title: "Descubriendo Bogotá",
           description: "Videogame developed for the IDPC Bogotá - Colombia.",
-          chips: ["Videogame", "Unity", "C#","Firebase"],
+          chips: ["Videogame", "Unity", "C#","Firebase","AR"],
           linkProject: "https://play.google.com/store/apps/details?id=com.mostromedia.descubriendobogota",
           linkRepository: "https://github.com/MostroMedia/DescubriendoBogota",
           images: [
             {
               image: descubriendobog1,
-              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+              alt: "I was a head developer on the project. My role was to stablish the game structure, design the logic and code in C#."
             },
             {
               image: descubriendobog2,
-              alt: "The colors were inspired on <a href='https://coldplay.com' target='_blank'>Coldplay</a> albums."
+              alt: "We created a complete stack of animations for each character using Unity and Photoshop."
             },
             {
               image: descubriendobog3,
-              alt: "My skills were only focused on 3D modeling and animation, nevertheless today I focused on coding."
+              alt: "The design and game rules were defined to create a good user experience."
             },
             {
               image: descubriendobog4,
-              alt: "Gifs for title section animation."
+              alt: "For the interaction and Augmented Reality. We used the powerful of Vuforia engine for tracking and 3D Handle."
             }
           ],
         }
