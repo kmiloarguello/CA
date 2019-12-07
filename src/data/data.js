@@ -36,6 +36,12 @@ import escamiloarguello003 from "../img/work/projects/escamiloarguello/escamilo0
 import escamiloarguello004 from "../img/work/projects/escamiloarguello/escamilo004.jpg";
 import escamiloarguello005 from "../img/work/projects/escamiloarguello/escamilo005.gif";
 
+import descubriendobogicon from "../img/work/projects/descubriendobog/pieza2.png"
+import descubriendobog1 from "../img/work/projects/descubriendobog/googleplay-1.jpg"
+import descubriendobog2 from "../img/work/projects/descubriendobog/googleplay-2.jpg"
+import descubriendobog3 from "../img/work/projects/descubriendobog/googleplay-3.jpg"
+import descubriendobog4 from "../img/work/projects/descubriendobog/googleplay-4.jpg"
+
 import tiendasjumbo from "../img/work/projects/tiendasjumbo/tiendasjumbo.jpg";
 import tiendasjumbo001 from "../img/work/projects/tiendasjumbo/tiendasjumbo0001.jpg";
 import tiendasjumbo002 from "../img/work/projects/tiendasjumbo/tiendasjumbo0002.jpg";
@@ -218,8 +224,8 @@ const data = {
           title: "My last portfolio",
           description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
           chips: ["Jquery", "Css", "Javascript"],
-          linkProject: "/harder-better",
-          linkRepository: "https://github.com/kmiloarguello/myBirthday24",
+          linkProject: "https://es.camiloarguello.xyz",
+          linkRepository: "https://github.com/kmiloarguello/kmiloarguello.github.io/tree/master/spanish",
           images: [
             {
               image: escamiloarguello005,
@@ -241,6 +247,38 @@ const data = {
               image: escamiloarguello002,
               alt: "Gifs for title section animation."
             },
+          ],
+        }
+      },
+
+
+      {
+        image: descubriendobogicon,
+        alt: "Descubriendo Bogotá",
+        level: 1,
+        detail: {
+          title: "Descubriendo Bogotá",
+          description: "Videogame developed for the IDPC Bogotá - Colombia.",
+          chips: ["Videogame", "Unity", "C#","Firebase"],
+          linkProject: "https://play.google.com/store/apps/details?id=com.mostromedia.descubriendobogota",
+          linkRepository: "https://github.com/MostroMedia/DescubriendoBogota",
+          images: [
+            {
+              image: descubriendobog1,
+              alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+            },
+            {
+              image: descubriendobog2,
+              alt: "The colors were inspired on <a href='https://coldplay.com' target='_blank'>Coldplay</a> albums."
+            },
+            {
+              image: descubriendobog3,
+              alt: "My skills were only focused on 3D modeling and animation, nevertheless today I focused on coding."
+            },
+            {
+              image: descubriendobog4,
+              alt: "Gifs for title section animation."
+            }
           ],
         }
       },
