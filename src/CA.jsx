@@ -5,7 +5,7 @@ import Loadable from "react-loadable";
 import Header from "./Components/Header.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
-
+//import { data_fr } from "./data/data-fr";
 
 Array.prototype.randomArray = function(){
   return this[Math.floor(Math.random()*this.length)];

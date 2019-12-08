@@ -1,80 +1,55 @@
-/**
- * Personal Info
- */
-import CALogo from "../img/logo-camilo-arguello.png";
-import CALogoWhite from "../img/logo-camilo-arguello-white.png";
-//import CAprofile from '../img/camilo-arguello-pf.jpg';
-import CAprofile from "../img/Juli-et-moi.jpg";
 
-/**
- * Projects
- */
-import kapta01 from "../img/work/kapta01.jpg";
-import kaptamexico001 from "../img/work/projects/kaptamexico/kaptamexico0001.jpg";
-import kaptamexico002 from "../img/work/projects/kaptamexico/kaptamexico0002.jpg";
-import kaptamexico003 from "../img/work/projects/kaptamexico/kaptamexico0003.jpg";
-
-import daftpunk from "../img/work/daftpunk.png";
-import daftpunk001 from "../img/work/projects/harderbetter/harderbetter0001.jpg";
-import daftpunk002 from "../img/work/projects/harderbetter/harderbetter0002.jpg";
-import daftpunk003 from "../img/work/projects/harderbetter/harderbetter0003.jpg";
-
-import motoe4plus from "../img/work/moto-e4-plus.png";
-import motoe4plus001 from "../img/work/projects/motoeplus/motoeplus0001.jpg";
-import motoe4plus002 from "../img/work/projects/motoeplus/motoeplus0002.jpg";
-import motoe4plus003 from "../img/work/projects/motoeplus/motoeplus0003.jpg";
-
-import mostromedia from "../img/work/mostromedia2019.png";
-import mostromedia001 from "../img/work/projects/mostromedia/mostromedia0001.jpg";
-import mostromedia003 from "../img/work/projects/mostromedia/mostromedia0003.jpg";
-
-import dashboard from "../img/work/kapta02.jpg";
-import dashboard001 from "../img/work/projects/dashboard/kaptadashboard0001.jpg";
-
-import escamiloarguello from "../img/work/projects/escamiloarguello/escamilo001.jpg";
-import escamiloarguello002 from "../img/work/projects/escamiloarguello/escamilo002.gif";
-import escamiloarguello003 from "../img/work/projects/escamiloarguello/escamilo003.gif";
-import escamiloarguello004 from "../img/work/projects/escamiloarguello/escamilo004.jpg";
-import escamiloarguello005 from "../img/work/projects/escamiloarguello/escamilo005.gif";
-
-import descubriendobogicon from "../img/work/projects/descubriendobog/pieza2.png"
-import descubriendobog1 from "../img/work/projects/descubriendobog/googleplay-1.jpg"
-import descubriendobog2 from "../img/work/projects/descubriendobog/googleplay-2.jpg"
-import descubriendobog3 from "../img/work/projects/descubriendobog/googleplay-3.jpg"
-import descubriendobog4 from "../img/work/projects/descubriendobog/googleplay-4.jpg"
-
-import tiendasjumbo from "../img/work/projects/tiendasjumbo/tiendasjumbo.jpg";
-import tiendasjumbo001 from "../img/work/projects/tiendasjumbo/tiendasjumbo0001.jpg";
-import tiendasjumbo002 from "../img/work/projects/tiendasjumbo/tiendasjumbo0002.jpg";
-import tiendasjumbo003 from "../img/work/projects/tiendasjumbo/tiendasjumbo0003.jpg";
-import tiendasjumbo004 from "../img/work/projects/tiendasjumbo/tiendasjumbo0004.jpg";
-import tiendasjumbo007 from "../img/work/projects/tiendasjumbo/tiendasjumbo0007.jpg";
-import tiendasjumbo008 from "../img/work/projects/tiendasjumbo/tiendasjumbo0008.jpg";
-
-import kaptainteriortrims001 from "../img/work/projects/kaptainteriortrims/interiortrims001.jpg";
-import kaptainteriortrims002 from "../img/work/projects/kaptainteriortrims/interiortrims002.jpg";
-
-import propulsion from "../img/work/projects/propulsion/propulsion0001.jpg";
-import propulsion002 from "../img/work/projects/propulsion/bmw-carmp4.mp4";
-
-/**
- * Icons
- */
-import iconScience from "../img/motivation/physics.png";
-import iconComputer from "../img/motivation/computer.png";
-import iconFilm from "../img/motivation/film.png";
-import iconEducation from "../img/motivation/education.png";
-import iconCosmos from "../img/motivation/cosmos.png";
-import iconGithub from "../img/social/github.svg";
-import iconLinkedin from "../img/social/linkedin.svg";
-
-
-/**
- * Deezer Images
- */
-
-import iconBestSong from "../img/deezer/myDeezerInstaCard-track.png"
-import iconBestGroup from "../img/deezer/myDeezerInstaCard-artist.png"
+import {
+  CALogo,
+  CALogoWhite,
+  CAprofile,
+  kapta01,
+  kaptamexico001,
+  kaptamexico002,
+  kaptamexico003,
+  daftpunk,
+  daftpunk001,
+  daftpunk002,
+  daftpunk003,
+  motoe4plus,
+  motoe4plus001,
+  motoe4plus002,
+  motoe4plus003,
+  mostromedia,
+  mostromedia001,
+  mostromedia003,
+  dashboard,
+  dashboard001,
+  escamiloarguello,
+  escamiloarguello002,
+  escamiloarguello003,
+  escamiloarguello004,
+  escamiloarguello005,
+  descubriendobogicon,
+  descubriendobog1,
+  descubriendobog2,
+  descubriendobog3,
+  descubriendobog4,
+  tiendasjumbo001,
+  tiendasjumbo002,
+  tiendasjumbo003,
+  tiendasjumbo004,
+  tiendasjumbo007,
+  tiendasjumbo008,
+  kaptainteriortrims001,
+  kaptainteriortrims002,
+  propulsion,
+  propulsion002,
+  iconScience,
+  iconComputer,
+  iconFilm,
+  iconEducation,
+  iconCosmos,
+  iconGithub,
+  iconLinkedin,
+  iconBestSong,
+  iconBestGroup
+} from "./images.js";
 
 
 const data = {
@@ -120,7 +95,7 @@ const data = {
             },
             {
               image: daftpunk003,
-              alt: "Each key trigger one song of the harder better stronger song."
+              alt: "Each key triggers one song of the harder better stronger song."
             },
             {
               image: daftpunk,
@@ -135,7 +110,7 @@ const data = {
         level: 1,
         detail: {
           title: "Moto e4 Plus",
-          description: "Layout of new website of Moto e4 Plus, which cover the main characteristics in aesthetics, design and ergonomic. Also its functionalities with the camera, battery and touch ID.",
+          description: "The layout of the new website of Moto e4 Plus, which cover the main characteristics in aesthetics, design and ergonomic. Also its functionalities with the camera, battery, and touch ID.",
           chips: ["ReactJs", "Jest", "Webpack", "PostCSS"],
           linkProject: "/moto-e4-plus",
           linkRepository: "https://github.com/kmiloarguello/moto-e4-plus",
@@ -166,13 +141,13 @@ const data = {
         level: 1,
         detail: {
           title: "Tiendas Jumbo Colombia",
-          description: "Working on the maintain and development of new features of a 10000 daily marketplace visitors in Colombia and over the world.",
+          description: "Development of new features concerning to 10000 daily marketplace visitors in Colombia and over the world..",
           chips: ["Javascript", "Sass", "Vtex" , "ES6"],
           linkProject: "https://www.tiendasjumbo.co",
           images: [
             {
               image: tiendasjumbo001,
-              alt: "This is the new home of the store."
+              alt: "This is how the new home of the store looks like."
             },
             {
               image: tiendasjumbo007,
@@ -180,7 +155,7 @@ const data = {
             },
             {
               image: tiendasjumbo008,
-              alt: "The user now has the option to choose between pickup it's products or waiting for them in its house."
+              alt: "The user now has the option to choose between pickup it's products or waiting for them at home."
             },
             {
               image: tiendasjumbo002,
@@ -204,7 +179,7 @@ const data = {
         level: 1,
         detail: {
           title: "Mostro Media",
-          description: "Website for Mostro Media company. The goal was to show the company as modern for the new customers.",
+          description: "Website for Mostro Media company. The goal was to show the company as modern for new customers.",
           chips: ["Wordpress"],
           linkProject: "https://mostromedia.com",
           images: [
@@ -232,7 +207,7 @@ const data = {
         level: 1,
         detail: {
           title: "My last portfolio",
-          description: "It was my first stable version of my portfolio. I was involved in a musical world, so it was inspired in different artists.",
+          description: "It was the first stable version of my portfolio. I was involved in a musical world, so it was inspired by different artists.",
           chips: ["Jquery", "Css", "Javascript"],
           linkProject: "https://es.camiloarguello.xyz",
           linkRepository: "https://github.com/kmiloarguello/kmiloarguello.github.io/tree/master/spanish",
@@ -275,7 +250,7 @@ const data = {
           images: [
             {
               image: descubriendobog1,
-              alt: "I was a head developer on the project. My role was to stablish the game structure, design the logic and code in C#."
+              alt: "I was the head developer on the project. My role was to establish the game structure, design the logic and code in C#."
             },
             {
               image: descubriendobog2,
@@ -287,7 +262,7 @@ const data = {
             },
             {
               image: descubriendobog4,
-              alt: "For the interaction and Augmented Reality. We used the powerful of Vuforia engine for tracking and 3D Handle."
+              alt: "For the interaction and Augmented Reality. We used the power of Vuforia engine for tracking and 3D Handle."
             }
           ],
         }
@@ -300,7 +275,7 @@ const data = {
         level: 1,
         detail: {
           title: "K@PTA Mexico",
-          description: "Website for K@PTA company In Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
+          description: "Website for K@PTA company in Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
           chips: ["Reactjs", "node", "Html"],
           linkProject: "https://kaptamexico.biz",
           images: [
@@ -310,11 +285,11 @@ const data = {
             },
             {
               image: kaptamexico002,
-              alt: "Information about the company in mobile"
+              alt: "Information about the company on mobile devices."
             },
             {
               image: kaptamexico003,
-              alt: "Use the corporate identity manual to reflects the company in a website"
+              alt: "Use the corporate identity manual to reflects the company in a website."
             }
           ],
         }
@@ -326,12 +301,12 @@ const data = {
         level: 2,
         detail: {
           title: "Interior Trims - BMW",
-          description: "It was an application to one company that I've worked for. The objective was to simulate an interior environment and select key points with specific information for technician people.",
+          description: "It was an application to one company that I've worked for. The objective was to simulate an interior environment and select a set of key points with specific information for technician people.",
           chips: ["React", "A-frame"],
           images: [
             {
               image: kaptainteriortrims001,
-              alt: "Interior Trims - BMW"
+              alt: "Interior Trims - BMW."
             },
             {
               image: kaptainteriortrims002,
@@ -346,7 +321,7 @@ const data = {
         alt: "Web Application for K@PTA",
         level: 1,
         detail: {
-          title: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve in BMW and KAPTA Technologies.",
+          title: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve for BMW and KAPTA teams.",
           description: "Web Application for K@PTA",
           chips: ["NodeJS", "Express", "MongoDB", "Server-side-rendering"],
           images: [
@@ -388,12 +363,12 @@ const data = {
       {
         icon: iconScience,
         title: "Science",
-        subtitle: "Learning everyday about the knowledge of humanity."
+        subtitle: "Learning every day about the knowledge of humanity."
       },
       {
         icon: iconComputer,
         title: "Coding",
-        subtitle: "I write code which create solutions for real life problems."
+        subtitle: "I write code which creates solutions for real-life problems."
       },
       {
         icon: iconFilm,
