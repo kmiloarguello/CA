@@ -6,10 +6,11 @@
         margin: 500px auto auto;
         padding: 0 50px;
     }
-    & .containerImages{
+    & .containerImagesDeezer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 100px;
+
         @media (--ie){
             display: block;
             text-align: center;
@@ -36,6 +37,9 @@
                 font-size: 1em;
                 font-weight: lighter;
                 padding: 0 50px;
+                @media (--small){
+                    padding: 0 5px;
+                }
             
             }
             & img{
@@ -44,6 +48,10 @@
                 margin: auto;
                 border-radius: 20px;
                 box-shadow: 0 3px 26px 0 rgba(0,0,0,0.40);
+                @media (--small){
+                    height: auto;
+                    width: 90%;
+                }
 
             } 
         }

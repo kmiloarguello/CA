@@ -21,7 +21,7 @@ export default class Deezer extends Component{
                 <div className={styles.containerTitle}>
                     <h2>{title}</h2>
                 </div>
-                <div className={styles.containerImages}>
+                <div className={styles.containerImagesDeezer}>
                     {this.renderList()}
                 </div>
                

@@ -152,7 +152,9 @@ export default class CA extends Component {
       });
     }
 
-    window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
+    if(!this.state.isMobile){
+      window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
+    }
 
   }
   updateScreenWidth(e){
@@ -220,7 +222,7 @@ export default class CA extends Component {
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={ defineLanguage() } />
-          <div id="particles-js"></div>
+          {!this.state.isMobile ? <div id="particles-js"></div> : ""}
           <div className="bg-container"></div>
         </div>
         <AsyncHow 

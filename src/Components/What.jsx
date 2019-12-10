@@ -56,7 +56,6 @@ export default class What extends Component {
 
   isMobile() {
     return this.getResolutionKey() == "xsmall";
-
   }
 
   // Moves the button to load more work items
