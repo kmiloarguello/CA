@@ -94,9 +94,9 @@ export default class What extends Component {
     });
   }
   renderLoadMoreButton(){
-    const { work } = this.props.data; 
+    const { work, btnLoadMoreProjects } = this.props.data; 
     if(work.length >= 8){
-      return <button onClick={() => this.loadMoreItems()} className="btn load-more"><span>Load More</span></button>
+      return <button onClick={() => this.loadMoreItems()} className="btn load-more"><span>{btnLoadMoreProjects}</span></button>
     }
   }
   render() {
@@ -122,7 +122,6 @@ What.propTypes = {
 class Portfolio extends Component{
   renderDetailOnHover(event){
     let element = event.target;
-
   }
   render(){
     const { work,index } = this.props;

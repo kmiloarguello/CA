@@ -16,7 +16,6 @@ export default class Deezer extends Component{
       }
     render(){
         const { title } = this.props.data;
-        console.log(this.props)
         return(
             <section id={styles.deezer}>
                 <div className={styles.containerTitle}>

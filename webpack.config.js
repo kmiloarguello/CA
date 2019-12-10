@@ -78,6 +78,20 @@ module.exports = {
         to: path.resolve(__dirname, "dist/css/animate.css"),
         toType: "file"
       }
-    ])
+    ]),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, "node_modules/particles.js/particles.js"),
+        to: path.resolve(__dirname, "dist/js/particles.js"),
+        toType: "file"
+      }
+    ]),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, "src/data/particlesjs-config.json"),
+        to: path.resolve(__dirname, "dist/js/particlesjs-config.json"),
+        toType: "file"
+      }
+    ]),
   ]
 };

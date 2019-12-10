@@ -9,7 +9,7 @@ export default class Why extends Component {
     smoothScroll(document.getElementById('what'));
   }
   render() {
-    const { img,section1,section2 } = this.props.data.Why;
+    const { img,section1,section2,btnMail, btnScrollToWork, txtMemories } = this.props.data.Why;
     const { name,email } = this.props.data.PersonalInfo;
     return (
       <section id={styles.why}>
@@ -18,12 +18,12 @@ export default class Why extends Component {
         <h2>{section2}</h2>
   
         <div className={styles.containerbtn}>
-          <button className="btn" onClick={() => window.location.href='mailto:' + email +'?Subject=Hello'} target="_top"><span>Contact me</span></button>
-          <button className="btn focus" onClick={() => this.scrollToWork()}><span>Find out more</span></button>
+          <button className="btn" onClick={() => window.location.href='mailto:' + email +'?Subject=Hello'} target="_top"><span>{btnMail}</span></button>
+          <button className="btn focus" onClick={() => this.scrollToWork()}><span>{btnScrollToWork}</span></button>
         </div>
       
         <img src={img} alt={name} className={styles.circle} />
-        <p>Memories from a happier time.</p>
+        <p>{txtMemories}</p>
       </section>
     );
   }

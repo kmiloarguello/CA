@@ -50,7 +50,7 @@ import {
   iconBestSong,
   iconBestGroup
 } from "./images.js";
-
+import colorPalettesFile from "./colors-palettes.js";
 
 const data = {
   Header: {
@@ -68,7 +68,10 @@ const data = {
     section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
     section3: `I'm currently available for a full-time job, so If you want to work
     with me, just put in contact with me and I can
-    start anytime.`
+    start anytime.`,
+    btnMail: "Contact me",
+    btnScrollToWork: "Find out more",
+    txtMemories: "Memories from a happier time."
   },
   What: {
     title: "Work",
@@ -355,7 +358,8 @@ const data = {
           video: propulsion002
         }
       }
-    ]
+    ],
+    btnLoadMoreProjects: "Load more"
   },
   How: {
     title: "Motivations",
@@ -402,7 +406,10 @@ const data = {
   Legal: {
     legal: `I'm currently available for a full-time job, so If you want to work
     with me, just put in contact with me and I can
-    start anytime.`
+    start anytime.`,
+    contact: "Contact",
+    siteMap: "Sitemap",
+    curriculum: "Curriculum Vitae"
   },
   Deezer: {
     title: "Here is my favorite music of 2019",
@@ -420,85 +427,17 @@ const data = {
       }
     ] 
   },
+  Language: {
+    language: "Language",
+    english: "English",
+    french: "French",
+    spanish: "Spanish"
+  },
   AdditionalIcons: {
     iconGithub,
     iconLinkedin
   },
-  ColorPalettes: [
-    {
-      firstColor: "#B724FF",
-      secondColor: "#2AF598",
-      thirdColor: "#38e1a2",
-      fourthColor: "#000"
-    },
-    {
-      firstColor: "#08f7fe",
-      secondColor: "#09fbd3",
-      thirdColor: "#f353bb",
-      fourthColor: "#f5d300"
-    },
-    {
-      firstColor: "#ffacfc",
-      secondColor: "#f148fb",
-      thirdColor: "#7122fa",
-      fourthColor: "#560a86"
-    },
-    {
-      firstColor: "#75d5fd",
-      secondColor: "#b76cfd",
-      thirdColor: "#ff2281",
-      fourthColor: "#011ffd"
-    },
-    {
-      firstColor: "#00feca",
-      secondColor: "#fdf200",
-      thirdColor: "#ff85ea",
-      fourthColor: "#fb61f8"
-    },
-    {
-      firstColor: "#ffd300",
-      secondColor: "#de38c8",
-      thirdColor: "#652ec7",
-      fourthColor: "#33135c"
-    },
-    {
-      firstColor: "#3b27ba",
-      secondColor: "#e847ae",
-      thirdColor: "#13ca91",
-      fourthColor: "#ff9472"
-    },
-    {
-      firstColor: "#ffdef3",
-      secondColor: "#ff61be",
-      thirdColor: "#3b55ce",
-      fourthColor: "#35212a"
-    },
-    {
-      firstColor: "#fdd400",
-      secondColor: "#fdb232",
-      thirdColor: "#02b8a2",
-      fourthColor: "#01535f"
-    },
-    {
-      firstColor: "#fec763",
-      secondColor: "#ea55b1",
-      thirdColor: "#a992fa",
-      fourthColor: "#00207f"
-    },
-    {
-      firstColor: "#79fffe",
-      secondColor: "#fea0fe",
-      thirdColor: "#ff8b8b",
-      fourthColor: "#f85125"
-    },
-    {
-      firstColor: "#ce96fb",
-      secondColor: "#ff8fcf",
-      thirdColor: "#00c2ba",
-      fourthColor: "#037a90"
-    },
-
-  ]
+  ColorPalettes: colorPalettesFile
 };
 
 module.exports = { data };

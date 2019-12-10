@@ -5,12 +5,48 @@ import Loadable from "react-loadable";
 import Header from "./Components/Header.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
-//import { data_fr } from "./data/data-fr";
+import { data_fr } from "./data/data.js";
+import { data_es } from "./data/data-es.js";
+//import parti from "./data/particlesjs-config.json";
+
 
 Array.prototype.randomArray = function(){
   return this[Math.floor(Math.random()*this.length)];
 }
 
+/**
+ * Defines the language inside of the website
+ * @param {String} language Type of language. i.e en-US or fr-FR 
+ */
+function defineLanguage(language = window.navigator.language){
+
+  if (typeof(Storage) !== "undefined") {
+
+    // If exists the localStorage AND also the lang storage variable exists
+    if(localStorage.getItem("lang") != null){
+      if( /fr/ig.test(localStorage.getItem("lang")) ){
+        return data_fr;
+      }else if( /es/ig.test(localStorage.getItem("lang")) ){
+        return data_es;
+      }else{
+        return data;
+      }
+
+    // Use the window.navigator language
+    }else{
+      if( /fr/ig.test(language) ){
+        return data_fr;
+      }else if( /es/ig.test(language)){
+        return data_es;
+      }else{
+        return data;
+      }
+    }
+    // Otherwise return english lang
+  }else{
+    return data;
+  }
+}
 
 function Loading(props) {
   if (props.error) {
@@ -116,6 +152,8 @@ export default class CA extends Component {
       });
     }
 
+    window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
+
   }
   updateScreenWidth(e){
     if (e.matches) {
@@ -138,7 +176,7 @@ export default class CA extends Component {
     let elem = e.target.closest(".item");
     let attr = parseInt(elem.getAttribute("data-index"));
 
-    this.detail = data.What.work[attr].detail;
+    this.detail = defineLanguage().What.work[attr].detail;
 
   }
   closeModal(){
@@ -147,7 +185,7 @@ export default class CA extends Component {
     });
   }
   radomGradients(){
-    let currentPalette = data.ColorPalettes.randomArray(); 
+    let currentPalette = defineLanguage().ColorPalettes.randomArray(); 
 
     this.setState({
       firstColor: currentPalette.firstColor,
@@ -172,7 +210,7 @@ export default class CA extends Component {
     if(this.state.isMobile){
       return;
     }else{
-      return <Header data={data}/>
+      return <Header data={ defineLanguage() }/>
     }
   }
   render() {
@@ -181,16 +219,17 @@ export default class CA extends Component {
         {this.renderGradients()} 
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
-          <AsyncWhy data={data} />
+          <AsyncWhy data={ defineLanguage() } />
+          <div id="particles-js"></div>
           <div className="bg-container"></div>
         </div>
         <AsyncHow 
-        data={data.How}
+        data={defineLanguage().How}
         />
-        <AsyncDeezer data={data.Deezer}/>
-        <AsyncWhat data={data.What}
+        <AsyncDeezer data={defineLanguage().Deezer}/>
+        <AsyncWhat data={defineLanguage().What}
           onClick={e => this.activateModal(e)} /> 
-        <AsyncFooter data={data} />
+        <AsyncFooter data={defineLanguage()} colorBtn={this.state.fourthColor} />
         <AsyncOverlay 
           modalActive={this.state.modalActive}
           detail={this.detail}

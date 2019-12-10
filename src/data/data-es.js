@@ -53,87 +53,85 @@ import {
   import colorPalettesFile from "./colors-palettes.js";
 
   
-  const data_fr = {
+  const data_es = {
     Header: {
       menu: [
-        {title: "Home", href:"#home"}, 
-        {title: "Motivation", href:"#motivation"},
-        {title: "Work", href:"#work"},
-        {title: "Contact", href:"#contact"}
+        {title: "Inicio", href:"#home"}, 
+        {title: "Motivación", href:"#motivation"},
+        {title: "Trabajo", href:"#work"},
+        {title: "Contacto", href:"#contact"}
       ]
     },
     Why: {
       title: "Home",
       img: CAprofile,
-      section1: `Le science et le technologique`,
-      section2: `Je suis une personne creative qui ....  I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
-      section3: `I'm currently available for a full-time job, so If you want to work
-      with me, just put in contact with me and I can
-      start anytime.`,
-      btnMail: "Contact me",
-      btnScrollToWork: "Find out more",
-      txtMemories: "Memories from a happier time."
+      section1: `Ciencia y tecnología`,
+      section2: `Soy una persona creativa e ingenionsa, quien usa la tecnología para dar vida a maravillosas e increibles ideas usando algoritmos, diseño computacional, desarrollo de software e investigación en multimedia.`,
+      section3: `Actualmente, estoy disponible para un trabajo de tiempo completo. Si deseas trabajar conmigo, contáctame.`,
+      btnMail: "Contáctame",
+      btnScrollToWork: "Conoce mi trabajo",
+      txtMemories: "Recuerdo de un momento feliz."
     },
     What: {
-      title: "Work",
+      title: "Portafolio",
       work: [
         
         {
           image: daftpunk,
-          alt: "Musical web application of Daft punk's song",
+          alt: "Aplicación web musicar de una canción de Daft Punk.",
           level: 2,
           detail: {
             title: "Harder Better",
-            description: "Musical web application of Daft punk's song using Web Audio API and Vanilla Js.",
+            description: "Aplicación web musical de una canción de Daft Punk usando Web Audio API y Vanilla Js.",
             chips: ["VanilaJS", "Web Audio Api", "Daft Punk"],
             linkProject: "/harder-better",
             linkRepository: "https://github.com/kmiloarguello/myBirthday24",
             images: [
               {
                 image: daftpunk001,
-                alt: "<b>All the development</b> was inspired on Daft Punk's music."
+                alt: "<b>Todo el desarrollo</b> fue inspirado en la música de Daft Punk."
               },
               {
                 image: daftpunk002,
-                alt: "The UI allows to the user to <b>play using the keyboard</b>."
+                alt: "La interfaz permite al usuario <b>jugar con el teclado</b>."
               },
               {
                 image: daftpunk003,
-                alt: "Each key triggers one song of the harder better stronger song."
+                alt: "Cada tecla actua como un disparador de un sonido de la cancion Harder Better Stronger. El objetivo es igualar la canción."
               },
               {
                 image: daftpunk,
-                alt: "Contains a section when the sounds are preloading."
+                alt: "Contiene una sección para cargar en un buffer todos los sonidos."
               },
             ],
           }
         },
         {
           image: motoe4plus002,
-          alt: "Layout of new Moto e4 plus website.",
+          alt: "Maquetación del sitio web del nuevo Moto e4 plus.",
           level: 1,
           detail: {
             title: "Moto e4 Plus",
-            description: "The layout of the new website of Moto e4 Plus, which cover the main characteristics in aesthetics, design and ergonomic. Also its functionalities with the camera, battery, and touch ID.",
+            description: "El \"layout\" del sitio muestra las características principales de estética, diseño y ergonomía del teléfono. Además, cuenta con funcionalidades adicionales con la cámara, la batería y el touch ID.",
             chips: ["ReactJs", "Jest", "Webpack", "PostCSS"],
             linkProject: "/moto-e4-plus",
             linkRepository: "https://github.com/kmiloarguello/moto-e4-plus",
             images: [
               {
                 image: motoe4plus001,
-                alt: "The development was mobile first using Css grid."
+                alt: "El desarrollo fue \"mobile-first\" usando Css grid."
               },
               {
                 image: motoe4plus002,
-                alt: "UI adaptable to each device."
+                alt: "La interfaz gráfica se adapta a cualquier dispositivo."
               },
               {
                 image: motoe4plus003,
-                alt: "No-library slider with transitions and click events."
+                alt: "Se desarrolló una transición manual sin uso de librerías."
               },
               {
                 image: motoe4plus,
-                alt: "All the content and images used were only for non-commercial purposes and they are property of Motorola."
+                alt: "TOdo el contenido e imágenes usadas son para fines no-comerciales, todas son propiedad de la marca Motorola."
               }
             ],
           }
@@ -145,33 +143,33 @@ import {
           level: 1,
           detail: {
             title: "Tiendas Jumbo Colombia",
-            description: "Development of new features concerning to 10000 daily marketplace visitors in Colombia and over the world..",
+            description: "Desarrollo de nuevas tecnologías para un retail \"e-commerce\" con promedio de visitantes diarios de 10000.",
             chips: ["Javascript", "Sass", "Vtex" , "ES6"],
             linkProject: "https://www.tiendasjumbo.co",
             images: [
               {
                 image: tiendasjumbo001,
-                alt: "This is how the new home of the store looks like."
+                alt: "Así es como luce el nuevo home del e-commerce."
               },
               {
                 image: tiendasjumbo007,
-                alt: "We developed the structure for services such as \"Jumbo al auto\" and \"Recogida en Tienda\" with the whole user experience including in Checkout v5. This has been my favorite development ever, due to the complexity and multiple UX flows. I'm proud of this work."
+                alt: "Dessarrollamos la estructura para servicios como \"Jumbo al auto\" y \"Recogida en Tienda\" con todo el análisis de la experiencia de usuario en un ambiente Vtex Checkout V5. Este ha sido uno de mis desarrollos favoritos, debido a la complejidad y los múltimples flujos de historias de usuario. Estoy orgulloso del trabajo realizado."
               },
               {
                 image: tiendasjumbo008,
-                alt: "The user now has the option to choose between pickup it's products or waiting for them at home."
+                alt: "Los usuarios ahora tienen la opción de elegir entre recoger sus productos en la tienda fisica o esperarlos en casa."
               },
               {
                 image: tiendasjumbo002,
-                alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
+                alt: "Los desarrollos fueron hechos en asociación con Blacksip, Fizzmod y Vtex."
               },
               {
                 image: tiendasjumbo003,
-                alt: "I've worked on different landings such the special for Samsung S10."
+                alt: "Trabajé en diferentes \"mini-sites\" o \"landing-pages\" como el especial para el Samsung S10."
               },
               {
                 image: tiendasjumbo004,
-                alt: "Each development is mobile first."
+                alt: "Cada desarrollo es \"mobile-first\"."
               }
             ],
           }
@@ -179,62 +177,60 @@ import {
   
         {
           image: mostromedia001,
-          alt:"Website of Mostro Media",
+          alt:"Sitio web para Mostro Media",
           level: 1,
           detail: {
             title: "Mostro Media",
-            description: "Website for Mostro Media company. The goal was to show the company as modern for new customers.",
+            description: "Sitio web para la empresa Mostro Media. El objetivo fue mostar la compañia con un estilo moderno.",
             chips: ["Wordpress"],
             linkProject: "https://mostromedia.com",
             images: [
               {
                 image: mostromedia001,
-                alt: "Mostro represents <b>innovation and creativity</b>."
+                alt: "Mostro representa <b>innovación y creatividad</b>."
               },
               {
                 image: mostromedia,
-                alt: "The whole site was a proof of a <b>high experience design</b>."
+                alt: "El sitio entero es una prueba de la <b>alta calidad en diseño</b>."
               },
               {
                 image: mostromedia003,
-                alt: "Mostro <b>boots</b> many companies in the digital world."
+                alt: "Mostro <b>impulsa</b> a compañias en su viaje dentro del mundo digital."
               }
             ],
           }
         },
-  
-        
-  
+
         {
           image: escamiloarguello005,
-          alt: "My last portfolio",
+          alt: "Mi ultimo portfolio",
           level: 1,
           detail: {
-            title: "My last portfolio",
-            description: "It was the first stable version of my portfolio. I was involved in a musical world, so it was inspired by different artists.",
+            title: "Mi ultimo portfolio",
+            description: "Fue la primer version estable de mi portafolio. Fue orientado e influenciado por mis gustos musicales de la época.",
             chips: ["Jquery", "Css", "Javascript"],
             linkProject: "https://es.camiloarguello.xyz",
             linkRepository: "https://github.com/kmiloarguello/kmiloarguello.github.io/tree/master/spanish",
             images: [
               {
                 image: escamiloarguello005,
-                alt: "I was inspired on <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a> animations."
+                alt: "Fue inspirado en las animaciones de <a href='https://jackuofficial.com' target='_blank'>Jack Ü</a>."
               },
               {
                 image: escamiloarguello,
-                alt: "The colors were inspired on <a href='https://coldplay.com' target='_blank'>Coldplay</a> albums."
+                alt: "Los colores fueron inspirados en la banda <a href='https://coldplay.com' target='_blank'>Coldplay</a>."
               },
               {
                 image: escamiloarguello004,
-                alt: "My skills were only focused on 3D modeling and animation, nevertheless today I focused on coding."
+                alt: "Mis habilidadas estaban orientadas al modelado 3D y las animaciones. Sin embargo, hoy en día me enfoco en otras áreas."
               },
               {
                 image: escamiloarguello003,
-                alt: "Gifs for title section animation."
+                alt: "Animaciones para las secciones de los títulos."
               },
               {
                 image: escamiloarguello002,
-                alt: "Gifs for title section animation."
+                alt: "Animaciones para las secciones de los títulos."
               },
             ],
           }
@@ -243,30 +239,30 @@ import {
   
         {
           image: descubriendobogicon,
-          alt: "Descubriendo Bogotá videogame",
+          alt: "Videojuego Descubriendo Bogotá",
           level: 2,
           detail: {
             title: "Descubriendo Bogotá",
-            description: "Videogame developed for the IDPC Bogotá - Colombia.",
+            description: "Videojuego desarrollado para el IDPC Bogotá - Colombia.",
             chips: ["Videogame", "Unity", "C#","Firebase","AR"],
             linkProject: "https://play.google.com/store/apps/details?id=com.mostromedia.descubriendobogota",
             linkRepository: "https://github.com/MostroMedia/DescubriendoBogota",
             images: [
               {
                 image: descubriendobog1,
-                alt: "I was the head developer on the project. My role was to establish the game structure, design the logic and code in C#."
+                alt: "Fuí el desarrollador lider del proyecto. Mi rol era establecer la estructura del juego, diseñar la lógica y el código en C#."
               },
               {
                 image: descubriendobog2,
-                alt: "We created a complete stack of animations for each character using Unity and Photoshop."
+                alt: "Creamos un completo conjunto de animaciones para cada personaje usando Unity y Adobe Photoshop."
               },
               {
                 image: descubriendobog3,
-                alt: "The design and game rules were defined to create a good user experience."
+                alt: "El diseño y las mécanicas de juego fueron definidas para crear una excelente experiencia de usuario."
               },
               {
                 image: descubriendobog4,
-                alt: "For the interaction and Augmented Reality. We used the power of Vuforia engine for tracking and 3D Handle."
+                alt: "Para la interacción y realidad aumentada. Usamos el poder de Vuforia Engine para analizar, segmentar y rastrear a los modelos 3D."
               }
             ],
           }
@@ -275,25 +271,25 @@ import {
         
         {
           image: kapta01,
-          alt:"Website for K@PTA Mexico",
+          alt:"Sitio web para K@PTA Mexico",
           level: 1,
           detail: {
             title: "K@PTA Mexico",
-            description: "Website for K@PTA company in Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
+            description: "Sitio web para la empresa K@PTA en Mexico. El objetivo era crear un portal con la estética e identidad corporativa de la empresa para el mercado mexicano.",
             chips: ["Reactjs", "node", "Html"],
             linkProject: "https://kaptamexico.biz",
             images: [
               {
                 image: kaptamexico001,
-                alt: "K@PTA reflects in desktop site as a <b>modern business</b>."
+                alt: "K@PTA refleja ser una <b>empresa moderna</b>."
               },
               {
                 image: kaptamexico002,
-                alt: "Information about the company on mobile devices."
+                alt: "Información acerca de la compañia en dispositivos móviles."
               },
               {
                 image: kaptamexico003,
-                alt: "Use the corporate identity manual to reflects the company in a website."
+                alt: "El manual de identidad corporativa se ve reflejado en el sitio web."
               }
             ],
           }
@@ -360,41 +356,41 @@ import {
           }
         }
       ],
-      btnLoadMoreProjects: "Load more"
+      btnLoadMoreProjects: "Ver más"
     },
     How: {
-      title: "Motivations",
+      title: "Motivaciones",
       info: [
         {
           icon: iconScience,
-          title: "Science",
-          subtitle: "Learning every day about the knowledge of humanity."
+          title: "Ciencia",
+          subtitle: "Aprender cada dia sobre el conocimiento de la humanidad."
         },
         {
           icon: iconComputer,
-          title: "Coding",
-          subtitle: "I write code which creates solutions for real-life problems."
+          title: "Computación",
+          subtitle: "Escribo código que soluciona problemas de la vida real."
         },
         {
           icon: iconFilm,
           title: "VFX",
-          subtitle: "One of my dreams is to become a visual-artist."
+          subtitle: "Uno de mis sueños es ser un artista visual."
         },
         {
           icon: iconEducation,
-          title: "Teaching",
-          subtitle: "I am professor by passion."
+          title: "Profesor",
+          subtitle: "Enseño por pasión."
         },
         {
           icon: iconCosmos,
           title: "Cosmos",
-          subtitle: "The curiosity about new ways to understand our universe."
+          subtitle: "Mi curiosidad acerca de nuevas formas de entender nuestro universo."
         }
       ]
     },
     PersonalInfo: {
       name: "Camilo Argüello",
-      job: "Developer and future scientist",
+      job: "Ingeniero apasionado por la ciencia.",
       age: 26,
       email: "camilo.arguello.rincon@gmail.xyz",
       tel: 10010101,
@@ -405,35 +401,33 @@ import {
       github: "https://github.com/kmiloarguello"
     },
     Legal: {
-      legal: `I'm currently available for a full-time job, so If you want to work
-      with me, just put in contact with me and I can
-      start anytime.`,
-      contact: "Contact",
-      siteMap: "Sitemap",
-      curriculum: "Curriculum Vitae"
+        legal: `Actualmente, estoy disponible para un trabajo de tiempo completo. Si deseas trabajar conmigo, contáctame.`,
+        contact: "Contacto",
+        siteMap: "Mapa del sitio",
+        curriculum: "Hoja de vida"
     },
     Deezer: {
-      title: "Here is my favorite music of 2019",
+      title: "Música favorita 2019",
       favorites:[
         
         {
           title:"The XX",
           image: iconBestGroup,
-          description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+          description: "La mezcla de sonidos que ellos han creado es increible. Cada sonido es una pieza de arte. Sus sonidos representan el \"glamour\" de vivir en Paris. Esta es la razón por la cual son mis favoritos del 2019."
         },
         {
           title:"On Hold - The XX",
           image: iconBestSong,
-          description:"Imagine living in Paris with the fashion, the culture, the beauty, passion, and love. It's the perfection combined into a song. This is my favorite song for 2019."
+          description: "Imagina vivir en Paris con el estilo, la clase, la cultura, la belleza, la pasión y el amor. Es la perfección combinada en una canción. Por eso es mi favorita del 2019."
         }
       ] 
     },
     Language: {
-      language: "Language",
-      english: "English",
-      french: "French",
-      spanish: "Spanish"
-    },
+        language: "Idioma",
+        english: "Inglés",
+        french: "Francés",
+        spanish: "Español"
+      },
     AdditionalIcons: {
       iconGithub,
       iconLinkedin
@@ -441,5 +435,5 @@ import {
     ColorPalettes: colorPalettesFile
   };
   
-  module.exports = { data_fr };
+  module.exports = { data_es };
   
