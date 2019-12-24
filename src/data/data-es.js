@@ -50,7 +50,7 @@ import {
     iconBestSong,
     iconBestGroup
   } from "./images.js";
-  import colorPalettesFile from "./colors-palettes.js";
+  import colorPalettesFile from "../colors/colors-palettes.js";
 
   
   const data_es = {
@@ -65,7 +65,7 @@ import {
     Why: {
       title: "Home",
       img: CAprofile,
-      section1: `Ciencia y tecnología`,
+      section1: `Ciencia Tecnología Ingeniería y Matemáticas`,
       section2: `Soy una persona creativa e ingenionsa, quien usa la tecnología para dar vida a maravillosas e increibles ideas usando algoritmos, diseño computacional, desarrollo de software e investigación en multimedia.`,
       section3: `Actualmente, estoy disponible para un trabajo de tiempo completo. Si deseas trabajar conmigo, contáctame.`,
       btnMail: "Contáctame",
@@ -425,8 +425,13 @@ import {
     Language: {
         language: "Idioma",
         english: "Inglés",
-        french: "Francés",
+        french: "Francés (WIP)",
         spanish: "Español"
+      },
+      Loading: {
+        error: "Lo sentimos hubo un error!",
+        timeout: "Esta sección está tomando demasiado tiempo para cargar...",
+        "retry": "Reintentar"
       },
     AdditionalIcons: {
       iconGithub,

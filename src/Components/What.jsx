@@ -105,9 +105,9 @@ export default class What extends Component {
         <div className={styles.containerTitle}>
           <h2>{title}</h2>
         </div>
-        <div className={styles.containerImages}>
+        <ul className={styles.containerImages}>
           {this.randomWorks()}
-        </div>
+        </ul>
         {this.renderLoadMoreButton()}
       </section>
     );
@@ -125,7 +125,7 @@ class Portfolio extends Component{
   render(){
     const { work,index } = this.props;
     return (
-      <div 
+      <li 
         data-index={index}
         className={"item level-" + work.level + " wow fadeInUp"} 
         onClick={this.props.onClick}
@@ -135,7 +135,7 @@ class Portfolio extends Component{
           <p>{work.alt}</p>
         </div>
         <img src={work.image} alt={work.alt} />
-      </div>
+      </li>
     );
   }
 }

@@ -3,6 +3,7 @@
 @import "./header.pcss";
 @import "./why.pcss";
 @import "./how.pcss";
+@import "./research.pcss";
 @import "./deezer.pcss";
 @import "./what.pcss";
 @import "./footer.pcss";
@@ -24,6 +25,7 @@ main {
   background: linear-gradient(to bottom, var(--firstGradColor), var(--secondGradColor) );
 	background-size: 100%;
   background-repeat: no-repeat;
+  animation: all ease 1s;
 
   @media (--ie){
     background: linear-gradient(to bottom, #B724FF, #2AF598 );
@@ -37,6 +39,8 @@ main {
     width: 100%;
     z-index: -1;
     background: linear-gradient(to right bottom, var(--darkGradColor), var(--blueSoftGradColor) 75%);
+    animation: all ease 1s;
+
   }
 
   & #particles-js{

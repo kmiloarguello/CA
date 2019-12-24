@@ -50,7 +50,7 @@ import {
   iconBestSong,
   iconBestGroup
 } from "./images.js";
-import colorPalettesFile from "./colors-palettes.js";
+import colorPalettesFile from "../colors/colors-palettes.js";
 
 const data = {
   Header: {
@@ -64,7 +64,7 @@ const data = {
   Why: {
     title: "Home",
     img: CAprofile,
-    section1: `Science and technology`,
+    section1: `Science Technology Engineering and Maths`,
     section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
     section3: `I'm currently available for a full-time job, so If you want to work
     with me, just put in contact with me and I can
@@ -361,6 +361,17 @@ const data = {
     ],
     btnLoadMoreProjects: "Load more"
   },
+  Research: {
+    title: "Research",
+    papers:[
+      {
+        title:"Exploring rhytmic patterns by video analysis",
+        image: iconBestGroup,
+        href: 'https://camiloarguello.xyz',
+        description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+      }
+    ] 
+  },
   How: {
     title: "Motivations",
     info: [
@@ -430,8 +441,13 @@ const data = {
   Language: {
     language: "Language",
     english: "English",
-    french: "French",
+    french: "French (WIP)",
     spanish: "Spanish"
+  },
+  Loading: {
+    error: "Lo sentimos hubo un error!",
+    timeout: "Esta sección está tomando demasiado tiempo para cargar...",
+    "retry": "Reintentar"
   },
   AdditionalIcons: {
     iconGithub,

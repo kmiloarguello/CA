@@ -50,7 +50,7 @@ import {
     iconBestSong,
     iconBestGroup
   } from "./images.js";
-  import colorPalettesFile from "./colors-palettes.js";
+  import colorPalettesFile from "../colors/colors-palettes.js";
 
   
   const data_fr = {
@@ -431,8 +431,13 @@ import {
     Language: {
       language: "Language",
       english: "English",
-      french: "French",
+      french: "French (WIP)",
       spanish: "Spanish"
+    },
+    Loading: {
+      error: "Lo sentimos hubo un error!",
+      timeout: "Esta sección está tomando demasiado tiempo para cargar...",
+      "retry": "Reintentar"
     },
     AdditionalIcons: {
       iconGithub,

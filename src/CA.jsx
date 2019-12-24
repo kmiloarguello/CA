@@ -2,80 +2,18 @@ import React, { Component } from "react";
 import WOW from "wowjs";
 import Loadable from "react-loadable";
 
+import defineLanguage from './lang/lang.js';
 import Header from "./Components/Header.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
-import { data_fr } from "./data/data.js";
-import { data_es } from "./data/data-es.js";
-//import parti from "./data/particlesjs-config.json";
 
+//import parti from "./data/particlesjs-config.json";
+import Loading from "./Components/Loading.jsx";
+//import colorTransition from "./colors/colors-transition.js";
 
 Array.prototype.randomArray = function(){
-  return this[Math.floor(Math.random()*this.length)];
-}
-
-/**
- * Defines the language inside of the website
- * @param {String} language Type of language. i.e en-US or fr-FR 
- */
-function defineLanguage(language = window.navigator.language){
-
-  if (typeof(Storage) !== "undefined") {
-
-    // If exists the localStorage AND also the lang storage variable exists
-    if(localStorage.getItem("lang") != null){
-      if( /fr/ig.test(localStorage.getItem("lang")) ){
-        return data_fr;
-      }else if( /es/ig.test(localStorage.getItem("lang")) ){
-        return data_es;
-      }else{
-        return data;
-      }
-
-    // Use the window.navigator language
-    }else{
-      if( /fr/ig.test(language) ){
-        return data_fr;
-      }else if( /es/ig.test(language)){
-        return data_es;
-      }else{
-        return data;
-      }
-    }
-    // Otherwise return english lang
-  }else{
-    return data;
-  }
-}
-
-function Loading(props) {
-  if (props.error) {
-    return (
-      <div className={styles.container_loader}>
-        <div className={styles.error}>
-          Lo sentimos hubo un error!
-          <br />
-          <button onClick={props.retry}>Reintentar</button>
-        </div>
-      </div>
-    );
-  } else if (props.timedOut) {
-    return (
-      <div className={styles.container_loader}>
-        <div className={styles.error}>
-          Esta sección está tomando demasiado tiempo para cargar...
-          <br />
-          <button onClick={props.retry}>Reintentar</button>
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <div className={styles.container_loader}>
-        <div className={styles.loader} />
-      </div>
-    );
-  }
+  let rand = Math.floor(Math.random() * this.length);
+  return this[ rand ];
 }
 
 const AsyncWhy = Loadable({
@@ -88,6 +26,11 @@ const AsyncHow = Loadable({
   loading: Loading,
   timeout: 20000
 });
+const AsyncResearch = Loadable({
+  loader: () => import("./Components/Research.jsx"),
+  loading: Loading,
+  timeout: 20000
+})
 const AsyncWhat = Loadable({
   loader: () => import("./Components/What.jsx"),
   loading: Loading,
@@ -103,6 +46,8 @@ const AsyncOverlay = Loadable({
   loading: "Loading",
   timeout: 20000
 });
+
+
 ////////////////////////////// FOR DEEZER //////////////////////////////
 const AsyncDeezer = Loadable({
   loader: () => import("./Components/Deezer.jsx"),
@@ -110,8 +55,6 @@ const AsyncDeezer = Loadable({
   timeout: 20000
 });
 ////////////////////////////// END FOR DEEZER //////////////////////////////
-
-
 
 export default class CA extends Component {
   constructor(){
@@ -128,6 +71,7 @@ export default class CA extends Component {
     this.detail = {};
     this.mediaScreen = null;
   }
+
   componentDidMount() {
     document.getElementById("first-loader").style.display = "none";
 
@@ -141,22 +85,17 @@ export default class CA extends Component {
     this.updateScreenWidth(this.mediaScreen);
     this.mediaScreen.addListener(e => this.updateScreenWidth(e));
     
+    //this.updateGradients();
+    this.createServiceWorker();
     
-    if ('serviceWorker' in navigator) {
-      self.addEventListener('load', function() {
-        navigator.serviceWorker.register('/files/service-worker.js',{scope: '/'} ).then(function(registration) {
-  
-        }, function(err) {
-          console.log('ServiceWorker registration failed: ', err);
-        });      
-      });
-    }
-
-    if(!this.state.isMobile){
-      window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
-    }
-
   }
+
+  /**
+   * **********************************************************************************
+   * HELPERS
+   * **********************************************************************************
+   */
+
   updateScreenWidth(e){
     if (e.matches) {
       this.setState({
@@ -169,6 +108,12 @@ export default class CA extends Component {
     }
 
   }
+
+  /**
+   * **********************************************************************************
+   * MODAL
+   * **********************************************************************************
+   */
   activateModal(e){
 
     this.setState({
@@ -186,6 +131,37 @@ export default class CA extends Component {
       modalActive : ""
     });
   }
+
+  /**
+   * **********************************************************************************
+   * SERVICE WORKER
+   * **********************************************************************************
+   */
+  createServiceWorker(){
+    if ('serviceWorker' in navigator) {
+      self.addEventListener('load', function() {
+        navigator.serviceWorker.register('/files/service-worker.js',{scope: '/'} ).then(function(registration) {
+  
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });      
+      });
+    }
+
+    if(!this.state.isMobile){
+      window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
+    }
+
+  }
+
+  /**
+   * **********************************************************************************
+   * GRADIENTS
+   * **********************************************************************************
+   * 
+   * Initializes the colors on the website
+   * then, Assign each color to the pattern as state
+   */
   radomGradients(){
     let currentPalette = defineLanguage().ColorPalettes.randomArray(); 
 
@@ -194,8 +170,30 @@ export default class CA extends Component {
       secondColor: currentPalette.secondColor,
       thirdColor: currentPalette.thirdColor,
       fourthColor: currentPalette.fourthColor,
-    })
+    });
+
   }
+
+  // Not used
+  // Changes the color gradient each 20s
+  updateGradients(){
+    let counter = 0;
+
+    setInterval(() => { 
+      if(counter < defineLanguage().ColorPalettes.length){
+        counter++;
+        this.radomGradients();
+      }
+    },2000);
+  }
+
+  /**
+   * **********************************************************************************
+   * RENDER
+   * **********************************************************************************
+   */
+
+   //Assign each state color to the CSS using <style jsx></style> notation
   renderGradients(){
     return (
       <style jsx="true">{`
@@ -208,16 +206,22 @@ export default class CA extends Component {
       `}</style>
     )
   }
+
+  // Render only the header on Desktop
   renderHeader(){
     if(this.state.isMobile){
       return;
     }else{
-      return <Header data={ defineLanguage() }/>
+      return <Header data={ defineLanguage() } />
     }
   }
+
   render() {
     return (
       <React.Fragment>
+
+        <button className="button" onClick={() => colorTransition()}>COLOOOOR</button>
+
         {this.renderGradients()} 
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
@@ -225,17 +229,23 @@ export default class CA extends Component {
           {!this.state.isMobile ? <div id="particles-js"></div> : ""}
           <div className="bg-container"></div>
         </div>
-        <AsyncHow 
-        data={defineLanguage().How}
-        />
-        <AsyncDeezer data={defineLanguage().Deezer}/>
+
+        <React.Fragment>
+          <AsyncHow data={defineLanguage().How} />
+          <AsyncResearch data={defineLanguage().Research} /> 
+          {/* <AsyncDeezer data={defineLanguage().Deezer} /> */}
+        </React.Fragment>
+
         <AsyncWhat data={defineLanguage().What}
           onClick={e => this.activateModal(e)} /> 
+
         <AsyncFooter data={defineLanguage()} colorBtn={this.state.fourthColor} />
+
         <AsyncOverlay 
           modalActive={this.state.modalActive}
           detail={this.detail}
           onClick={() => this.closeModal()} />
+
       </React.Fragment>
     );
   }
