@@ -445,9 +445,9 @@ const data = {
     spanish: "Spanish"
   },
   Loading: {
-    error: "Lo sentimos hubo un error!",
-    timeout: "Esta sección está tomando demasiado tiempo para cargar...",
-    "retry": "Reintentar"
+    error: "I am sorry, something wrong happend!",
+    timeout: "This section is taking so much time to load...",
+    "retry": "Retry"
   },
   AdditionalIcons: {
     iconGithub,

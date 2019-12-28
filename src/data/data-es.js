@@ -400,6 +400,17 @@ import {
       linkedin : "https://www.linkedin.com/in/kmiloarguello",
       github: "https://github.com/kmiloarguello"
     },
+    Research: {
+      title: "Research",
+      papers:[
+        {
+          title:"Exploring rhytmic patterns by video analysis",
+          image: iconBestGroup,
+          href: 'https://camiloarguello.xyz',
+          description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+        }
+      ] 
+    },
     Legal: {
         legal: `Actualmente, estoy disponible para un trabajo de tiempo completo. Si deseas trabajar conmigo, contáctame.`,
         contact: "Contacto",

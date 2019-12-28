@@ -58,24 +58,22 @@ import {
       menu: [
         {title: "Home", href:"#home"}, 
         {title: "Motivation", href:"#motivation"},
-        {title: "Work", href:"#work"},
-        {title: "Contact", href:"#contact"}
+        {title: "Travail", href:"#work"},
+        {title: "Contactez moi", href:"#contact"}
       ]
     },
     Why: {
       title: "Home",
       img: CAprofile,
       section1: `Le science et le technologique`,
-      section2: `Je suis une personne creative qui ....  I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
-      section3: `I'm currently available for a full-time job, so If you want to work
-      with me, just put in contact with me and I can
-      start anytime.`,
-      btnMail: "Contact me",
-      btnScrollToWork: "Find out more",
-      txtMemories: "Memories from a happier time."
+      section2: `Je suis une personne creative et ingeniouse. J'utilize le technologie pour donner ou create beau et incroyable idées. Pour ca J'utilize l'algorithmic, la conception informatique, le programmation et le recherche.`,
+      section3: `Je suis entrain de obtenir ma diploma d'ingenieur au ESIEE Paris, mais si vous voulez sil'vous plaît contactez moi.`,
+      btnMail: "Contactez moi",
+      btnScrollToWork: "Regarder un peu plus",
+      txtMemories: "Souvenirs d'un moment plus beau."
     },
     What: {
-      title: "Work",
+      title: "Travail",
       work: [
         
         {
@@ -368,33 +366,33 @@ import {
         {
           icon: iconScience,
           title: "Science",
-          subtitle: "Learning every day about the knowledge of humanity."
+          subtitle: "Je voudrai aprendre chache jour à propos de les connaissances de l'humanité."
         },
         {
           icon: iconComputer,
           title: "Coding",
-          subtitle: "I write code which creates solutions for real-life problems."
+          subtitle: "Je fait le code pour créer des solutions à problèmes réels."
         },
         {
           icon: iconFilm,
           title: "VFX",
-          subtitle: "One of my dreams is to become a visual-artist."
+          subtitle: "An jour, je serai un artiste visuel."
         },
         {
           icon: iconEducation,
           title: "Teaching",
-          subtitle: "I am professor by passion."
+          subtitle: "Je suis prof par passion."
         },
         {
           icon: iconCosmos,
           title: "Cosmos",
-          subtitle: "The curiosity about new ways to understand our universe."
+          subtitle: "J'adore l'universe et notre vie dans lui."
         }
       ]
     },
     PersonalInfo: {
       name: "Camilo Argüello",
-      job: "Developer and future scientist",
+      job: "Engineer informatique",
       age: 26,
       email: "camilo.arguello.rincon@gmail.xyz",
       tel: 10010101,
@@ -405,12 +403,21 @@ import {
       github: "https://github.com/kmiloarguello"
     },
     Legal: {
-      legal: `I'm currently available for a full-time job, so If you want to work
-      with me, just put in contact with me and I can
-      start anytime.`,
-      contact: "Contact",
-      siteMap: "Sitemap",
-      curriculum: "Curriculum Vitae"
+      legal: `Je suis entrain de obtenir ma diploma d'ingenieur au ESIEE Paris, mais si vous voulez sil-vous plaît contactez moi.`,
+      contact: "Contactez moi",
+      siteMap: "Le cart du site",
+      curriculum: "Mon CV"
+    },
+    Research: {
+      title: "Research",
+      papers:[
+        {
+          title:"Exploring rhytmic patterns by video analysis",
+          image: iconBestGroup,
+          href: 'https://camiloarguello.xyz',
+          description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+        }
+      ] 
     },
     Deezer: {
       title: "Here is my favorite music of 2019",
@@ -430,14 +437,14 @@ import {
     },
     Language: {
       language: "Language",
-      english: "English",
-      french: "French (WIP)",
-      spanish: "Spanish"
+      english: "Anglais",
+      french: "Francais (WIP)",
+      spanish: "Espagnol"
     },
     Loading: {
-      error: "Lo sentimos hubo un error!",
-      timeout: "Esta sección está tomando demasiado tiempo para cargar...",
-      "retry": "Reintentar"
+      error: "Je suis désolé. Il'y a quelques problèmes.",
+      timeout: "Le chargement de ce contenu prend beaucoup de temps...",
+      "retry": "Réessayer"
     },
     AdditionalIcons: {
       iconGithub,

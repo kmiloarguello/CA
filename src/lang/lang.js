@@ -1,5 +1,5 @@
 import { data } from "../data/data.js";
-import { data_fr } from "../data/data.js";
+import { data_fr } from "../data/data-fr.js";
 import { data_es } from "../data/data-es.js";
 
 /**
