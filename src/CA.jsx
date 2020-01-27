@@ -220,13 +220,11 @@ export default class CA extends Component {
     return (
       <React.Fragment>
 
-        <button className="button" onClick={() => colorTransition()}>COLOOOOR</button>
-
         {this.renderGradients()} 
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={ defineLanguage() } />
-          {!this.state.isMobile ? <div id="particles-js"></div> : ""}
+          {/*!this.state.isMobile ? <div id="particles-js"></div> : ""*/}
           <div className="bg-container"></div>
         </div>
 

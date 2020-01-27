@@ -18,24 +18,33 @@
             text-align: center;
         }
 
-        & .conticons{
+        & .researches_list{
             
             display: grid;
             grid-template-columns: 15% 1fr;
             text-decoration: none;
+            padding-bottom: 50px;
 
             @media (--ie){
                 display: inline-block;
                 padding: 10px;
                 width: 20%;
             }
+
+            & a{
+                text-decoration: none;
+                &:hover{
+                    color: var(--graySoftColor);
+                }
+            }
             
             & h3,
             & p{
-                text-align: center;
                 color: #444;
+                
             }
             & h3{
+                text-align: center;
                 font-family: "Muli", Arial, Helvetica, sans-serif;
                 margin: 10px 0;
             }
@@ -44,17 +53,16 @@
                 font-size: 1em;
                 font-weight: lighter;
                 padding: 0 50px;
+                test-align: justify;
                 @media (--small){
                     padding: 0 5px;
                 }
-            
             }
             & img{
                 width: 90%;
                 height: auto;
                 display: block;
                 margin: auto;
-                border-radius: 50%;
                 box-shadow: 0 3px 26px 0 rgba(0,0,0,0.40);
 
             }

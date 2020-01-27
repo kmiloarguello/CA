@@ -48,7 +48,8 @@ import {
     iconGithub,
     iconLinkedin,
     iconBestSong,
-    iconBestGroup
+    iconBestGroup,
+    hci2016
   } from "./images.js";
   import colorPalettesFile from "../colors/colors-palettes.js";
 
@@ -56,16 +57,16 @@ import {
   const data_fr = {
     Header: {
       menu: [
-        {title: "Home", href:"#home"}, 
+        {title: "Accueil", href:"#home"}, 
         {title: "Motivation", href:"#motivation"},
         {title: "Travail", href:"#work"},
         {title: "Contactez moi", href:"#contact"}
       ]
     },
     Why: {
-      title: "Home",
+      title: "Accueil",
       img: CAprofile,
-      section1: `Le science et le technologique`,
+      section1: `Le science et la technologie`,
       section2: `Je suis une personne creative et ingeniouse. J'utilize le technologie pour donner ou create beau et incroyable idées. Pour ca J'utilize l'algorithmic, la conception informatique, le programmation et le recherche.`,
       section3: `Je suis entrain de obtenir ma diploma d'ingenieur au ESIEE Paris, mais si vous voulez sil'vous plaît contactez moi.`,
       btnMail: "Contactez moi",
@@ -358,7 +359,7 @@ import {
           }
         }
       ],
-      btnLoadMoreProjects: "Load more"
+      btnLoadMoreProjects: "En savoir plus"
     },
     How: {
       title: "Motivations",
@@ -413,11 +414,11 @@ import {
       papers:[
         {
           title:"Exploring rhytmic patterns by video analysis",
-          image: iconBestGroup,
-          href: 'https://camiloarguello.xyz',
-          description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+          image: hci2016,
+          href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
+          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
         }
-      ] 
+      ]  
     },
     Deezer: {
       title: "Here is my favorite music of 2019",
@@ -438,7 +439,7 @@ import {
     Language: {
       language: "Language",
       english: "Anglais",
-      french: "Francais (WIP)",
+      french: "Francais",
       spanish: "Espagnol"
     },
     Loading: {

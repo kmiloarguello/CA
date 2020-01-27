@@ -48,7 +48,8 @@ import {
   iconGithub,
   iconLinkedin,
   iconBestSong,
-  iconBestGroup
+  iconBestGroup,
+  hci2016
 } from "./images.js";
 import colorPalettesFile from "../colors/colors-palettes.js";
 
@@ -366,9 +367,9 @@ const data = {
     papers:[
       {
         title:"Exploring rhytmic patterns by video analysis",
-        image: iconBestGroup,
-        href: 'https://camiloarguello.xyz',
-        description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+        image: hci2016,
+        href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
+        description: `Treatments of coordination disorders may be benefit from modern assistive technologies by achieving effective feedback that improves the rehabilitation protocols. In this paper, a method to identify movement patterns from video sequences is presented, providing acoustic stimuli by means of sounds generated from motion analysis. The method explores rhythmic patterns in movements, through fundamental concepts as: motion detection and analysis, Principal Component Analysis (PCA) and frequency analysis. The proposed method was evaluated by using four (4) dance steps, used typically in Latin music, showing good performance in detecting and reproducing acoustic beats.`
       }
     ] 
   },
@@ -441,7 +442,7 @@ const data = {
   Language: {
     language: "Language",
     english: "English",
-    french: "French (WIP)",
+    french: "French",
     spanish: "Spanish"
   },
   Loading: {

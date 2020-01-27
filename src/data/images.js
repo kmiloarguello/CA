@@ -7,6 +7,14 @@ import CALogoWhite from "../img/logo-camilo-arguello-white.png";
 import CAprofile from "../img/Juli-et-moi.jpg";
 
 /**
+ * 
+ * RESEARCH
+ * 
+ */
+
+import hci2016 from "../img/research/hci2016/camiloarguellohci2016-001.jpg";
+
+/**
  * Projects
  */
 import kapta01 from "../img/work/kapta01.jpg";
@@ -130,5 +138,6 @@ module.exports = {
     iconGithub,
     iconLinkedin,
     iconBestSong,
-    iconBestGroup
+    iconBestGroup,
+    hci2016
 }
