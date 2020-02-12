@@ -16,6 +16,7 @@ Array.prototype.randomArray = function(){
   return this[ rand ];
 }
 
+////////////////////////////// ASYNC COMPONENTS //////////////////////////////
 const AsyncWhy = Loadable({
   loader: () => import("./Components/Why.jsx"),
   loading: Loading,
@@ -46,15 +47,12 @@ const AsyncOverlay = Loadable({
   loading: "Loading",
   timeout: 20000
 });
-
-
-////////////////////////////// FOR DEEZER //////////////////////////////
 const AsyncDeezer = Loadable({
   loader: () => import("./Components/Deezer.jsx"),
   loading: Loading,
   timeout: 20000
 });
-////////////////////////////// END FOR DEEZER //////////////////////////////
+////////////////////////////// END ASYNC COMPONENTS //////////////////////////////
 
 export default class CA extends Component {
   constructor(){
@@ -126,6 +124,7 @@ export default class CA extends Component {
     this.detail = defineLanguage().What.work[attr].detail;
 
   }
+
   closeModal(){
     this.setState({
       modalActive : ""
@@ -137,6 +136,7 @@ export default class CA extends Component {
    * SERVICE WORKER
    * **********************************************************************************
    */
+
   createServiceWorker(){
     if ('serviceWorker' in navigator) {
       self.addEventListener('load', function() {
@@ -162,6 +162,7 @@ export default class CA extends Component {
    * Initializes the colors on the website
    * then, Assign each color to the pattern as state
    */
+
   radomGradients(){
     let currentPalette = defineLanguage().ColorPalettes.randomArray(); 
 
@@ -216,6 +217,7 @@ export default class CA extends Component {
     }
   }
 
+  // Render all components
   render() {
     return (
       <React.Fragment>

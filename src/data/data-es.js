@@ -74,6 +74,34 @@ const data_es = {
   What: {
     title: "Portafolio",
     work: [
+
+      {
+        image: boulangerie001,
+        alt: "Pastelería en Paris",
+        level: 3,
+        detail: {
+          title: "La boulangerie",
+          description: "Pastelería en Paris",
+          chips: ["Angular", "SpringBoot", "MongoDB","Personal Project"],
+          linkProject: "https://boulangerie-front.herokuapp.com",
+          linkRepository: "https://github.com/kmiloarguello/boulangerie-back.git",
+          images: [
+            {
+              image: boulangerie001,
+              alt: "Desarrollo usando arquitectura MVC."
+            },
+            {
+              image: boulangerie002,
+              alt: "Base de datos MongoDB."
+            },
+            {
+              image: boulangerie003,
+              alt: "UI insipirada en el estilo \"Pâtisserie Parissien\"."
+            }
+          ],
+        }
+      },
+
       {
         image: daftpunk,
         alt: "Aplicación web musicar de una canción de Daft Punk.",

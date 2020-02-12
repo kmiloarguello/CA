@@ -49,7 +49,10 @@ import {
   iconLinkedin,
   iconBestSong,
   iconBestGroup,
-  hci2016
+  hci2016,
+  boulangerie001,
+    boulangerie002,
+    boulangerie003
 } from "./images.js";
 import colorPalettesFile from "../colors/colors-palettes.js";
 
@@ -66,7 +69,7 @@ const data = {
     title: "Home",
     img: CAprofile,
     section1: `Science Technology Engineering and Maths`,
-    section2: `I'm a creative and ingenious person, who uses the technology to bring life to beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
+    section2: `I'm a creative and inquisitive person, who uses the technology to create beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
     section3: `I'm currently available for a full-time job, so If you want to work
     with me, just put in contact with me and I can
     start anytime.`,
@@ -77,7 +80,34 @@ const data = {
   What: {
     title: "Work",
     work: [
-      
+
+      {
+        image: boulangerie001,
+        alt: "Bakery store in Paris",
+        level: 3,
+        detail: {
+          title: "La boulangerie",
+          description: "Bakery store in Paris",
+          chips: ["Angular", "SpringBoot", "MongoDB","Personal Project"],
+          linkProject: "https://boulangerie-front.herokuapp.com",
+          linkRepository: "https://github.com/kmiloarguello/boulangerie-back.git",
+          images: [
+            {
+              image: boulangerie001,
+              alt: "Clean development using MVC architecture."
+            },
+            {
+              image: boulangerie002,
+              alt: "MongoDB database."
+            },
+            {
+              image: boulangerie003,
+              alt: "UI inspired on the style \"Pâtisserie Parissien\"."
+            }
+          ],
+        }
+      },
+
       {
         image: daftpunk,
         alt: "Musical web application of Daft punk's song",

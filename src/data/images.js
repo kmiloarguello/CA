@@ -3,8 +3,8 @@
  */
 import CALogo from "../img/logo-camilo-arguello.png";
 import CALogoWhite from "../img/logo-camilo-arguello-white.png";
-//import CAprofile from '../img/camilo-arguello-pf.jpg';
-import CAprofile from "../img/Juli-et-moi.jpg";
+import CAprofile from '../img/camilo-arguello-pf.jpg';
+//import CAprofile from "../img/Juli-et-moi.jpg";
 
 /**
  * 
@@ -65,6 +65,10 @@ import kaptainteriortrims002 from "../img/work/projects/kaptainteriortrims/inter
 
 import propulsion from "../img/work/projects/propulsion/propulsion0001.jpg";
 import propulsion002 from "../img/work/projects/propulsion/bmw-carmp4.mp4";
+
+import boulangerie001 from "../img/work/projects/boulangerie/boul001.jpg";
+import boulangerie002 from "../img/work/projects/boulangerie/boul002.jpg";
+import boulangerie003 from "../img/work/projects/boulangerie/boul003.jpg";
 
 /**
  * Icons
@@ -139,5 +143,8 @@ module.exports = {
     iconLinkedin,
     iconBestSong,
     iconBestGroup,
-    hci2016
+    hci2016,
+    boulangerie001,
+    boulangerie002,
+    boulangerie003
 }

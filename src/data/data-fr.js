@@ -76,6 +76,33 @@ import {
     What: {
       title: "Travail",
       work: [
+
+        {
+          image: boulangerie001,
+          alt: "Bakery store in Paris",
+          level: 3,
+          detail: {
+            title: "La boulangerie",
+            description: "Bakery store in Paris",
+            chips: ["Angular", "SpringBoot", "MongoDB","Personal Project"],
+            linkProject: "https://boulangerie-front.herokuapp.com",
+            linkRepository: "https://github.com/kmiloarguello/boulangerie-back.git",
+            images: [
+              {
+                image: boulangerie001,
+                alt: "Clean development using MVC architecture."
+              },
+              {
+                image: boulangerie002,
+                alt: "Database using MongoDB."
+              },
+              {
+                image: boulangerie003,
+                alt: "UI inspired on the style Pâtisserie Parissien."
+              }
+            ],
+          }
+        },
         
         {
           image: daftpunk,
