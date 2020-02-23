@@ -125,6 +125,16 @@
         object-fit: cover;
         border-radius: 10px;
       }
+      & video.itemVideoThumb{
+        height: auto;
+        width: 100%;
+        position: absolute;
+        border-radius: 10px;
+
+        @media (--small){
+          position: relative;
+        }
+      }
     }
     & .level-1 {
       grid-row-end: span 1;

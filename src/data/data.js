@@ -54,6 +54,10 @@ import {
     boulangerie002,
     boulangerie003
 } from "./images.js";
+import {
+  interiorTrims
+} from "./videos.js";
+
 import colorPalettesFile from "../colors/colors-palettes.js";
 
 const data = {
@@ -208,6 +212,29 @@ const data = {
       },
 
       {
+        image: kaptainteriortrims001,
+        alt: "Application for BMW Training course",
+        level: 2,
+        isAVideoThumb: true,
+        videoSource: interiorTrims,
+        detail: {
+          title: "Interior Trims - BMW",
+          description: "It was an application to one company that I've worked for. The objective was to simulate an interior environment and select a set of key points with specific information for technician people.",
+          chips: ["React", "A-frame"],
+          images: [
+            {
+              image: kaptainteriortrims001,
+              alt: "Interior Trims - BMW."
+            },
+            {
+              image: kaptainteriortrims002,
+              alt: "All the content is property of K@PTA."
+            }
+          ]
+        }
+      },
+
+      {
         image: mostromedia001,
         alt:"Website of Mostro Media",
         level: 1,
@@ -329,34 +356,15 @@ const data = {
         }
       },
 
-      {
-        image: kaptainteriortrims001,
-        alt: "Application for BMW Training course",
-        level: 2,
-        detail: {
-          title: "Interior Trims - BMW",
-          description: "It was an application to one company that I've worked for. The objective was to simulate an interior environment and select a set of key points with specific information for technician people.",
-          chips: ["React", "A-frame"],
-          images: [
-            {
-              image: kaptainteriortrims001,
-              alt: "Interior Trims - BMW."
-            },
-            {
-              image: kaptainteriortrims002,
-              alt: "All the content is property of K@PTA."
-            }
-          ]
-        }
-      },
+      
 
       {
         image: dashboard,
         alt: "Web Application for K@PTA",
         level: 1,
         detail: {
-          title: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve for BMW and KAPTA teams.",
-          description: "Web Application for K@PTA",
+          title: "Web Application for K@PTA",
+          description: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve for BMW and KAPTA teams.",
           chips: ["NodeJS", "Express", "MongoDB", "Server-side-rendering"],
           images: [
             {

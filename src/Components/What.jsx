@@ -119,11 +119,30 @@ What.propTypes = {
 }
 
 class Portfolio extends Component{
+  renderVideoThumb(video) {
+    return (
+      <video class={styles.itemVideoThumb} autoPlay={true} controls={false} loop={true}>
+          <source src={video} type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+      </video>
+    );
+  }
+  renderImageThumb(image,alt) {
+    return (<img src={image} alt={alt} />);
+  }
+  renderThumbnail(work){
+    if(work.isAVideoThumb != undefined && work.isAVideoThumb){
+      return this.renderVideoThumb(work.videoSource);
+    }else{
+      return this.renderImageThumb(work.image,work.alt)
+    }
+  }
   renderDetailOnHover(event){
     let element = event.target;
   }
   render(){
     const { work,index } = this.props;
+
     return (
       <li 
         data-index={index}
@@ -134,7 +153,7 @@ class Portfolio extends Component{
         <div className={styles.itemLevelFocus}>
           <p>{work.alt}</p>
         </div>
-        <img src={work.image} alt={work.alt} />
+        { this.renderThumbnail(work) }
       </li>
     );
   }
