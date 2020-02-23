@@ -356,8 +356,6 @@ const data = {
         }
       },
 
-      
-
       {
         image: dashboard,
         alt: "Web Application for K@PTA",
