@@ -18,15 +18,8 @@ export default class What extends Component {
       let resolutionMap = {
           "xsmall": {
               "min": 0,
-              // //
-
               "max": 760
-
           },
-          // "small": {
-          // 	"min": 481,
-          // 	"max": 959
-          // },
           "medium": {
               "min": 761,
               "max": 1024
@@ -76,18 +69,19 @@ export default class What extends Component {
     }else{
 
       this.setState({
-        paddingBottom: this.state.paddingBottom + 100
+        paddingBottom: this.state.paddingBottom + 100,
+        maxHeight: this.state.maxHeight + 1000
       });
-    
+
       let cont = document.getElementsByClassName(styles.containerImages)[1];
+      cont.style.maxHeight = this.state.maxHeight + "px";
       cont.style.paddingBottom = this.state.paddingBottom + "px";
 
     }
     
   }
-  randomWorks() {
+  renderAvailableWorks() {
     const { work } = this.props.data; 
-    // TODO: Random without repeat
     return work.map((elem,index) => {
       return <Portfolio key={index} index={index} work={elem} onClick={this.props.onClick} />
     });
@@ -106,7 +100,7 @@ export default class What extends Component {
           <h2>{title}</h2>
         </div>
         <ul className={styles.containerImages}>
-          {this.randomWorks()}
+          {this.renderAvailableWorks()}
         </ul>
         {this.renderLoadMoreButton()}
       </section>
@@ -118,10 +112,14 @@ What.propTypes = {
   data: PropTypes.object
 }
 
+
+
+
+
 class Portfolio extends Component{
   renderVideoThumb(video) {
     return (
-      <video class={styles.itemVideoThumb} autoPlay={true} controls={false} loop={true}>
+      <video className={styles.itemVideoThumb} autoPlay={true} controls={false} loop={true}>
           <source src={video} type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
       </video>
@@ -137,9 +135,6 @@ class Portfolio extends Component{
       return this.renderImageThumb(work.image,work.alt)
     }
   }
-  renderDetailOnHover(event){
-    let element = event.target;
-  }
   render(){
     const { work,index } = this.props;
 
@@ -148,7 +143,6 @@ class Portfolio extends Component{
         data-index={index}
         className={"item level-" + work.level + " wow fadeInUp"} 
         onClick={this.props.onClick}
-        onMouseEnter={e => this.renderDetailOnHover(e)}
         >
         <div className={styles.itemLevelFocus}>
           <p>{work.alt}</p>
