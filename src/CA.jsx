@@ -54,6 +54,7 @@ const AsyncDeezer = Loadable({
 });
 ////////////////////////////// END ASYNC COMPONENTS //////////////////////////////
 
+
 export default class CA extends Component {
   constructor(){
     super();
@@ -83,7 +84,6 @@ export default class CA extends Component {
     this.updateScreenWidth(this.mediaScreen);
     this.mediaScreen.addListener(e => this.updateScreenWidth(e));
     
-    //this.updateGradients();
     this.createServiceWorker();
     
   }
@@ -148,9 +148,12 @@ export default class CA extends Component {
       });
     }
 
+    /*
+    // It should be removed in next versions
     if(!this.state.isMobile){
       window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
     }
+    */
 
   }
 
@@ -174,20 +177,6 @@ export default class CA extends Component {
     });
 
   }
-
-  // Not used
-  // Changes the color gradient each 20s
-  updateGradients(){
-    let counter = 0;
-
-    setInterval(() => { 
-      if(counter < defineLanguage().ColorPalettes.length){
-        counter++;
-        this.radomGradients();
-      }
-    },2000);
-  }
-
   /**
    * **********************************************************************************
    * RENDER

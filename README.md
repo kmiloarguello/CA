@@ -28,11 +28,10 @@ npm run prod
 ## WIP
 
 I try to update this site as much as possible, these are the new requirements in the backlog.
-
-- Fix `See more` button on desktop [Priority: High]
+ 
 - Finalize the project README.md >:'v [Priority: Medium]
-- Create totally french website [Priority: Medium]
-- Create totally spanish website [Priority: Medium]
+- Create totally french website [Priority: High]
+- Create totally spanish website [Priority: High]
 - Combine the files `src/data/data.js`, `src/data/data-es.js` and `src/data/data-fr.js` into a one single file which handles all the three languages. [Priority: Low]
 - Add [Redux](https://reduxjs.com)
 - Admin platform to update the content [Priority: Low]
