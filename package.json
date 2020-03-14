@@ -81,7 +81,7 @@
     "webpack-serve": "2.0.2"
   },
   "dependencies": {
-    "acorn": "6.1.1",
+    "acorn": "6.4.1",
     "babel-plugin-dynamic-import-node": "2.0.0",
     "babel-polyfill": "6.26.0",
     "particles.js": "^2.0.0",
