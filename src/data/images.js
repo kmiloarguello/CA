@@ -13,6 +13,8 @@ import CAprofile from '../img/camilo-arguello-pf.jpg';
  */
 
 import hci2016 from "../img/research/hci2016/camiloarguellohci2016-001.jpg";
+import esiee_s1_ca from "../img/research/computerarchitecture/computerarchitecture.png";
+import esiee_s2_wi from "../img/research/wirelessnetwork/raspberry-pi.jpg";
 
 /**
  * Projects
@@ -144,6 +146,8 @@ module.exports = {
     iconBestSong,
     iconBestGroup,
     hci2016,
+    esiee_s1_ca,
+    esiee_s2_wi,
     boulangerie001,
     boulangerie002,
     boulangerie003

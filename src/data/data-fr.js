@@ -50,6 +50,8 @@ import {
     iconBestSong,
     iconBestGroup,
     hci2016,
+    esiee_s1_ca,
+    esiee_s2_wi,
     boulangerie001,
     boulangerie002,
     boulangerie003
@@ -86,26 +88,26 @@ import {
 
         {
           image: boulangerie001,
-          alt: "Bakery store in Paris",
+          alt: "Boulangerie à Paris",
           level: 3,
           detail: {
             title: "La boulangerie",
-            description: "Bakery store in Paris",
+            description: "Boulangerie à Paris",
             chips: ["Angular", "SpringBoot", "MongoDB","Personal Project"],
             linkProject: "https://boulangerie-front.herokuapp.com",
             linkRepository: "https://github.com/kmiloarguello/boulangerie-back.git",
             images: [
               {
                 image: boulangerie001,
-                alt: "Clean development using MVC architecture."
+                alt: "Développement propre à l'aide de l'architecture MVC"
               },
               {
                 image: boulangerie002,
-                alt: "Database using MongoDB."
+                alt: "Base de donnée avec MongoDB."
               },
               {
                 image: boulangerie003,
-                alt: "UI inspired on the style Pâtisserie Parissien."
+                alt: "UI inspiré du style Pâtisserie Parissien."
               }
             ],
           }
@@ -113,60 +115,60 @@ import {
         
         {
           image: daftpunk,
-          alt: "Musical web application of Daft punk's song",
+          alt: "Application web musicale d'une chanson de Daft punk.",
           level: 2,
           detail: {
             title: "Harder Better",
-            description: "Musical web application of Daft punk's song using Web Audio API and Vanilla Js.",
+            description: "Application web musicale d'une chanson de Daft punk avec Web Audio API et Vanilla Js.",
             chips: ["VanilaJS", "Web Audio Api", "Daft Punk"],
             linkProject: "/harder-better",
             linkRepository: "https://github.com/kmiloarguello/myBirthday24",
             images: [
               {
                 image: daftpunk001,
-                alt: "<b>All the development</b> was inspired on Daft Punk's music."
+                alt: "<b>Tout le développement</b> a été inspiré par la musique de Daft Punk."
               },
               {
                 image: daftpunk002,
-                alt: "The UI allows to the user to <b>play using the keyboard</b>."
+                alt: "L'interface utilisateur permet à l'utilisateur <b>de jouer à l'aide du clavier</b>."
               },
               {
                 image: daftpunk003,
-                alt: "Each key triggers one song of the harder better stronger song."
+                alt: "Chaque touche déclenche une chanson de la plus difficile et la plus forte."
               },
               {
                 image: daftpunk,
-                alt: "Contains a section when the sounds are preloading."
+                alt: "il y a d'une section lorsque les sons sont préchargés."
               },
             ],
           }
         },
         {
           image: motoe4plus002,
-          alt: "Layout of new Moto e4 plus website.",
+          alt: "Présentation du nouveau site Web Moto e4 plus.",
           level: 1,
           detail: {
             title: "Moto e4 Plus",
-            description: "The layout of the new website of Moto e4 Plus, which cover the main characteristics in aesthetics, design and ergonomic. Also its functionalities with the camera, battery, and touch ID.",
+            description: "La mise en page du nouveau site Web Moto e4 Plus, qui couvre les principaux caractéristiques esthétiques, design et ergonomiques. Aussi ses fonctionnalités avec l'appareil photo, la batterie et le Touch ID.",
             chips: ["ReactJs", "Jest", "Webpack", "PostCSS"],
             linkProject: "/moto-e4-plus",
             linkRepository: "https://github.com/kmiloarguello/moto-e4-plus",
             images: [
               {
                 image: motoe4plus001,
-                alt: "The development was mobile first using Css grid."
+                alt: "Le développement a d'abord été mobile en utilisant CSS grid."
               },
               {
                 image: motoe4plus002,
-                alt: "UI adaptable to each device."
+                alt: "Interface utilisateur adaptable à chaque appareil."
               },
               {
                 image: motoe4plus003,
-                alt: "No-library slider with transitions and click events."
+                alt: "Slider et transitions et événements de clic."
               },
               {
                 image: motoe4plus,
-                alt: "All the content and images used were only for non-commercial purposes and they are property of Motorola."
+                alt: "Tous les contenus et images utilisés étaient uniquement à des fins non commerciales et ils sont la propriété de Motorola."
               }
             ],
           }
@@ -178,33 +180,33 @@ import {
           level: 1,
           detail: {
             title: "Tiendas Jumbo Colombia",
-            description: "Development of new features concerning to 10000 daily marketplace visitors in Colombia and over the world..",
+            description: "Développement de nouvelles fonctionnalités concernant à 10k visiteurs quotidiens du marché en Colombie et dans le monde.",
             chips: ["Javascript", "Sass", "Vtex" , "ES6"],
             linkProject: "https://www.tiendasjumbo.co",
             images: [
               {
                 image: tiendasjumbo001,
-                alt: "This is how the new home of the store looks like."
+                alt: "Voilà à quoi ressemble la nouvelle maison du magasin."
               },
               {
                 image: tiendasjumbo007,
-                alt: "We developed the structure for services such as \"Jumbo al auto\" and \"Recogida en Tienda\" with the whole user experience including in Checkout v5. This has been my favorite development ever, due to the complexity and multiple UX flows. I'm proud of this work."
+                alt: "On a développé la structure de services tels que \"Jumbo al auto\" et \"Recogida en Tienda\" avec toute l'expérience utilisateur, y compris dans Checkout v5. Cela a toujours été mon développement préféré, en raison de la complexité et des multiples flux UX. Je suis fier de ce travail."
               },
               {
                 image: tiendasjumbo008,
-                alt: "The user now has the option to choose between pickup it's products or waiting for them at home."
+                alt: "L'utilisateur a désormais la possibilité de choisir entre retirer ses produits ou les attendre chez lui."
               },
               {
                 image: tiendasjumbo002,
-                alt: "Developed in association with Blacksip, Fizzmod and Vtex developers."
+                alt: "Développé en association avec les développeurs Blacksip, Fizzmod et Vtex."
               },
               {
                 image: tiendasjumbo003,
-                alt: "I've worked on different landings such the special for Samsung S10."
+                alt: "J'ai travaillé sur différents sites web tels que le spécial pour Samsung S10."
               },
               {
                 image: tiendasjumbo004,
-                alt: "Each development is mobile first."
+                alt: "Chaque développement est d'abord mobile."
               }
             ],
           }
@@ -212,13 +214,13 @@ import {
 
         {
           image: kaptainteriortrims001,
-          alt: "Application for BMW Training course",
+          alt: "Application web pour BMW Training course",
           level: 2,
           isAVideoThumb: true,
         videoSource: interiorTrims,
           detail: {
             title: "Interior Trims - BMW",
-            description: "It was an application to one company that I've worked for. The objective was to simulate an interior environment and select a set of key points with specific information for technician people.",
+            description: "C'était une application pour une entreprise pour laquelle j'ai travaillé. L'objectif était de simuler un environnement intérieur et de sélectionner un ensemble de points clés avec des informations spécifiques pour les techniciens.",
             chips: ["React", "A-frame"],
             images: [
               {
@@ -227,7 +229,7 @@ import {
               },
               {
                 image: kaptainteriortrims002,
-                alt: "All the content is property of K@PTA."
+                alt: "Tout le contenu est la propriété de K@PTA."
               }
             ]
           }
@@ -240,21 +242,21 @@ import {
           level: 1,
           detail: {
             title: "Mostro Media",
-            description: "Website for Mostro Media company. The goal was to show the company as modern for new customers.",
+            description: "Site Web de la société Mostro Media. L'objectif était de montrer l'entreprise comme moderne pour les nouveaux clients.",
             chips: ["Wordpress"],
             linkProject: "https://mostromedia.com",
             images: [
               {
                 image: mostromedia001,
-                alt: "Mostro represents <b>innovation and creativity</b>."
+                alt: "Mostro représente <b>l'innovation et la créativité</b>."
               },
               {
                 image: mostromedia,
-                alt: "The whole site was a proof of a <b>high experience design</b>."
+                alt: "L'ensemble du site était la preuve <b>d'une conception de grande expérience</b>."
               },
               {
                 image: mostromedia003,
-                alt: "Mostro <b>boots</b> many companies in the digital world."
+                alt: "Mostro <b>démarre</b> de nombreuses entreprises dans le monde numérique."
               }
             ],
           }
@@ -328,57 +330,7 @@ import {
             ],
           }
         },
-  
-        
-        {
-          image: kapta01,
-          alt:"Website for K@PTA Mexico",
-          level: 1,
-          detail: {
-            title: "K@PTA Mexico",
-            description: "Website for K@PTA company in Mexico. The goal is to create a beauty but informative site for the new marketplace in Mexico.",
-            chips: ["Reactjs", "node", "Html"],
-            linkProject: "https://kaptamexico.biz",
-            images: [
-              {
-                image: kaptamexico001,
-                alt: "K@PTA reflects in desktop site as a <b>modern business</b>."
-              },
-              {
-                image: kaptamexico002,
-                alt: "Information about the company on mobile devices."
-              },
-              {
-                image: kaptamexico003,
-                alt: "Use the corporate identity manual to reflects the company in a website."
-              }
-            ],
-          }
-        },
-  
-       
-        {
-          image: dashboard,
-          alt: "Web Application for K@PTA",
-          level: 1,
-          detail: {
-            title: "Web Application for K@PTA",
-            description: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve for BMW and KAPTA teams.",
-            chips: ["NodeJS", "Express", "MongoDB", "Server-side-rendering"],
-            images: [
-              {
-                image: dashboard001,
-                alt: "A modern platform to manage the <b>internal evaluation results</b>."
-              },
-              {
-                image: dashboard,
-                alt: "It uses the <b>ClassMarker API</b> to handle the results and to create graphs and tables."
-              }
-            ],
-          }
-        },
-        
-        
+ 
         {
           image: propulsion,
           alt: "BMW Technician application",
@@ -431,7 +383,7 @@ import {
     },
     PersonalInfo: {
       name: "Camilo Argüello",
-      job: "Engineer informatique",
+      job: "Ingénieur en génie informatique",
       age: 26,
       email: "camilo.arguello.rincon@gmail.xyz",
       tel: 10010101,
@@ -451,11 +403,31 @@ import {
       title: "Research",
       papers:[
         {
-          title:"Exploring rhytmic patterns by video analysis",
+          title: "Exploring rhytmic patterns by video analysis",
           image: hci2016,
           href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
-          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
-        }
+          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. 
+                        Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. 
+                        Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
+        },
+        {
+          title: "Expériences dans les techniques d'optimisation des systèmes embarqués.",
+          image: esiee_s1_ca,
+          description: `
+                        OpenCV est l'une des bibliothèques les plus utilisées dans les applications de vision par ordinateur ou en anglais Computer Vision.
+                        La vision par ordinateur demande beaucoup de calcul, même pour des algorithmes qui résolvent des problèmes comme la détection faciale.
+                        Dans cette recherche, on présent une implémentation du filtre des images Sobel conçu pour les architectures embarquées afin d'optimiser le traitement par rapport à OpenCV.
+                        Cette approche n'a pas utilisé de parallélisation ou d'accélérateurs matériels. Co-author: David Martinez.`,
+        },
+        {
+          title: "Un voyage jusqu'à MQTT",
+          image: esiee_s2_wi,
+          description: `
+                        L'internet of things (IoT) est devenu un standard en raison de la révolution des technologies de l'information, par conséquent, il existe de nombreux scénarios mis en œuvre où les protocoles IoT participent.
+                        Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
+                        Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
+                        Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
+        },
       ]  
     },
     Deezer: {
@@ -465,12 +437,12 @@ import {
         {
           title:"The XX",
           image: iconBestGroup,
-          description: "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX."
+          description: "Le mixing et les chansons qu'ils ont créées sont incroyables. Chaque chanson est une œuvre d'art. Leurs chansons représentent le glamour de la vie à Paris. c'est la principale raison pour laquelle mon artiste préféré pour 2019 est The XX."
         },
         {
           title:"On Hold - The XX",
           image: iconBestSong,
-          description:"Imagine living in Paris with the fashion, the culture, the beauty, passion, and love. It's the perfection combined into a song. This is my favorite song for 2019."
+          description:"Je vous invite à imaginez habiter à Paris avec la mode, la culture, la beauté, la passion et l'amour. C'est la perfection combinée en une chanson. C'est ma chanson préférée pour 2019."
         }
       ] 
     },

@@ -49,9 +49,11 @@ import {
   iconBestSong,
   iconBestGroup,
   hci2016,
+  esiee_s1_ca,
+  esiee_s2_wi,
   boulangerie001,
-    boulangerie002,
-    boulangerie003
+  boulangerie002,
+  boulangerie003
 } from "./images.js";
 import {
   interiorTrims
@@ -347,61 +349,7 @@ const data_es = {
           ]
         }
       },
-
-      {
-        image: kapta01,
-        alt: "Sitio web para K@PTA Mexico",
-        level: 1,
-        detail: {
-          title: "K@PTA Mexico",
-          description:
-            "Sitio web para la empresa K@PTA en Mexico. El objetivo era crear un portal con la estética e identidad corporativa de la empresa para el mercado mexicano.",
-          chips: ["Reactjs", "node", "Html"],
-          linkProject: "https://kaptamexico.biz",
-          images: [
-            {
-              image: kaptamexico001,
-              alt: "K@PTA refleja ser una <b>empresa moderna</b>."
-            },
-            {
-              image: kaptamexico002,
-              alt: "Información acerca de la compañia en dispositivos móviles."
-            },
-            {
-              image: kaptamexico003,
-              alt:
-                "El manual de identidad corporativa se ve reflejado en el sitio web."
-            }
-          ]
-        }
-      },
-
-      
-
-      {
-        image: dashboard,
-        alt: "Web Application for K@PTA",
-        level: 1,
-        detail: {
-          title:
-            "Web Application for K@PTA",
-          description: "Dashboard of Results K@PTA. The goal was to create a platform to manage the test results and learning progress curve for BMW and KAPTA teams.",
-          chips: ["NodeJS", "Express", "MongoDB", "Server-side-rendering"],
-          images: [
-            {
-              image: dashboard001,
-              alt:
-                "A modern platform to manage the <b>internal evaluation results</b>."
-            },
-            {
-              image: dashboard,
-              alt:
-                "It uses the <b>ClassMarker API</b> to handle the results and to create graphs and tables."
-            }
-          ]
-        }
-      },
-
+    
       {
         image: propulsion,
         alt: "BMW Technician application",
@@ -475,7 +423,23 @@ const data_es = {
         href:
           "https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13",
         description: `Los tratamientos de desordenes de coordinación pueden tener bastantes beneficios usando tecnologías modernas que asistan en los protocolos de rehabilitación. En este artículo, presentamos un método efectivo para extraer patrones de movimiento a partir de secuencias de video, para luego proveer estímulos acústicos generados desde el análisis del movimiento. Este método explora diferentes patrones de movimiento guiado por conceptos como: Detección y análisis de movimiento, Principal Component Analysis (PCA) y análisis frequencial.`
-      }
+      },
+      {
+        title:
+          "Experimento en técnicas de optimización para sistemas embebidos.",
+        image: esiee_s1_ca,
+        description: `Uno de las librerías más usadas en aplicaciones de visión por computador es OpenCV.
+                      La visión por computador exige alta demanda computacional, incluso para algoritmos que resuelven problemas como la deteción facial.
+                      En esta investigación, presentamos una implementación del filtro Sobel hecha para arquitecturas embebidas para así, optimizar el procesamiento comparado con OpenCV.
+                      Este approach no utilizó paralelización o hardware accelerators. Co-author: David Martinez.`,
+      },
+      {
+        title: "Un viaje hacia MQTT",
+        image: esiee_s2_wi,
+        description: `Internet of Things (IoT), se ha convertido en un estandar debido a la rápida revolución en tecnologías de información, por ende hay muchos escenarios implementados donde participan protocolos IoT.
+                      Por ejemplo, Protocolo Push is mas recomendable para dispositivos IoT, debido a su bajo consumo de electricidad y baja capacidad de transferencia de datos. En esta investigación, una guia completa sobre MQTT es presentada. Para ello, realizo una configuración probando diferentes escenarios y dispositivos para analizar las ventajas de la tecnología.
+                      Además, Concluyo el estudio de MQTT probando en diferentes dispositivos hardware. Este proyecto fue para el curso IMC-4302A de ESIEE Paris.`,
+      },
     ]
   },
   Legal: {
