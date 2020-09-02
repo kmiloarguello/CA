@@ -38,6 +38,9 @@ import {
     tiendasjumbo008,
     kaptainteriortrims001,
     kaptainteriortrims002,
+    confflux_001,
+    confflux_002,
+    confflux_003,
     propulsion,
     propulsion002,
     iconScience,
@@ -52,12 +55,15 @@ import {
     hci2016,
     esiee_s1_ca,
     esiee_s2_wi,
+    esiee_s3_ml,
     boulangerie001,
     boulangerie002,
     boulangerie003
   } from "./images.js";
   import {
-    interiorTrims
+    interiorTrims,
+    confflux_api_001,
+    confflux_api_002
   } from "./videos.js";
   
   import colorPalettesFile from "../colors/colors-palettes.js";
@@ -79,12 +85,42 @@ import {
       section2: `Je suis une personne creative et ingeniouse. J'utilize le technologie pour donner ou create beau et incroyable idées. Pour ca J'utilize l'algorithmic, la conception informatique, le programmation et le recherche.`,
       section3: `Je suis entrain de obtenir ma diploma d'ingenieur au ESIEE Paris, mais si vous voulez sil'vous plaît contactez moi.`,
       btnMail: "Contactez moi",
-      btnScrollToWork: "Regarder un peu plus",
+      btnScrollToWork: "En savoir plus",
       txtMemories: "Souvenirs d'un moment plus beau."
     },
     What: {
       title: "Travail",
       work: [
+
+
+        {
+          image: confflux_003,
+          alt: "Confflux API",
+          level: 2,
+          detail: {
+            title: "Confflux API",
+            description: "L'API pour Confflux.",
+            chips: ["NodeJS", "ExpressJS", "MongoDB"],
+            linkRepository: "https://gitlab.com/conflux-solutions/web-backend",
+            images: [
+              {
+                image: confflux_003,
+                alt: "Trouvez des éspaces sans affluences."
+              },
+              {
+                image: confflux_002,
+                alt: "Développement Backend avec NodeJS et MongoDB."
+              },
+             {
+                image: confflux_001,
+                alt: "Nous sommes éngages pour amêliorer la vie des gens pendant et après le confinément."
+              }
+            ],
+            videos: [
+              confflux_api_001
+            ]
+          }
+        },
 
         {
           image: boulangerie001,
@@ -384,7 +420,7 @@ import {
     PersonalInfo: {
       name: "Camilo Argüello",
       job: "Ingénieur en génie informatique",
-      age: 26,
+      age: 25,
       email: "camilo.arguello.rincon@gmail.xyz",
       tel: 10010101,
       logo: CALogo,
@@ -427,6 +463,16 @@ import {
                         Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
                         Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
                         Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
+        },
+        {
+          title: "Est-ce qu'un champignon est comestible ou toxique?",
+          image: esiee_s3_ml,
+          href:
+          "https://github.com/crownedone/mushrooms",
+          description: `Manger des champignons sauvages peut être un régal; ils sont l'un des rares aliments végétaux qui contiennent de la vitamine D et d'autres avantages pour l'homme.
+          Malheureusement, des effets indésirables peuvent survenir après avoir mangé un champignon sauvage. Certaines de ces réactions négatives comprennent de graves symptômes respiratoires, des nausées et des vomissements.
+          Comme consécuence, les organes vitaux pourraient être endommagés, ce qui pourrait entraîner la mort. Ainsi, l'objectif de cette recherche est d'analyser et de prédire si un champignon est comestible ou toxique en fonction de quelques caractéristiques. Co-author: Steffer Ehrle.
+          `,
         },
       ]  
     },

@@ -6,6 +6,9 @@ import {
   kaptamexico001,
   kaptamexico002,
   kaptamexico003,
+  confflux_001,
+  confflux_002,
+  confflux_003,
   daftpunk,
   daftpunk001,
   daftpunk002,
@@ -51,12 +54,16 @@ import {
   hci2016,
   esiee_s1_ca,
   esiee_s2_wi,
+  esiee_s3_ml,
   boulangerie001,
   boulangerie002,
   boulangerie003
 } from "./images.js";
+
 import {
-  interiorTrims
+  interiorTrims,
+  confflux_api_001,
+  confflux_api_002
 } from "./videos.js";
 import colorPalettesFile from "../colors/colors-palettes.js";
 
@@ -82,6 +89,35 @@ const data_es = {
   What: {
     title: "Portafolio",
     work: [
+
+      {
+        image: confflux_003,
+        alt: "Confflux API",
+        level: 2,
+        detail: {
+          title: "Confflux API",
+          description: "la API para Confflux.",
+          chips: ["NodeJS", "ExpressJS", "MongoDB"],
+          linkRepository: "https://gitlab.com/conflux-solutions/web-backend",
+          images: [
+            {
+              image: confflux_003,
+              alt: "Encuentra lugares libres de multitud."
+            },
+            {
+              image: confflux_002,
+              alt: "Confflux es una app desarrollada con NodeJS y MongoDB."
+            },
+           {
+              image: confflux_001,
+              alt: "Estamos comprometidos en ayudar a negocios y a personas en esta cuarentena."
+            }
+          ],
+          videos: [
+            confflux_api_001
+          ]
+        }
+      },
 
       {
         image: boulangerie001,
@@ -405,7 +441,7 @@ const data_es = {
   PersonalInfo: {
     name: "Camilo Argüello",
     job: "Ingeniero apasionado por la ciencia.",
-    age: 26,
+    age: 25,
     email: "camilo.arguello.rincon@gmail.xyz",
     tel: 10010101,
     logo: CALogo,
@@ -439,6 +475,15 @@ const data_es = {
         description: `Internet of Things (IoT), se ha convertido en un estandar debido a la rápida revolución en tecnologías de información, por ende hay muchos escenarios implementados donde participan protocolos IoT.
                       Por ejemplo, Protocolo Push is mas recomendable para dispositivos IoT, debido a su bajo consumo de electricidad y baja capacidad de transferencia de datos. En esta investigación, una guia completa sobre MQTT es presentada. Para ello, realizo una configuración probando diferentes escenarios y dispositivos para analizar las ventajas de la tecnología.
                       Además, Concluyo el estudio de MQTT probando en diferentes dispositivos hardware. Este proyecto fue para el curso IMC-4302A de ESIEE Paris.`,
+      },
+      {
+        title: "Cómo distinguir a un hongo venenoso?",
+        image: esiee_s3_ml,
+        href:
+          "https://github.com/crownedone/mushrooms",
+        description: `Comer un hongo puede ser un riesgo, ellos son unas de las pocas plantas que contienen vitaminas D y algunos otros beneficios para los seres humanos.
+        Sin embargo, reacciones adversas pueden ocurrir luego de comer un hongo. Algunos de ellos producen reacciones negativas que van hasta serios problemas respiratorios, nauseas y vomito.
+        Como consecuencia algunos organos vitales pueden ser afectados, lo que puede resultar en la muerte. Por ende, el objetivo de esta investigación es analizar y predecir si un hongo es comestible o venenoso basado en algunas caracteristicas. Co-author: Steffer Ehrle.`,
       },
     ]
   },

@@ -47,14 +47,27 @@ export default class Overlay extends Component{
             )
         }
     }
+    renderMultipleVideos(){
+        const { videos } = this.props.detail;
+        if(videos){
+            return videos.map((video,index) => {
+                return (
+                    <video controls={true} key={index} className={"itemImage" + (index + 1)}>
+                        <source src={video} type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                )
+            });
+        }
+    }
     renderImagesDetails(){
         const { images } = this.props.detail;
         return (
             images.map((image,index) => {
                 return (
-                    <React.Fragment>
+                    <React.Fragment key={index}>
 
-                            <div className={"itemImage" + (index + 1)}  key={index} >
+                            <div className={"itemImage" + (index + 1)} >
                                 <img 
                                     className={"image" + (index + 1)} 
                                     src={image.image} 
@@ -93,6 +106,7 @@ export default class Overlay extends Component{
                             </div>
                             <div className={styles.containerImages}>
                                 { this.renderImagesDetails() }
+                                { this.props.detail.videos ? this.renderMultipleVideos() : "" }
                             </div>
                         </div>
                         <div className={styles.modalOverlay} onClick={onClick} />

@@ -15,6 +15,7 @@ import CAprofile from '../img/camilo-arguello-pf.jpg';
 import hci2016 from "../img/research/hci2016/camiloarguellohci2016-001.jpg";
 import esiee_s1_ca from "../img/research/computerarchitecture/computerarchitecture.png";
 import esiee_s2_wi from "../img/research/wirelessnetwork/raspberry-pi.jpg";
+import esiee_s3_ml from "../img/research/mushrooms/bg-mushrooms-steffen-camiloarguello.jpg"
 
 /**
  * Projects
@@ -72,6 +73,9 @@ import boulangerie001 from "../img/work/projects/boulangerie/boul001.jpg";
 import boulangerie002 from "../img/work/projects/boulangerie/boul002.jpg";
 import boulangerie003 from "../img/work/projects/boulangerie/boul003.jpg";
 
+import confflux_001 from "../img/work/projects/confflux/confflux_api_001.jpg";
+import confflux_002 from "../img/work/projects/confflux/confflux_api_002.jpg";
+import confflux_003 from "../img/work/projects/confflux/confflux_api_003.jpg";
 /**
  * Icons
  */
@@ -134,6 +138,9 @@ module.exports = {
     tiendasjumbo008,
     kaptainteriortrims001,
     kaptainteriortrims002,
+    confflux_001,
+    confflux_002,
+    confflux_003,
     propulsion,
     propulsion002,
     iconScience,
@@ -148,6 +155,7 @@ module.exports = {
     hci2016,
     esiee_s1_ca,
     esiee_s2_wi,
+    esiee_s3_ml,
     boulangerie001,
     boulangerie002,
     boulangerie003

@@ -17,6 +17,9 @@ import {
   mostromedia,
   mostromedia001,
   mostromedia003,
+  confflux_001,
+  confflux_002,
+  confflux_003,
   dashboard,
   dashboard001,
   escamiloarguello,
@@ -53,9 +56,15 @@ import {
   boulangerie002,
   boulangerie003,
   esiee_s1_ca,
-  esiee_s2_wi
+  esiee_s2_wi,
+  esiee_s3_ml
 } from "./images.js";
-import { interiorTrims } from "./videos.js";
+
+import {
+  interiorTrims,
+  confflux_api_001,
+  confflux_api_002
+} from "./videos.js";
 
 import colorPalettesFile from "../colors/colors-palettes.js";
 
@@ -83,6 +92,34 @@ const data = {
   What: {
     title: "Work",
     work: [
+      {
+        image: confflux_003,
+        alt: "Confflux API",
+        level: 2,
+        detail: {
+          title: "Confflux API",
+          description: "Own API for Confflux.",
+          chips: ["NodeJS", "ExpressJS", "MongoDB"],
+          linkRepository: "https://gitlab.com/conflux-solutions/web-backend",
+          images: [
+            {
+              image: confflux_003,
+              alt: "Find a free crowded place."
+            },
+            {
+              image: confflux_002,
+              alt: "Development made with Mongo and NodeJS"
+            },
+           {
+              image: confflux_001,
+              alt: "We are commitment with help people and establishment on this challenging period."
+            }
+          ],
+          videos: [
+            confflux_api_001
+          ]
+        }
+      },
       {
         image: boulangerie001,
         alt: "Bakery store in Paris",
@@ -399,6 +436,16 @@ const data = {
                       For example, Push protocol is more suitable for IoT devices, due to its lightweight and high productivity. In this research a completely guide on MQTT lightweight and bandwidth efficiency will be studied. I perform a general setup to go through the whole tool analyzing the tool, the pros and cons. 
                       Also, I conclude survey study of MQTT putting testing in hardware devices. This project was for the course IMC-4302A Wireless Networks at ESIEE Paris.`,
       },
+      {
+        title: "Does a mushroom is edible or poisonous?",
+        image: esiee_s3_ml,
+        href:
+          "https://github.com/crownedone/mushrooms",
+        description: `Eating wild mushrooms can be a treat; they are one of the few plant foods which contain vitamin D and some other benefits for the human beings.
+                      However, adverse reactions can occur after eating a wild mushroom. Some of those negative reactions include serious respiratory symptoms, with nauseas and vomiting. 
+                      As consecuence vital organs could be damaged, which can result in death. Thus, the objective for this research is to analyze and predict whether a mushroom is edible or poisonous based on certain characteristics. Co-author: Steffer Ehrle.
+        `,
+      },
     ],
   },
   How: {
@@ -435,7 +482,7 @@ const data = {
   PersonalInfo: {
     name: "Camilo Argüello",
     job: "Developer and future scientist",
-    age: 26,
+    age: 25,
     email: "camilo.arguello.rincon@gmail.xyz",
     tel: 10010101,
     logo: CALogo,
