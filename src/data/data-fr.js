@@ -81,9 +81,12 @@ import {
     Why: {
       title: "Accueil",
       img: CAprofile,
-      section1: `Le science et la technologie`,
-      section2: `Je suis une personne creative et ingeniouse. J'utilize le technologie pour donner ou create beau et incroyable idées. Pour ca J'utilize l'algorithmic, la conception informatique, le programmation et le recherche.`,
-      section3: `Je suis entrain de obtenir ma diploma d'ingenieur au ESIEE Paris, mais si vous voulez sil'vous plaît contactez moi.`,
+      section1: `La science et la technologie`,
+      section2: `Je suis une personne créative et ingénieuse. 
+                J'utilise la technologie pour créer de nouvelles et incroyables idées. 
+                Maintenant, je suis très intéressé pour le traitement des images à Sorbonne Université. 
+                Je cherche un stage débutant en février 2021.`,
+      section3: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). Contactez moi.`,
       btnMail: "Contactez moi",
       btnScrollToWork: "En savoir plus",
       txtMemories: "Souvenirs d'un moment plus beau."
@@ -91,8 +94,6 @@ import {
     What: {
       title: "Travail",
       work: [
-
-
         {
           image: confflux_003,
           alt: "Confflux API",
@@ -421,7 +422,7 @@ import {
       name: "Camilo Argüello",
       job: "Ingénieur en génie informatique",
       age: 25,
-      email: "camilo.arguello.rincon@gmail.xyz",
+      email: "camilo.arguello.rincon@gmail.com",
       tel: 10010101,
       logo: CALogo,
       logoWhite: CALogoWhite,
@@ -430,7 +431,10 @@ import {
       github: "https://github.com/kmiloarguello"
     },
     Legal: {
-      legal: `Je suis entrain de obtenir ma diploma d'ingenieur au ESIEE Paris, mais si vous voulez sil-vous plaît contactez moi.`,
+      legal: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). 
+              Je suis très intéressé pour le traitement des images. 
+              Je cherche un stage débutant en février 2021. 
+              Contactez moi.`,
       contact: "Contactez moi",
       siteMap: "Le cart du site",
       curriculum: "Mon CV"
