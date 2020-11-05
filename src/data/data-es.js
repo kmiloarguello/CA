@@ -80,8 +80,9 @@ const data_es = {
     title: "Home",
     img: CAprofile,
     section1: `Ciencia Tecnología Ingeniería y Matemáticas`,
-    section2: `Soy una persona creativa e ingenionsa, quien usa la tecnología para dar vida a maravillosas e increibles ideas usando algoritmos, diseño computacional, desarrollo de software e investigación en multimedia.`,
-    section3: `Actualmente, estoy disponible para un trabajo de tiempo completo. Si deseas trabajar conmigo, contáctame.`,
+    section2: `Soy una persona creativa e ingenionsa, quien usa la tecnología para dar vida a maravillosas e increibles ideas usando algoritmos, diseño computacional, desarrollo de software e investigación en multimedia.
+              Actualmente, estoy haciendo el master IMA - M2 (Procesamiento de imágenes) en la Universidad Sorbonne (Paris - Francia). Estoy buscando una pasantía que empiece en febrero de 2021.`,
+    section3: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Estoy buscando una pasantía que empiece en febrero de 2021. Si deseas trabajar conmigo, contáctame.`,
     btnMail: "Contáctame",
     btnScrollToWork: "Conoce mi trabajo",
     txtMemories: "Recuerdo de un momento feliz."
@@ -442,7 +443,7 @@ const data_es = {
     name: "Camilo Argüello",
     job: "Ingeniero apasionado por la ciencia.",
     age: 25,
-    email: "camilo.arguello.rincon@gmail.xyz",
+    email: "camilo.arguello.rincon@gmail.com",
     tel: 10010101,
     logo: CALogo,
     logoWhite: CALogoWhite,
@@ -488,7 +489,7 @@ const data_es = {
     ]
   },
   Legal: {
-    legal: `Actualmente, estoy disponible para un trabajo de tiempo completo. Si deseas trabajar conmigo, contáctame.`,
+    legal: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Estoy buscando una pasantía en el campo de procesamiento de imágenes que empiece en febrero de 2021. Si deseas trabajar conmigo, contáctame.`,
     contact: "Contacto",
     siteMap: "Mapa del sitio",
     curriculum: "Hoja de vida"
