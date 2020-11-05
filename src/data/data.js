@@ -81,8 +81,9 @@ const data = {
     title: "Home",
     img: CAprofile,
     section1: `Science Technology Engineering and Maths`,
-    section2: `I'm a creative and inquisitive person, who uses the technology to create beauty and powerful ideas using algorithms, computational design, software development and multimedia research.`,
-    section3: `I'm currently available for a full-time job, so If you want to work
+    section2: `I'm a creative and inquisitive person, who uses the technology to create beauty and powerful ideas using algorithms, computational design, software development and multimedia research.
+              Currently, I am finishing the master IMA - M2 at Sorbonne Univeristy (Paris - France). I am looking for an internship on Image Processing starting on february 2021.`,
+    section3: `I'm currently available for an intership job in the domain of image processing, so If you want to work
     with me, just put in contact with me and I can
     start anytime.`,
     btnMail: "Contact me",
@@ -483,7 +484,7 @@ const data = {
     name: "Camilo Argüello",
     job: "Developer and future scientist",
     age: 25,
-    email: "camilo.arguello.rincon@gmail.xyz",
+    email: "camilo.arguello.rincon@gmail.com",
     tel: 10010101,
     logo: CALogo,
     logoWhite: CALogoWhite,
@@ -492,9 +493,8 @@ const data = {
     github: "https://github.com/kmiloarguello",
   },
   Legal: {
-    legal: `I'm currently available for a full-time job, so If you want to work
-    with me, just put in contact with me and I can
-    start anytime.`,
+    legal: `Currently, I am finishing the master IMA - M2 at Sorbonne Univeristy (Paris - France). I am looking for an internship on Image Processing starting on february 2021. 
+            If you want to work with me, just put in contact with me.`,
     contact: "Contact",
     siteMap: "Sitemap",
     curriculum: "Curriculum Vitae",
@@ -523,7 +523,7 @@ const data = {
     spanish: "Spanish",
   },
   Loading: {
-    error: "I am sorry, something wrong happend!",
+    error: "I am sorry, something wrong happened!",
     timeout: "This section is taking so much time to load...",
     retry: "Retry",
   },
