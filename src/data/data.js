@@ -57,7 +57,8 @@ import {
   boulangerie003,
   esiee_s1_ca,
   esiee_s2_wi,
-  esiee_s3_ml
+  esiee_s3_ml,
+  ac_vincent
 } from "./images.js";
 
 import {
@@ -412,30 +413,15 @@ const data = {
     title: "Research",
     papers: [
       {
-        title: "Exploring rhytmic patterns by video analysis",
-        image: hci2016,
+        title: "Finding contours by using \"Active contours\" (snakes)",
+        image: ac_vincent,
         href:
-          "https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13",
-        description: `Treatments of coordination disorders may be benefit from modern assistive technologies by achieving effective feedback that improves the rehabilitation protocols. 
-                      In this paper, a method to identify movement patterns from video sequences is presented, providing acoustic stimuli by means of sounds generated from motion analysis. 
-                      The method explores rhythmic patterns in movements, through fundamental concepts as: motion detection and analysis, Principal Component Analysis (PCA) and frequency analysis. 
-                      The proposed method was evaluated by using four (4) dance steps, used typically in Latin music, showing good performance in detecting and reproducing acoustic beats.`,
-      },
-      {
-        title:
-          "Experiment of optimization techniques in the context of embedded systems",
-        image: esiee_s1_ca,
-        description: `One of the most used libraries for computer vision applications is OpenCV. 
-                      The computer vision is computationally expensive, even for algorithms which solve specific problems such smile detection. 
-                      We performed an approach to create a sobel filter for embedded architectures to optimize the frame processing and compare it with OpenCV.
-                      This approach didn't use parallelization or hardware accelerators. Co-author: David Martinez.`,
-      },
-      {
-        title: "A journey towards MQTT",
-        image: esiee_s2_wi,
-        description: `Internet of Things (IoT), has become a standard based on the rapid revolution in the area of information communication technology and digital things, thus there are several different scenarios implemented where all the protocols IoT are involved. 
-                      For example, Push protocol is more suitable for IoT devices, due to its lightweight and high productivity. In this research a completely guide on MQTT lightweight and bandwidth efficiency will be studied. I perform a general setup to go through the whole tool analyzing the tool, the pros and cons. 
-                      Also, I conclude survey study of MQTT putting testing in hardware devices. This project was for the course IMC-4302A Wireless Networks at ESIEE Paris.`,
+          "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+        description: `On this research I use the active contours to detect segment contours/regions on gray-scale images, it allows a semi-interactive way of segmenting the image by an operator which is initialized in the same region, 
+        This approach use inner and outer energy to estimate the borders. 
+        In this experiment, I show some examples about what we can do using this segmentation principle to find contours and borders. 
+        One of its applicabilities is reflected in Photoshop, when an object is selected with the "magic wand tool", the software calculates the region and borders by using active contours. 
+        This work was as part of my master degree at Sorbonne Université.`,
       },
       {
         title: "Does a mushroom is edible or poisonous?",
@@ -447,6 +433,33 @@ const data = {
                       As consecuence vital organs could be damaged, which can result in death. Thus, the objective for this research is to analyze and predict whether a mushroom is edible or poisonous based on certain characteristics. Co-author: Steffer Ehrle.
         `,
       },
+      {
+        title:
+          "Experiment of optimization techniques in the context of embedded systems",
+        image: esiee_s1_ca,
+        description: `One of the most used libraries for computer vision applications is OpenCV. 
+                      The computer vision is computationally expensive, even for algorithms which solve specific problems such smile detection. 
+                      We performed an approach to create a sobel filter for embedded architectures to optimize the frame processing and compare it with OpenCV.
+                      This approach didn't use parallelization or hardware accelerators. Co-author: David Martinez.`,
+      },
+      {
+        title: "Exploring rhytmic patterns by video analysis",
+        image: hci2016,
+        href:
+          "https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13",
+        description: `Treatments of coordination disorders may be benefit from modern assistive technologies by achieving effective feedback that improves the rehabilitation protocols. 
+                      In this paper, a method to identify movement patterns from video sequences is presented, providing acoustic stimuli by means of sounds generated from motion analysis. 
+                      The method explores rhythmic patterns in movements, through fundamental concepts as: motion detection and analysis, Principal Component Analysis (PCA) and frequency analysis. 
+                      The proposed method was evaluated by using four (4) dance steps, used typically in Latin music, showing good performance in detecting and reproducing acoustic beats.`,
+      },
+      
+      {
+        title: "A journey towards MQTT",
+        image: esiee_s2_wi,
+        description: `Internet of Things (IoT), has become a standard based on the rapid revolution in the area of information communication technology and digital things, thus there are several different scenarios implemented where all the protocols IoT are involved. 
+                      For example, Push protocol is more suitable for IoT devices, due to its lightweight and high productivity. In this research a completely guide on MQTT lightweight and bandwidth efficiency will be studied. I perform a general setup to go through the whole tool analyzing the tool, the pros and cons. 
+                      Also, I conclude survey study of MQTT putting testing in hardware devices. This project was for the course IMC-4302A Wireless Networks at ESIEE Paris.`,
+      }
     ],
   },
   How: {
