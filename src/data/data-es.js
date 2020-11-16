@@ -73,6 +73,7 @@ const data_es = {
     menu: [
       { title: "Inicio", href: "#home" },
       { title: "Motivación", href: "#motivation" },
+      { title: "Investigación", href:"#research"},
       { title: "Trabajo", href: "#work" },
       { title: "Contacto", href: "#contact" }
     ]
