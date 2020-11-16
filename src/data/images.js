@@ -17,6 +17,8 @@ import esiee_s1_ca from "../img/research/computerarchitecture/computerarchitectu
 import esiee_s2_wi from "../img/research/wirelessnetwork/raspberry-pi.jpg";
 import esiee_s3_ml from "../img/research/mushrooms/bg-mushrooms-steffen-camiloarguello.jpg"
 
+import ac_vincent from "../img/research/activecontours/vincent-segmented.png";
+
 /**
  * Projects
  */
@@ -156,6 +158,7 @@ module.exports = {
     esiee_s1_ca,
     esiee_s2_wi,
     esiee_s3_ml,
+    ac_vincent,
     boulangerie001,
     boulangerie002,
     boulangerie003

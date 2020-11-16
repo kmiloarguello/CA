@@ -56,6 +56,7 @@ import {
     esiee_s1_ca,
     esiee_s2_wi,
     esiee_s3_ml,
+    ac_vincent,
     boulangerie001,
     boulangerie002,
     boulangerie003
@@ -74,6 +75,7 @@ import {
       menu: [
         {title: "Accueil", href:"#home"}, 
         {title: "Motivation", href:"#motivation"},
+        {title: "Recherche", href:"#research"},
         {title: "Travail", href:"#work"},
         {title: "Contactez moi", href:"#contact"}
       ]
@@ -443,12 +445,13 @@ import {
       title: "Research",
       papers:[
         {
-          title: "Exploring rhytmic patterns by video analysis",
-          image: hci2016,
-          href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
-          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. 
-                        Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. 
-                        Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
+          title: "Les propriétés de modèles déformables dans la segmentation avec la méthode de contours actifs.",
+          image: ac_vincent,
+          href:
+            "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+          description: `La détection de contours dans les images avec de contours actifs « snakes », permet d’un façon semi-interactive de segmenter l’image par un opérateur qui est initialisé dans l’image dans la même région à segmenter et qui finalement par une énergie propre, une énergie potentielle, et une énergie externe va à trouver le contour de l’objet.  
+          L'une de ses applications se reflète dans Photoshop, lorsqu'un objet est sélectionné avec «l'outil wand magique», le logiciel calcule la région et les contours en utilisant des contours actifs.
+          Ce projet à été développé pour le cours TADI à Sorbonne Université.`,
         },
         {
           title: "Expériences dans les techniques d'optimisation des systèmes embarqués.",
@@ -460,15 +463,6 @@ import {
                         Cette approche n'a pas utilisé de parallélisation ou d'accélérateurs matériels. Co-author: David Martinez.`,
         },
         {
-          title: "Un voyage jusqu'à MQTT",
-          image: esiee_s2_wi,
-          description: `
-                        L'internet of things (IoT) est devenu un standard en raison de la révolution des technologies de l'information, par conséquent, il existe de nombreux scénarios mis en œuvre où les protocoles IoT participent.
-                        Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
-                        Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
-                        Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
-        },
-        {
           title: "Est-ce qu'un champignon est comestible ou toxique?",
           image: esiee_s3_ml,
           href:
@@ -478,6 +472,25 @@ import {
           Comme consécuence, les organes vitaux pourraient être endommagés, ce qui pourrait entraîner la mort. Ainsi, l'objectif de cette recherche est d'analyser et de prédire si un champignon est comestible ou toxique en fonction de quelques caractéristiques. Co-author: Steffer Ehrle.
           `,
         },
+        {
+          title: "(anglais) Exploring rhythmic patterns by video analysis",
+          image: hci2016,
+          href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
+          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. 
+                        Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. 
+                        Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
+        },
+        
+        {
+          title: "Un voyage jusqu'à MQTT",
+          image: esiee_s2_wi,
+          description: `
+                        L'internet of things (IoT) est devenu un standard en raison de la révolution des technologies de l'information, par conséquent, il existe de nombreux scénarios mis en œuvre où les protocoles IoT participent.
+                        Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
+                        Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
+                        Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
+        },
+        
       ]  
     },
     Deezer: {

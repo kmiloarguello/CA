@@ -55,6 +55,7 @@ import {
   esiee_s1_ca,
   esiee_s2_wi,
   esiee_s3_ml,
+  ac_vincent,
   boulangerie001,
   boulangerie002,
   boulangerie003
@@ -72,6 +73,7 @@ const data_es = {
     menu: [
       { title: "Inicio", href: "#home" },
       { title: "Motivación", href: "#motivation" },
+      { title: "Investigación", href:"#research"},
       { title: "Trabajo", href: "#work" },
       { title: "Contacto", href: "#contact" }
     ]
@@ -455,11 +457,22 @@ const data_es = {
     title: "Research",
     papers: [
       {
-        title: "Explorando patrones rítmicos usando análisis de video.",
-        image: hci2016,
+        title: "Segmentación de imágenes usando \"Active contours\"",
+        image: ac_vincent,
         href:
-          "https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13",
-        description: `Los tratamientos de desordenes de coordinación pueden tener bastantes beneficios usando tecnologías modernas que asistan en los protocolos de rehabilitación. En este artículo, presentamos un método efectivo para extraer patrones de movimiento a partir de secuencias de video, para luego proveer estímulos acústicos generados desde el análisis del movimiento. Este método explora diferentes patrones de movimiento guiado por conceptos como: Detección y análisis de movimiento, Principal Component Analysis (PCA) y análisis frequencial.`
+          "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+        description: `La detección de contornos en imágenes usando contornos "snakes" activos, permite una forma semi-interactiva de segmentar la imagen por un operador que se inicializa en la imagen en la misma región en
+        segmento y que, en última instancia, mediante energía limpia, energía potencial y energía externa permite encontrar el contorno del objeto. En este experimento, muestro algunos ejemplos de lo que podemos hacer usando este principio de segmentacion para encontrar contornos y bordes. Una de las aplicabilidades de este principio se refleja en Photoshop, cuando se selecciona un objeto con la "varita mágica", el software calcula los bordes.
+        Este trabajo fue como parte de mi formación a Sorbonne Université.`,
+      },
+      {
+        title: "Cómo distinguir a un hongo venenoso?",
+        image: esiee_s3_ml,
+        href:
+          "https://github.com/crownedone/mushrooms",
+        description: `Comer un hongo puede ser un riesgo, ellos son unas de las pocas plantas que contienen vitaminas D y algunos otros beneficios para los seres humanos.
+        Sin embargo, reacciones adversas pueden ocurrir luego de comer un hongo. Algunos de ellos producen reacciones negativas que van hasta serios problemas respiratorios, nauseas y vomito.
+        Como consecuencia algunos organos vitales pueden ser afectados, lo que puede resultar en la muerte. Por ende, el objetivo de esta investigación es analizar y predecir si un hongo es comestible o venenoso basado en algunas caracteristicas. Co-author: Steffer Ehrle.`,
       },
       {
         title:
@@ -471,21 +484,19 @@ const data_es = {
                       Este approach no utilizó paralelización o hardware accelerators. Co-author: David Martinez.`,
       },
       {
+        title: "Explorando patrones rítmicos usando análisis de video.",
+        image: hci2016,
+        href:
+          "https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13",
+        description: `Los tratamientos de desordenes de coordinación pueden tener bastantes beneficios usando tecnologías modernas que asistan en los protocolos de rehabilitación. En este artículo, presentamos un método efectivo para extraer patrones de movimiento a partir de secuencias de video, para luego proveer estímulos acústicos generados desde el análisis del movimiento. Este método explora diferentes patrones de movimiento guiado por conceptos como: Detección y análisis de movimiento, Principal Component Analysis (PCA) y análisis frequencial.`
+      },
+      {
         title: "Un viaje hacia MQTT",
         image: esiee_s2_wi,
         description: `Internet of Things (IoT), se ha convertido en un estandar debido a la rápida revolución en tecnologías de información, por ende hay muchos escenarios implementados donde participan protocolos IoT.
                       Por ejemplo, Protocolo Push is mas recomendable para dispositivos IoT, debido a su bajo consumo de electricidad y baja capacidad de transferencia de datos. En esta investigación, una guia completa sobre MQTT es presentada. Para ello, realizo una configuración probando diferentes escenarios y dispositivos para analizar las ventajas de la tecnología.
                       Además, Concluyo el estudio de MQTT probando en diferentes dispositivos hardware. Este proyecto fue para el curso IMC-4302A de ESIEE Paris.`,
-      },
-      {
-        title: "Cómo distinguir a un hongo venenoso?",
-        image: esiee_s3_ml,
-        href:
-          "https://github.com/crownedone/mushrooms",
-        description: `Comer un hongo puede ser un riesgo, ellos son unas de las pocas plantas que contienen vitaminas D y algunos otros beneficios para los seres humanos.
-        Sin embargo, reacciones adversas pueden ocurrir luego de comer un hongo. Algunos de ellos producen reacciones negativas que van hasta serios problemas respiratorios, nauseas y vomito.
-        Como consecuencia algunos organos vitales pueden ser afectados, lo que puede resultar en la muerte. Por ende, el objetivo de esta investigación es analizar y predecir si un hongo es comestible o venenoso basado en algunas caracteristicas. Co-author: Steffer Ehrle.`,
-      },
+      }
     ]
   },
   Legal: {
