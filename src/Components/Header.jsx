@@ -14,9 +14,12 @@ export default class Header extends Component {
         smoothScroll(document.getElementById('how'))
         break;
       case 2:
-        smoothScroll(document.getElementById('what'))
+        smoothScroll(document.getElementById('research'))
         break;
       case 3:
+        smoothScroll(document.getElementById('what'))
+        break;
+      case 4:
         smoothScroll(document.getElementById('footer'))
         break;
       default:
@@ -33,6 +36,9 @@ export default class Header extends Component {
           break;
         case "#motivation":
           smoothScroll(document.getElementById('how'))
+          break;
+        case "#research":
+          smoothScroll(document.getElementById('research'))
           break;
         case "#work":
           smoothScroll(document.getElementById('what'))
