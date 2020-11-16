@@ -75,6 +75,7 @@ import {
       menu: [
         {title: "Accueil", href:"#home"}, 
         {title: "Motivation", href:"#motivation"},
+        {title: "Recherche", href:"#research"},
         {title: "Travail", href:"#work"},
         {title: "Contactez moi", href:"#contact"}
       ]
