@@ -73,6 +73,7 @@ const data = {
     menu: [
       { title: "Home", href: "#home" },
       { title: "Motivation", href: "#motivation" },
+      { title: "Investigación", href:"#research"},
       { title: "Work", href: "#work" },
       { title: "Contact", href: "#contact" },
     ],
