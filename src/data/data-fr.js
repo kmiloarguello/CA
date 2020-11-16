@@ -449,8 +449,7 @@ import {
           href:
             "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
           description: `La détection de contours dans les images avec de contours actifs « snakes », permet d’un façon semi-interactive de segmenter l’image par un opérateur qui est initialisé dans l’image dans la même région à segmenter et qui finalement par une énergie propre, une énergie potentielle, et une énergie externe va à trouver le contour de l’objet.  
-          On peut voir ce principle là, en Photoshop, lorsqu'un objet est choisi avec le "magic wand tool", le logicien va ca
-          L'une de ses applications se reflète dans Photoshop, lorsqu'un objet est sélectionné avec «l'outil wand magique», le logiciel calcule la région et les bordures en utilisant des contours actifs.
+          L'une de ses applications se reflète dans Photoshop, lorsqu'un objet est sélectionné avec «l'outil wand magique», le logiciel calcule la région et les contours en utilisant des contours actifs.
           Ce projet à été développé pour le cours TADI à Sorbonne Université.`,
         },
         {
