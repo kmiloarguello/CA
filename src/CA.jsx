@@ -222,7 +222,7 @@ export default class CA extends Component {
         <React.Fragment>
           <AsyncHow data={defineLanguage().How} />
           <AsyncResearch data={defineLanguage().Research} /> 
-          {/* <AsyncDeezer data={defineLanguage().Deezer} /> */}
+          <AsyncDeezer data={defineLanguage().Deezer} />
         </React.Fragment>
 
         <AsyncWhat data={defineLanguage().What}
