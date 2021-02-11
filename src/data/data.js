@@ -49,8 +49,8 @@ import {
   iconCosmos,
   iconGithub,
   iconLinkedin,
-  iconBestSong,
-  iconBestGroup,
+  meandmagdalena,
+  miraclemadeon,
   hci2016,
   boulangerie001,
   boulangerie002,
@@ -84,8 +84,8 @@ const data = {
     img: CAprofile,
     section1: `Science Technology Engineering and Maths`,
     section2: `I'm a creative and inquisitive person, who uses the technology to create beauty and powerful ideas using algorithms, computational design, software development and multimedia research.
-              Currently, I am finishing the master IMA - M2 at Sorbonne Univeristy (Paris - France). I am looking for an internship on Image Processing starting on february 2021.`,
-    section3: `I'm currently available for an intership job in the domain of image processing, so If you want to work
+              Currently, I am studying at the master Image processing and Computer Vision - M2 Sorbonne Univeristé`,
+    section3: `I'm currently available for an job in the domain of image processing/computer vision, so If you want to work
     with me, just put in contact with me and I can
     start anytime.`,
     btnMail: "Contact me",
@@ -507,26 +507,25 @@ const data = {
     github: "https://github.com/kmiloarguello",
   },
   Legal: {
-    legal: `Currently, I am finishing the master IMA - M2 at Sorbonne Univeristy (Paris - France). I am looking for an internship on Image Processing starting on february 2021. 
-            If you want to work with me, just put in contact with me.`,
+    legal: `Currently, I am studying at the master IMA - M2 Sorbonne Univeristé. If you want to work with me, just put in contact with me.`,
     contact: "Contact",
     siteMap: "Sitemap",
     curriculum: "Curriculum Vitae",
   },
   Deezer: {
-    title: "Here is my favorite music of 2019",
+    title: "Based on Deezer these are my favorites songs right now",
     favorites: [
       {
-        title: "The XX",
-        image: iconBestGroup,
+        title: "Me and Magdalena",
+        image: meandmagdalena,
         description:
-          "The mixing and the songs that they have created are amazing. Each song is a piece of art. Their songs represent the glamour of living in Paris. this is the main reason why my favorite artist for 2019 is The XX.",
+          "Loving someone goes beyond understanding the language we speak and seeing that feelings can speak for themselves.",
       },
       {
-        title: "On Hold - The XX",
-        image: iconBestSong,
+        title: "Miracle",
+        image: miraclemadeon,
         description:
-          "Imagine living in Paris with the fashion, the culture, the beauty, passion, and love. It's the perfection combined into a song. This is my favorite song for 2019.",
+          "This song represents everything good, everything pure.",
       },
     ],
   },
