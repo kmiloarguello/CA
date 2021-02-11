@@ -49,8 +49,8 @@ import {
   iconCosmos,
   iconGithub,
   iconLinkedin,
-  iconBestSong,
-  iconBestGroup,
+  meandmagdalena,
+  miraclemadeon,
   hci2016,
   esiee_s1_ca,
   esiee_s2_wi,
@@ -83,8 +83,8 @@ const data_es = {
     img: CAprofile,
     section1: `Ciencia Tecnología Ingeniería y Matemáticas`,
     section2: `Soy una persona creativa e ingenionsa, quien usa la tecnología para dar vida a maravillosas e increibles ideas usando algoritmos, diseño computacional, desarrollo de software e investigación en multimedia.
-              Actualmente, estoy haciendo el master IMA - M2 (Procesamiento de imágenes) en la Universidad Sorbonne (Paris - Francia). Estoy buscando una pasantía que empiece en febrero de 2021.`,
-    section3: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Estoy buscando una pasantía que empiece en febrero de 2021. Si deseas trabajar conmigo, contáctame.`,
+              Actualmente, estoy haciendo el master IMA - M2 (Procesamiento de imágenes) en la Universidad Sorbonne (Paris - Francia).`,
+    section3: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Si deseas trabajar conmigo, contáctame.`,
     btnMail: "Contáctame",
     btnScrollToWork: "Conoce mi trabajo",
     txtMemories: "Recuerdo de un momento feliz."
@@ -454,7 +454,7 @@ const data_es = {
     github: "https://github.com/kmiloarguello"
   },
   Research: {
-    title: "Research",
+    title: "Investigación",
     papers: [
       {
         title: "Segmentación de imágenes usando \"Active contours\"",
@@ -506,20 +506,20 @@ const data_es = {
     curriculum: "Hoja de vida"
   },
   Deezer: {
-    title: "Música favorita 2019",
+    title: "Según Deezer, estas son mis canciones preferidas",
     favorites: [
       {
-        title: "The XX",
-        image: iconBestGroup,
+        title: "Me and Magdalena",
+        image: meandmagdalena,
         description:
-          'La mezcla de sonidos que ellos han creado es increible. Cada sonido es una pieza de arte. Sus sonidos representan el "glamour" de vivir en Paris. Esta es la razón por la cual son mis favoritos del 2019.'
+          "Querer a alguien va mas allá de las diferencias de idioma, es ver que los sentimientos hablan un mismo idioma.",
       },
       {
-        title: "On Hold - The XX",
-        image: iconBestSong,
+        title: "Miracle",
+        image: miraclemadeon,
         description:
-          "Imagina vivir en Paris con el estilo, la clase, la cultura, la belleza, la pasión y el amor. Es la perfección combinada en una canción. Por eso es mi favorita del 2019."
-      }
+          "Esta canción representa todo lo que es bueno y puro en mi vida.",
+      },
     ]
   },
   Language: {

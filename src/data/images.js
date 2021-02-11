@@ -94,8 +94,8 @@ import iconLinkedin from "../img/social/linkedin.svg";
  * Deezer Images
  */
 
-import iconBestSong from "../img/deezer/myDeezerInstaCard-track.png"
-import iconBestGroup from "../img/deezer/myDeezerInstaCard-artist.png"
+import meandmagdalena from "../img/deezer/meandmagdalena.jpg";
+import miraclemadeon from "../img/deezer/madeonmiracle.jpg";
 
 
 
@@ -152,8 +152,8 @@ module.exports = {
     iconCosmos,
     iconGithub,
     iconLinkedin,
-    iconBestSong,
-    iconBestGroup,
+    miraclemadeon,
+    meandmagdalena,
     hci2016,
     esiee_s1_ca,
     esiee_s2_wi,
