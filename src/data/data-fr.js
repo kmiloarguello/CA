@@ -50,12 +50,13 @@ import {
     iconCosmos,
     iconGithub,
     iconLinkedin,
-    iconBestSong,
-    iconBestGroup,
+    meandmagdalena,
+    miraclemadeon,
     hci2016,
     esiee_s1_ca,
     esiee_s2_wi,
     esiee_s3_ml,
+    ac_vincent,
     boulangerie001,
     boulangerie002,
     boulangerie003
@@ -74,6 +75,7 @@ import {
       menu: [
         {title: "Accueil", href:"#home"}, 
         {title: "Motivation", href:"#motivation"},
+        {title: "Recherche", href:"#research"},
         {title: "Travail", href:"#work"},
         {title: "Contactez moi", href:"#contact"}
       ]
@@ -83,10 +85,9 @@ import {
       img: CAprofile,
       section1: `La science et la technologie`,
       section2: `Je suis une personne créative et ingénieuse. 
-                J'utilise la technologie pour créer de nouvelles et incroyables idées. 
-                Maintenant, je suis très intéressé pour le traitement des images à Sorbonne Université. 
-                Je cherche un stage débutant en février 2021.`,
-      section3: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). Contactez moi.`,
+                J'utilise la technologie pour créer de nouvelles idées. 
+                Maintenant, je suis très intéressé pour le traitement des images et la vision par ordinateur. Sorbonne Université.`,
+      section3: `Je suis dans le master informatique - IMA à Sorbonne Université. Contactez moi.`,
       btnMail: "Contactez moi",
       btnScrollToWork: "En savoir plus",
       txtMemories: "Souvenirs d'un moment plus beau."
@@ -394,17 +395,17 @@ import {
         {
           icon: iconScience,
           title: "Science",
-          subtitle: "Je voudrai aprendre chache jour à propos de les connaissances de l'humanité."
+          subtitle: "Je voudrais aprendre chaque jour à propos de les connaissances de l'humanité."
         },
         {
           icon: iconComputer,
           title: "Coding",
-          subtitle: "Je fait le code pour créer des solutions à problèmes réels."
+          subtitle: "Je fais le codage pour créer des solutions à problèmes réels."
         },
         {
           icon: iconFilm,
           title: "VFX",
-          subtitle: "An jour, je serai un artiste visuel."
+          subtitle: "Un jour, je serai une artiste visuel."
         },
         {
           icon: iconEducation,
@@ -414,7 +415,7 @@ import {
         {
           icon: iconCosmos,
           title: "Cosmos",
-          subtitle: "J'adore l'universe et notre vie dans lui."
+          subtitle: "J'adore l'universe et la maniere d'éxpliquer notre vie dans le cosmos."
         }
       ]
     },
@@ -432,41 +433,32 @@ import {
     },
     Legal: {
       legal: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). 
-              Je suis très intéressé pour le traitement des images. 
-              Je cherche un stage débutant en février 2021. 
+              Je suis très intéressé pour le traitement des images et la vision par ordinateur. 
               Contactez moi.`,
       contact: "Contactez moi",
-      siteMap: "Le cart du site",
+      siteMap: "Le carte du site",
       curriculum: "Mon CV"
     },
     Research: {
-      title: "Research",
+      title: "Recherche",
       papers:[
         {
-          title: "Exploring rhytmic patterns by video analysis",
-          image: hci2016,
-          href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
-          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. 
-                        Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. 
-                        Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
+          title: "Les propriétés de modèles déformables dans la segmentation avec la méthode de contours actifs.",
+          image: ac_vincent,
+          href:
+            "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+          description: `La détection de contours dans les images avec de contours actifs « snakes », permet d’un façon semi-interactive de segmenter l’image par un opérateur qui est initialisé dans l’image dans la même région à segmenter et qui finalement par une énergie propre, une énergie potentielle, et une énergie externe va à trouver le contour de l’objet.  
+          L'une de ses applications se reflète dans Photoshop, lorsqu'un objet est sélectionné avec «l'outil wand magique», le logiciel calcule la région et les contours en utilisant des contours actifs.
+          Ce projet à été développé pour le cours TADI à Sorbonne Université.`,
         },
         {
-          title: "Expériences dans les techniques d'optimisation des systèmes embarqués.",
+          title: "Éxploration des techniques d'optimisation des systèmes embarqués.",
           image: esiee_s1_ca,
           description: `
                         OpenCV est l'une des bibliothèques les plus utilisées dans les applications de vision par ordinateur ou en anglais Computer Vision.
                         La vision par ordinateur demande beaucoup de calcul, même pour des algorithmes qui résolvent des problèmes comme la détection faciale.
                         Dans cette recherche, on présent une implémentation du filtre des images Sobel conçu pour les architectures embarquées afin d'optimiser le traitement par rapport à OpenCV.
                         Cette approche n'a pas utilisé de parallélisation ou d'accélérateurs matériels. Co-author: David Martinez.`,
-        },
-        {
-          title: "Un voyage jusqu'à MQTT",
-          image: esiee_s2_wi,
-          description: `
-                        L'internet of things (IoT) est devenu un standard en raison de la révolution des technologies de l'information, par conséquent, il existe de nombreux scénarios mis en œuvre où les protocoles IoT participent.
-                        Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
-                        Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
-                        Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
         },
         {
           title: "Est-ce qu'un champignon est comestible ou toxique?",
@@ -478,28 +470,48 @@ import {
           Comme consécuence, les organes vitaux pourraient être endommagés, ce qui pourrait entraîner la mort. Ainsi, l'objectif de cette recherche est d'analyser et de prédire si un champignon est comestible ou toxique en fonction de quelques caractéristiques. Co-author: Steffer Ehrle.
           `,
         },
+        {
+          title: "(anglais) Exploring rhythmic patterns by video analysis",
+          image: hci2016,
+          href: 'https://link.springer.com/chapter/10.1007%2F978-3-319-40247-5_13',
+          description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. 
+                        Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. 
+                        Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
+        },
+        
+        {
+          title: "Un voyage jusqu'à MQTT",
+          image: esiee_s2_wi,
+          description: `
+                        L'internet of things (IoT) est devenu un standard en raison de la révolution des technologies de l'information, par conséquent, il existe de nombreux scénarios mis en œuvre où les protocoles IoT participent.
+                        Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
+                        Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
+                        Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
+        },
+        
       ]  
     },
     Deezer: {
-      title: "Here is my favorite music of 2019",
+      title: "Selon Deezer, ce sont mes titres préférés",
       favorites:[
-        
         {
-          title:"The XX",
-          image: iconBestGroup,
-          description: "Le mixing et les chansons qu'ils ont créées sont incroyables. Chaque chanson est une œuvre d'art. Leurs chansons représentent le glamour de la vie à Paris. c'est la principale raison pour laquelle mon artiste préféré pour 2019 est The XX."
+          title: "Me and Magdalena",
+          image: meandmagdalena,
+          description:
+            "Aimer quelqu'un va au-delà de la compréhension de la langue que nous parlons et de voir que les sentiments peuvent parler pour eux-mêmes.",
         },
         {
-          title:"On Hold - The XX",
-          image: iconBestSong,
-          description:"Je vous invite à imaginez habiter à Paris avec la mode, la culture, la beauté, la passion et l'amour. C'est la perfection combinée en une chanson. C'est ma chanson préférée pour 2019."
-        }
+          title: "Miracle",
+          image: miraclemadeon,
+          description:
+            "Cette chanson représente tout ce qui est bon, tout ce qui est pur.",
+        },
       ] 
     },
     Language: {
       language: "Language",
       english: "Anglais",
-      french: "Francais",
+      french: "Français",
       spanish: "Espagnol"
     },
     Loading: {
