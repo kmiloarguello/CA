@@ -50,8 +50,8 @@ import {
     iconCosmos,
     iconGithub,
     iconLinkedin,
-    iconBestSong,
-    iconBestGroup,
+    meandmagdalena,
+    miraclemadeon,
     hci2016,
     esiee_s1_ca,
     esiee_s2_wi,
@@ -85,10 +85,9 @@ import {
       img: CAprofile,
       section1: `La science et la technologie`,
       section2: `Je suis une personne créative et ingénieuse. 
-                J'utilise la technologie pour créer de nouvelles et incroyables idées. 
-                Maintenant, je suis très intéressé pour le traitement des images à Sorbonne Université. 
-                Je cherche un stage débutant en février 2021.`,
-      section3: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). Contactez moi.`,
+                J'utilise la technologie pour créer de nouvelles idées. 
+                Maintenant, je suis très intéressé pour le traitement des images et la vision par ordinateur. Sorbonne Université.`,
+      section3: `Je suis dans le master informatique - IMA à Sorbonne Université. Contactez moi.`,
       btnMail: "Contactez moi",
       btnScrollToWork: "En savoir plus",
       txtMemories: "Souvenirs d'un moment plus beau."
@@ -396,17 +395,17 @@ import {
         {
           icon: iconScience,
           title: "Science",
-          subtitle: "Je voudrai aprendre chache jour à propos de les connaissances de l'humanité."
+          subtitle: "Je voudrais aprendre chaque jour à propos de les connaissances de l'humanité."
         },
         {
           icon: iconComputer,
           title: "Coding",
-          subtitle: "Je fait le code pour créer des solutions à problèmes réels."
+          subtitle: "Je fais le codage pour créer des solutions à problèmes réels."
         },
         {
           icon: iconFilm,
           title: "VFX",
-          subtitle: "An jour, je serai un artiste visuel."
+          subtitle: "Un jour, je serai une artiste visuel."
         },
         {
           icon: iconEducation,
@@ -416,7 +415,7 @@ import {
         {
           icon: iconCosmos,
           title: "Cosmos",
-          subtitle: "J'adore l'universe et notre vie dans lui."
+          subtitle: "J'adore l'universe et la maniere d'éxpliquer notre vie dans le cosmos."
         }
       ]
     },
@@ -434,15 +433,14 @@ import {
     },
     Legal: {
       legal: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). 
-              Je suis très intéressé pour le traitement des images. 
-              Je cherche un stage débutant en février 2021. 
+              Je suis très intéressé pour le traitement des images et la vision par ordinateur. 
               Contactez moi.`,
       contact: "Contactez moi",
-      siteMap: "Le cart du site",
+      siteMap: "Le carte du site",
       curriculum: "Mon CV"
     },
     Research: {
-      title: "Research",
+      title: "Recherche",
       papers:[
         {
           title: "Les propriétés de modèles déformables dans la segmentation avec la méthode de contours actifs.",
@@ -454,7 +452,7 @@ import {
           Ce projet à été développé pour le cours TADI à Sorbonne Université.`,
         },
         {
-          title: "Expériences dans les techniques d'optimisation des systèmes embarqués.",
+          title: "Éxploration des techniques d'optimisation des systèmes embarqués.",
           image: esiee_s1_ca,
           description: `
                         OpenCV est l'une des bibliothèques les plus utilisées dans les applications de vision par ordinateur ou en anglais Computer Vision.
@@ -494,25 +492,26 @@ import {
       ]  
     },
     Deezer: {
-      title: "Here is my favorite music of 2019",
+      title: "Selon Deezer, ce sont mes titres préférés",
       favorites:[
-        
         {
-          title:"The XX",
-          image: iconBestGroup,
-          description: "Le mixing et les chansons qu'ils ont créées sont incroyables. Chaque chanson est une œuvre d'art. Leurs chansons représentent le glamour de la vie à Paris. c'est la principale raison pour laquelle mon artiste préféré pour 2019 est The XX."
+          title: "Me and Magdalena",
+          image: meandmagdalena,
+          description:
+            "Aimer quelqu'un va au-delà de la compréhension de la langue que nous parlons et de voir que les sentiments peuvent parler pour eux-mêmes.",
         },
         {
-          title:"On Hold - The XX",
-          image: iconBestSong,
-          description:"Je vous invite à imaginez habiter à Paris avec la mode, la culture, la beauté, la passion et l'amour. C'est la perfection combinée en une chanson. C'est ma chanson préférée pour 2019."
-        }
+          title: "Miracle",
+          image: miraclemadeon,
+          description:
+            "Cette chanson représente tout ce qui est bon, tout ce qui est pur.",
+        },
       ] 
     },
     Language: {
       language: "Language",
       english: "Anglais",
-      french: "Francais",
+      french: "Français",
       spanish: "Espagnol"
     },
     Loading: {
