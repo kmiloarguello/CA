@@ -2,10 +2,6 @@ import {
   CALogo,
   CALogoWhite,
   CAprofile,
-  kapta01,
-  kaptamexico001,
-  kaptamexico002,
-  kaptamexico003,
   confflux_001,
   confflux_002,
   confflux_003,
@@ -20,8 +16,6 @@ import {
   mostromedia,
   mostromedia001,
   mostromedia003,
-  dashboard,
-  dashboard001,
   escamiloarguello,
   escamiloarguello002,
   escamiloarguello003,
@@ -58,13 +52,15 @@ import {
   ac_vincent,
   boulangerie001,
   boulangerie002,
-  boulangerie003
+  boulangerie003,
+  graphs_regions,
+  analyse_faciale,
+  iasi_satellite_stage
 } from "./images.js";
 
 import {
   interiorTrims,
-  confflux_api_001,
-  confflux_api_002
+  confflux_api_001
 } from "./videos.js";
 import colorPalettesFile from "../colors/colors-palettes.js";
 
@@ -86,7 +82,7 @@ const data_es = {
               Actualmente, estoy haciendo el master IMA - M2 (Procesamiento de imágenes) en la Universidad Sorbonne (Paris - Francia).`,
     section3: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Si deseas trabajar conmigo, contáctame.`,
     btnMail: "Contáctame",
-    btnScrollToWork: "Conoce mi trabajo",
+    btnScrollToWork: "Conoce más",
     txtMemories: "Recuerdo de un momento feliz."
   },
   What: {
@@ -457,10 +453,33 @@ const data_es = {
     title: "Investigación",
     papers: [
       {
+        title: "[EN PROGRESO] - Extracción y analisis de regiones de contaminación por Ozono a partir de observaciones satelitales en la Tropósfera",
+        image: iasi_satellite_stage,
+        href: "https://w3.mi.parisdescartes.fr/sip-lab/files/stages/2020-2021/stageM2-Smoothing%20of%20incomplete%20air%20pollution%20regions%20of%20interest%20from%20satellite%20observations.pdf",
+        description: `El objetivo de esta pasantía es de analizar un conjunto de observaciones satelilates de forma objetiva, con el fin de identificar los eventos de contaminación, de igual manera, rastrear estas regiones de contaminación y su evolución en el tiempo.
+        Este trabajo es realizado en el marco de mi pasantía en la Université de Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Supervisado por: Laurent Wendling, Camille Kurtz, Nicole Vincent et Gaëlle Dufour.`
+      },
+      {
+        title: "Investigación de tecnicas de morfología matemática usando grafos",
+        image: graphs_regions,
+        href: "https://camiloarguello.xyz/pdf/morphologygraphs.pdf",
+        description: `Esta investigación se concentra sobre los principios de grafos aplicados al tratamiento de imágenes.
+        El objetivo es modelizar las relaciones de vecindad entre los pixeles o los voxeles de la imagen, para luego construir operadores morfológicos.
+        Esta teoría conlleva a una gran aplicabilidad sobre diferentes dominios como el filtrado de imágenes, la reconstrucción, 'esqueletización', y los operadores geodésicos, etc. Supervisado por: Isabelle Bloch.`,
+      },
+      {
+        title: "Implementación de una cascada de regresores lineares sobre un dataset de rostros humanos",
+        image: analyse_faciale,
+        href: "https://camiloarguello.xyz/pdf/analysefaciale.pdf",
+        description: `L'objectif de ce recherche est d'analyser plusieurs images associées à un ensemble de points caractéristiques qui sont liés sur la forme du visage. L'idée est que l'algorithme apprend à déplacer ces points pour les positionner correctement sur le visage.
+        Lorsqu’on veut d’extraire des informations d'une image, on peut utiliser les points caractéristiques, qui vont nous indiquer l’information sur la distance entre eux, ainsi que sur les caractéristiques de l'expression du visage. L'objectif est de pouvoir les affiner en fonction de la position et de la taille de la boite englobante.
+        à la fin, nous testons si le modèle a appris à localiser les points caractéristiques, en utilisant un ensemble de données de points aléatoires.        
+        `,
+      },
+      {
         title: "Segmentación de imágenes usando \"Active contours\"",
         image: ac_vincent,
-        href:
-          "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+        href: "hhttps://camiloarguello.xyz/pdf/modelesdeformables.pdf",
         description: `La detección de contornos en imágenes usando contornos "snakes" activos, permite una forma semi-interactiva de segmentar la imagen por un operador que se inicializa en la imagen en la misma región en
         segmento y que, en última instancia, mediante energía limpia, energía potencial y energía externa permite encontrar el contorno del objeto. En este experimento, muestro algunos ejemplos de lo que podemos hacer usando este principio de segmentacion para encontrar contornos y bordes. Una de las aplicabilidades de este principio se refleja en Photoshop, cuando se selecciona un objeto con la "varita mágica", el software calcula los bordes.
         Este trabajo fue como parte de mi formación a Sorbonne Université.`,

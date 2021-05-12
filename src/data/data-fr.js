@@ -3,10 +3,6 @@ import {
     CALogo,
     CALogoWhite,
     CAprofile,
-    kapta01,
-    kaptamexico001,
-    kaptamexico002,
-    kaptamexico003,
     daftpunk,
     daftpunk001,
     daftpunk002,
@@ -18,8 +14,6 @@ import {
     mostromedia,
     mostromedia001,
     mostromedia003,
-    dashboard,
-    dashboard001,
     escamiloarguello,
     escamiloarguello002,
     escamiloarguello003,
@@ -54,17 +48,18 @@ import {
     miraclemadeon,
     hci2016,
     esiee_s1_ca,
-    esiee_s2_wi,
     esiee_s3_ml,
     ac_vincent,
     boulangerie001,
     boulangerie002,
-    boulangerie003
+    boulangerie003,
+    graphs_regions,
+    analyse_faciale,
+    iasi_satellite_stage
   } from "./images.js";
   import {
     interiorTrims,
-    confflux_api_001,
-    confflux_api_002
+    confflux_api_001
   } from "./videos.js";
   
   import colorPalettesFile from "../colors/colors-palettes.js";
@@ -443,10 +438,33 @@ import {
       title: "Recherche",
       papers:[
         {
+          title: "[IN PROGRESS] - Smoothing of incomplete air pollution regions of interest from satellite observations",
+          image: iasi_satellite_stage,
+          href: "https://w3.mi.parisdescartes.fr/sip-lab/files/stages/2020-2021/stageM2-Smoothing%20of%20incomplete%20air%20pollution%20regions%20of%20interest%20from%20satellite%20observations.pdf",
+          description: `L'objectif de ce stage est d'analyser un ensemble d'observations satellitaires de manière objective pour identifier les événements de pollution, suivre les régions de pollution et leur évolution dans le temps, et identifier l'origine anthropique ou naturelle de ces régions.
+          Ce travail est réalisé dans le cadre de mon stage à l'Université Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Encadrement par: Laurent Wendling, Camille Kurtz, Nicole Vincent et Gaëlle Dufour.`
+        },
+        {
+          title: "Recherche de techniques en morophologie mathematique liées aux graphs.",
+          image: graphs_regions,
+          href: "https://camiloarguello.xyz/pdf/morphologygraphs.pdf",
+          description: `Cette recherche se concentre sur les principes des graphes appliqués au traitement d'images. 
+          En modélisant les relations de voisinage entre les pixels ou les voxels de l’image et en construisant des opérateurs morphologiques. 
+          Cette théorie fournit une grande applicabilité sur différents domaines tels que le filtrage d'images, la reconstruction d'images, les squelettes, les opérateurs géodésiques, l'étiquetage, etc. Encadrement par: Isabelle Bloch.`,
+        },
+        {
+          title: "Implémentation d'une cascade de régresseurs pour l'alignement de points caractéristiques du visage",
+          image: analyse_faciale,
+          href: "https://camiloarguello.xyz/pdf/analysefaciale.pdf",
+          description: `L'objectif de ce recherche est d'analyser plusieurs images associées à un ensemble de points caractéristiques qui sont liés sur la forme du visage. L'idée est que l'algorithme apprend à déplacer ces points pour les positionner correctement sur le visage.
+          Lorsqu’on veut d’extraire des informations d'une image, on peut utiliser les points caractéristiques, qui vont nous indiquer l’information sur la distance entre eux, ainsi que sur les caractéristiques de l'expression du visage. L'objectif est de pouvoir les affiner en fonction de la position et de la taille de la boite englobante.
+          à la fin, nous testons si le modèle a appris à localiser les points caractéristiques, en utilisant un ensemble de données de points aléatoires.        
+          `,
+        },
+        {
           title: "Les propriétés de modèles déformables dans la segmentation avec la méthode de contours actifs.",
           image: ac_vincent,
-          href:
-            "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+          href: "https://camiloarguello.xyz/pdf/modelesdeformables.pdf",
           description: `La détection de contours dans les images avec de contours actifs « snakes », permet d’un façon semi-interactive de segmenter l’image par un opérateur qui est initialisé dans l’image dans la même région à segmenter et qui finalement par une énergie propre, une énergie potentielle, et une énergie externe va à trouver le contour de l’objet.  
           L'une de ses applications se reflète dans Photoshop, lorsqu'un objet est sélectionné avec «l'outil wand magique», le logiciel calcule la région et les contours en utilisant des contours actifs.
           Ce projet à été développé pour le cours TADI à Sorbonne Université.`,
@@ -477,18 +495,7 @@ import {
           description: `Les traitements des troubles de la coordination peuvent avoir de nombreux avantages en utilisant des technologies modernes qui facilitent les protocoles de réadaptation. 
                         Dans cet article, nous présentons une méthode efficace pour extraire des modèles de mouvement à partir de séquences vidéo, puis fournir des stimuli acoustiques générés à partir de l'analyse de mouvement. 
                         Cette méthode explore différents modèles de mouvement guidés par des concepts tels que: détection et analyse de mouvement, analyse en composantes principales (ACP) et analyse de fréquence.`
-        },
-        
-        {
-          title: "Un voyage jusqu'à MQTT",
-          image: esiee_s2_wi,
-          description: `
-                        L'internet of things (IoT) est devenu un standard en raison de la révolution des technologies de l'information, par conséquent, il existe de nombreux scénarios mis en œuvre où les protocoles IoT participent.
-                        Par exemple, le protocole Push est plus recommandé pour les appareils IoT, en raison de sa faible consommation d'électricité et de sa faible capacité de transfert de données. Dans cette recherche, un guide complet du MQTT est présenté. 
-                        Pour ce faire, j'effectue une configuration testant différents scénarios et appareils pour analyser les avantages de la technologie.
-                        Aussi, je conclus les tests de l'étude MQTT sur différents périphériques matériels. Ce projet concernait le cours IMC-4302A à l'école ESIEE Paris.`,
-        },
-        
+        },        
       ]  
     },
     Deezer: {

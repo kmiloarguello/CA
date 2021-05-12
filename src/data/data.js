@@ -2,10 +2,6 @@ import {
   CALogo,
   CALogoWhite,
   CAprofile,
-  kapta01,
-  kaptamexico001,
-  kaptamexico002,
-  kaptamexico003,
   daftpunk,
   daftpunk001,
   daftpunk002,
@@ -20,8 +16,6 @@ import {
   confflux_001,
   confflux_002,
   confflux_003,
-  dashboard,
-  dashboard001,
   escamiloarguello,
   escamiloarguello002,
   escamiloarguello003,
@@ -56,9 +50,11 @@ import {
   boulangerie002,
   boulangerie003,
   esiee_s1_ca,
-  esiee_s2_wi,
   esiee_s3_ml,
-  ac_vincent
+  ac_vincent,
+  graphs_regions,
+  analyse_faciale,
+  iasi_satellite_stage
 } from "./images.js";
 
 import {
@@ -414,10 +410,37 @@ const data = {
     title: "Research",
     papers: [
       {
+        title: "[IN PROGRESS] - Smoothing of incomplete air pollution regions of interest from satellite observations",
+        image: iasi_satellite_stage,
+        href: "https://w3.mi.parisdescartes.fr/sip-lab/files/stages/2020-2021/stageM2-Smoothing%20of%20incomplete%20air%20pollution%20regions%20of%20interest%20from%20satellite%20observations.pdf",
+        description: `The objective is to analyze a set of satellite observations in an objective way to identify pollution events, track pollution plumes and their evolution over time, and identify the anthropogenic or natural origin of these plumes.
+        This work is made for my internship at Université Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Supervision by: Laurent Wendling, Camille Kurtz, Nicole Vincent and Gaëlle Dufour.`
+      },
+      {
+        title: "Exploration in techniques of mathematical morphology applied on graphs",
+        image: graphs_regions,
+        href: "https://camiloarguello.xyz/pdf/morphologygraphs.pdf",
+        description: `This research systematically seeks to address the principles of graphs applied to image processing. By 
+        modeling neighborhood relationships between image’s pixels or voxels and constructing morphological 
+        operators. This theory provides a great amount of applicability on different fields such as image filtering, 
+        image reconstruction, skeletons, geodesic operators, labelling, etc. The research delves in some basic 
+        morphological operators acting on the lattice of a graph, by considering notions of dilation and erosion, 
+        but also applying opening and closing filters. Supervised by: Isabelle Bloch.`,
+      },
+      {
+        title: "Training a linear regressor to align a set of characteristic points in a face dataset",
+        image: analyse_faciale,
+        href: "https://camiloarguello.xyz/pdf/analysefaciale.pdf",
+        description: `The goal of this research is to analyze several images associated with a set of characteristic points. 
+        These points are linked to the face's shape. The algorithm learns to move these points to position them correctly on the face.
+        When we want to extract information from an image, we can use the characteristic points, which will tell us information about the distance between them, but also the features of the facial expression. 
+        The objective is to be able to refine them according to the position and the size of the bounding box. Finally, we test whether the model has learned to locate the characteristic points, using a random point data set.       
+        `,
+      },
+      {
         title: "Finding contours by using \"Active contours\" (snakes)",
         image: ac_vincent,
-        href:
-          "https://colab.research.google.com/drive/1F7qEWD1R80PTWk_RWfvV8_UQmtEqmdgk?usp=sharing",
+        href: "https://camiloarguello.xyz/pdf/modelesdeformables.pdf",
         description: `On this research I use the active contours to detect segment contours/regions on gray-scale images, it allows a semi-interactive way of segmenting the image by an operator which is initialized in the same region, 
         This approach use inner and outer energy to estimate the borders. 
         In this experiment, I show some examples about what we can do using this segmentation principle to find contours and borders. 
@@ -452,14 +475,6 @@ const data = {
                       In this paper, a method to identify movement patterns from video sequences is presented, providing acoustic stimuli by means of sounds generated from motion analysis. 
                       The method explores rhythmic patterns in movements, through fundamental concepts as: motion detection and analysis, Principal Component Analysis (PCA) and frequency analysis. 
                       The proposed method was evaluated by using four (4) dance steps, used typically in Latin music, showing good performance in detecting and reproducing acoustic beats.`,
-      },
-      
-      {
-        title: "A journey towards MQTT",
-        image: esiee_s2_wi,
-        description: `Internet of Things (IoT), has become a standard based on the rapid revolution in the area of information communication technology and digital things, thus there are several different scenarios implemented where all the protocols IoT are involved. 
-                      For example, Push protocol is more suitable for IoT devices, due to its lightweight and high productivity. In this research a completely guide on MQTT lightweight and bandwidth efficiency will be studied. I perform a general setup to go through the whole tool analyzing the tool, the pros and cons. 
-                      Also, I conclude survey study of MQTT putting testing in hardware devices. This project was for the course IMC-4302A Wireless Networks at ESIEE Paris.`,
       }
     ],
   },
