@@ -29,11 +29,8 @@ npm run prod
 
 I try to update this site as much as possible, these are the new requirements in the backlog.
  
-- Finalize the project README.md >:'v [Priority: Medium]
-- Create totally french website [Priority: High]
-- Create totally spanish website [Priority: High]
 - Combine the files `src/data/data.js`, `src/data/data-es.js` and `src/data/data-fr.js` into a one single file which handles all the three languages. [Priority: Low]
-- Add [Redux](https://reduxjs.com)
+- Add React Router for highlight each project and research [Priority High]
 - Admin platform to update the content [Priority: Low]
 
 ---
