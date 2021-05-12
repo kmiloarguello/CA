@@ -18,6 +18,9 @@ import esiee_s2_wi from "../img/research/wirelessnetwork/raspberry-pi.jpg";
 import esiee_s3_ml from "../img/research/mushrooms/bg-mushrooms-steffen-camiloarguello.jpg"
 
 import ac_vincent from "../img/research/activecontours/vincent-segmented.png";
+import graphs_regions from "../img/research/graphs/image-region-graph.jpg";
+import analyse_faciale from "../img/research/analysefaciale/analyse-faciale.png";
+import iasi_satellite_stage from "../img/research/stage/iasi-satellite-observation.png";
 
 /**
  * Projects
@@ -161,5 +164,8 @@ module.exports = {
     ac_vincent,
     boulangerie001,
     boulangerie002,
-    boulangerie003
+    boulangerie003,
+    graphs_regions,
+    analyse_faciale,
+    iasi_satellite_stage
 }
