@@ -9,3 +9,4 @@ src/img/motivation/sources/
 src/data/*.pdf
 */juli
 yarn.lock
+.DS_Store

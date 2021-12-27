@@ -7,9 +7,9 @@ import Header from "./Components/Header.jsx";
 import styles from "./css/index.pcss";
 import { data } from "./data/data.js";
 
-//import parti from "./data/particlesjs-config.json";
+import parti from "./data/particlesjs-config.json";
 import Loading from "./Components/Loading.jsx";
-//import colorTransition from "./colors/colors-transition.js";
+import colorTransition from "./colors/colors-transition.js";
 
 Array.prototype.randomArray = function(){
   let rand = Math.floor(Math.random() * this.length);
@@ -148,12 +148,11 @@ export default class CA extends Component {
       });
     }
 
-    /*
-    // It should be removed in next versions
+    
     if(!this.state.isMobile){
-      window.particlesJS.load('particles-js', "https://camiloarguello.xyz/js/particlesjs-config.json" , function() {});
+      window.particlesJS('particles-js', parti);
     }
-    */
+    
 
   }
 
@@ -215,7 +214,7 @@ export default class CA extends Component {
         <div id="why-cont" className={styles.containerhome}>
           {this.renderHeader()}
           <AsyncWhy data={ defineLanguage() } />
-          {/*!this.state.isMobile ? <div id="particles-js"></div> : ""*/}
+          {!this.state.isMobile ? <div id="particles-js"></div> : ""}
           <div className="bg-container"></div>
         </div>
 

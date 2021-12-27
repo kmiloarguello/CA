@@ -453,9 +453,8 @@ const data_es = {
     title: "Investigación",
     papers: [
       {
-        title: "[EN PROGRESO] - Extracción y analisis de regiones de contaminación por Ozono a partir de observaciones satelitales en la Tropósfera",
+        title: "Extracción y analisis de regiones de contaminación por Ozono a partir de observaciones satelitales en la Tropósfera",
         image: iasi_satellite_stage,
-        href: "https://w3.mi.parisdescartes.fr/sip-lab/files/stages/2020-2021/stageM2-Smoothing%20of%20incomplete%20air%20pollution%20regions%20of%20interest%20from%20satellite%20observations.pdf",
         description: `El objetivo de esta pasantía es de analizar un conjunto de observaciones satelilates de forma objetiva, con el fin de identificar los eventos de contaminación, de igual manera, rastrear estas regiones de contaminación y su evolución en el tiempo.
         Este trabajo es realizado en el marco de mi pasantía en la Université de Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Supervisado por: Laurent Wendling, Camille Kurtz, Nicole Vincent et Gaëlle Dufour.`
       },
