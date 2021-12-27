@@ -80,12 +80,11 @@ import {
       img: CAprofile,
       section1: `La science et la technologie`,
       section2: `Je suis une personne créative et ingénieuse. 
-                J'utilise la technologie pour créer de nouvelles idées. 
-                Maintenant, je suis très intéressé pour le traitement des images et la vision par ordinateur. Sorbonne Université.`,
-      section3: `Je suis dans le master informatique - IMA à Sorbonne Université. Contactez moi.`,
+                J'utilise la technologie pour créer de nouvelles idées. Je viens de finir un master informatique liée au traitement des images et vision par ordinateur à Sorbonne Université.`,
+      section3: `Je suis à la recherche active d'un poste de travail comme ingénieur de logiciels, ou développeur web, ou développeur machine learning. Contactez moi.`,
       btnMail: "Contactez moi",
       btnScrollToWork: "En savoir plus",
-      txtMemories: "Souvenirs d'un moment plus beau."
+      txtMemories: "Souvenirs d'un bon moment."
     },
     What: {
       title: "Travail",
@@ -438,9 +437,8 @@ import {
       title: "Recherche",
       papers:[
         {
-          title: "[IN PROGRESS] - Smoothing of incomplete air pollution regions of interest from satellite observations",
+          title: "Smoothing of incomplete air pollution regions of interest from satellite observations",
           image: iasi_satellite_stage,
-          href: "https://w3.mi.parisdescartes.fr/sip-lab/files/stages/2020-2021/stageM2-Smoothing%20of%20incomplete%20air%20pollution%20regions%20of%20interest%20from%20satellite%20observations.pdf",
           description: `L'objectif de ce stage est d'analyser un ensemble d'observations satellitaires de manière objective pour identifier les événements de pollution, suivre les régions de pollution et leur évolution dans le temps, et identifier l'origine anthropique ou naturelle de ces régions.
           Ce travail est réalisé dans le cadre de mon stage à l'Université Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Encadrement par: Laurent Wendling, Camille Kurtz, Nicole Vincent et Gaëlle Dufour.`
         },

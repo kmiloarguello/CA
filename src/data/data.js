@@ -80,8 +80,8 @@ const data = {
     img: CAprofile,
     section1: `Science Technology Engineering and Maths`,
     section2: `I'm a creative and inquisitive person, who uses the technology to create beauty and powerful ideas using algorithms, computational design, software development and multimedia research.
-              Currently, I am studying at the master Image processing and Computer Vision - M2 Sorbonne Univeristé`,
-    section3: `I'm currently available for an job in the domain of image processing/computer vision, so If you want to work
+              I have finished the master Image processing and Computer Vision at Sorbonne Univeristé. \n Now, I am studying physics!`,
+    section3: `I'm currently available for an job in the domain of image processing/computer vision/Web development, so If you want to work
     with me, just put in contact with me and I can
     start anytime.`,
     btnMail: "Contact me",
@@ -410,9 +410,8 @@ const data = {
     title: "Research",
     papers: [
       {
-        title: "[IN PROGRESS] - Smoothing of incomplete air pollution regions of interest from satellite observations",
+        title: "Smoothing of incomplete air pollution regions of interest from satellite observations",
         image: iasi_satellite_stage,
-        href: "https://w3.mi.parisdescartes.fr/sip-lab/files/stages/2020-2021/stageM2-Smoothing%20of%20incomplete%20air%20pollution%20regions%20of%20interest%20from%20satellite%20observations.pdf",
         description: `The objective is to analyze a set of satellite observations in an objective way to identify pollution events, track pollution plumes and their evolution over time, and identify the anthropogenic or natural origin of these plumes.
         This work is made for my internship at Université Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Supervision by: Laurent Wendling, Camille Kurtz, Nicole Vincent and Gaëlle Dufour.`
       },
