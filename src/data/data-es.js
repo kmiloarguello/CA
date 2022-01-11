@@ -55,7 +55,8 @@ import {
   boulangerie003,
   graphs_regions,
   analyse_faciale,
-  iasi_satellite_stage
+  iasi_satellite_stage,
+  ozone_processus
 } from "./images.js";
 
 import {
@@ -79,8 +80,8 @@ const data_es = {
     img: CAprofile,
     section1: `Ciencia Tecnología Ingeniería y Matemáticas`,
     section2: `Soy una persona creativa e ingenionsa, quien usa la tecnología para dar vida a maravillosas e increibles ideas usando algoritmos, diseño computacional, desarrollo de software e investigación en multimedia.
-              Actualmente, estoy haciendo el master IMA - M2 (Procesamiento de imágenes) en la Universidad Sorbonne (Paris - Francia).`,
-    section3: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Si deseas trabajar conmigo, contáctame.`,
+              El año pasado, finalicé el master IMA - M2 (Procesamiento de imágenes) en la Universidad Sorbonne (Paris - Francia). Este año estoy estudiando Física.`,
+    section3: `Actualmente, estoy estudiando física en la Universidad Sorbonne (Paris - Francia). Si deseas trabajar conmigo, contáctame.`,
     btnMail: "Contáctame",
     btnScrollToWork: "Conoce más",
     txtMemories: "Recuerdo de un momento feliz."
@@ -439,10 +440,8 @@ const data_es = {
   },
   PersonalInfo: {
     name: "Camilo Argüello",
-    job: "Ingeniero apasionado por la ciencia.",
-    age: 25,
+    job: "Infórmatico/Físico",
     email: "camilo.arguello.rincon@gmail.com",
-    tel: 10010101,
     logo: CALogo,
     logoWhite: CALogoWhite,
     cv: "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf",
@@ -453,8 +452,18 @@ const data_es = {
     title: "Investigación",
     papers: [
       {
+        title: "Ozono: Composición y variabilidad en la atmósfera",
+        image: ozone_processus,
+        description: `
+        El objetivo de este proyecto es hacer una modelización de los posibles orígenes de la aumentación de la concentración del ozono troposférico, igualmente validar posibles reacciones que favorizan la destrucción del ozono en la estratosfera.
+        Definimos un modelo que considera las concentraciones ligadas a las oxidaciones de gases COV (CO, SOx, CFCs) junto con gases NOx y radicales peroxyles (OH, HOx, ROx). Comparando dos estados: alto en NOx, y bajo en NOx, para ambas capas atmosféricas.
+        Los resultados muestran una importancia considerable de los gases NOx en las alteraciones de reacciones del ozono en la atmósfera. Pronto más información.
+        `
+      },
+      {
         title: "Extracción y analisis de regiones de contaminación por Ozono a partir de observaciones satelitales en la Tropósfera",
         image: iasi_satellite_stage,
+        href: "https://camiloarguello.xyz/pdf/smoothing-of-incomplete-air-pollution-regions-of-interest-from-satellite-observations.pdf",
         description: `El objetivo de esta pasantía es de analizar un conjunto de observaciones satelilates de forma objetiva, con el fin de identificar los eventos de contaminación, de igual manera, rastrear estas regiones de contaminación y su evolución en el tiempo.
         Este trabajo es realizado en el marco de mi pasantía en la Université de Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Supervisado por: Laurent Wendling, Camille Kurtz, Nicole Vincent et Gaëlle Dufour.`
       },
@@ -471,7 +480,7 @@ const data_es = {
         image: analyse_faciale,
         href: "https://camiloarguello.xyz/pdf/analysefaciale.pdf",
         description: `L'objectif de ce recherche est d'analyser plusieurs images associées à un ensemble de points caractéristiques qui sont liés sur la forme du visage. L'idée est que l'algorithme apprend à déplacer ces points pour les positionner correctement sur le visage.
-        Lorsqu’on veut d’extraire des informations d'une image, on peut utiliser les points caractéristiques, qui vont nous indiquer l’information sur la distance entre eux, ainsi que sur les caractéristiques de l'expression du visage. L'objectif est de pouvoir les affiner en fonction de la position et de la taille de la boite englobante.
+        Lorsqu'on veut d'extraire des informations d'une image, on peut utiliser les points caractéristiques, qui vont nous indiquer l'information sur la distance entre eux, ainsi que sur les caractéristiques de l'expression du visage. L'objectif est de pouvoir les affiner en fonction de la position et de la taille de la boite englobante.
         à la fin, nous testons si le modèle a appris à localiser les points caractéristiques, en utilisant un ensemble de données de points aléatoires.        
         `,
       },
@@ -518,7 +527,7 @@ const data_es = {
     ]
   },
   Legal: {
-    legal: `Actualmente, estoy haciendo el master IMA - M2 en la Universidad Sorbonne (Paris - Francia). Estoy buscando una pasantía en el campo de procesamiento de imágenes que empiece en febrero de 2021. Si deseas trabajar conmigo, contáctame.`,
+    legal: `Actualmente, estoy estudiando Física en la Universidad Sorbonne (Paris - Francia). Estoy a la escucha de nuevas oportunidades. Si deseas trabajar conmigo, contáctame.`,
     contact: "Contacto",
     siteMap: "Mapa del sitio",
     curriculum: "Hoja de vida"
