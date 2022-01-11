@@ -55,7 +55,8 @@ import {
     boulangerie003,
     graphs_regions,
     analyse_faciale,
-    iasi_satellite_stage
+    iasi_satellite_stage,
+    ozone_processus
   } from "./images.js";
   import {
     interiorTrims,
@@ -80,7 +81,7 @@ import {
       img: CAprofile,
       section1: `La science et la technologie`,
       section2: `Je suis une personne créative et ingénieuse. 
-                J'utilise la technologie pour créer de nouvelles idées. Je viens de finir un master informatique liée au traitement des images et vision par ordinateur à Sorbonne Université.`,
+                J'utilise la technologie pour créer de nouvelles idées. Je viens de finir un master informatique liée au traitement des images et vision par ordinateur à Sorbonne Université. Cette année, j'ai commencé une licence en Physique L2.`,
       section3: `Je suis à la recherche active d'un poste de travail comme ingénieur de logiciels, ou développeur web, ou développeur machine learning. Contactez moi.`,
       btnMail: "Contactez moi",
       btnScrollToWork: "En savoir plus",
@@ -416,9 +417,7 @@ import {
     PersonalInfo: {
       name: "Camilo Argüello",
       job: "Ingénieur en génie informatique",
-      age: 25,
       email: "camilo.arguello.rincon@gmail.com",
-      tel: 10010101,
       logo: CALogo,
       logoWhite: CALogoWhite,
       cv: "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf",
@@ -426,9 +425,7 @@ import {
       github: "https://github.com/kmiloarguello"
     },
     Legal: {
-      legal: `Je suis dans le master informatique - IMA à Sorbonne Université (Paris). 
-              Je suis très intéressé pour le traitement des images et la vision par ordinateur. 
-              Contactez moi.`,
+      legal: `J'ai commencé une licence en Physique à Sorbonne Université. Si vous voulez travailler avec moi, ne hesitez pas à me contacter.`,
       contact: "Contactez moi",
       siteMap: "Le carte du site",
       curriculum: "Mon CV"
@@ -437,8 +434,18 @@ import {
       title: "Recherche",
       papers:[
         {
+          title: "Composition et variabilité de l'ozone dans la troposphère et la stratosphère",
+          image: ozone_processus,
+          description: `
+          Ce projet a comme objectif la modelisation des sources liées à l'augmentation de la concentration d'ozone troposphérique, ainsi que à la validation d'éventuelles réactions qui favorisent la destruction de l'ozone dans la stratosphère.
+          On a défini un modèle qui considère les concentrations liées aux oxydations des gaz COV (CO, SOx, CFC) ainsi que des gaz NOx et des radicaux peroxy (OH, HOx, ROx). Comparaison de deux milieux : élevé en NOx et faible en NOx, pour les deux couches atmosphériques.
+          Les résultats montrent une importance considérable des gaz NOx dans les altérations des réactions de l'ozone dans l'atmosphère. Bientôt beaucoup plus de details.
+          `
+        },
+        {
           title: "Smoothing of incomplete air pollution regions of interest from satellite observations",
           image: iasi_satellite_stage,
+          href: "https://camiloarguello.xyz/pdf/smoothing-of-incomplete-air-pollution-regions-of-interest-from-satellite-observations.pdf",
           description: `L'objectif de ce stage est d'analyser un ensemble d'observations satellitaires de manière objective pour identifier les événements de pollution, suivre les régions de pollution et leur évolution dans le temps, et identifier l'origine anthropique ou naturelle de ces régions.
           Ce travail est réalisé dans le cadre de mon stage à l'Université Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Encadrement par: Laurent Wendling, Camille Kurtz, Nicole Vincent et Gaëlle Dufour.`
         },
@@ -447,7 +454,7 @@ import {
           image: graphs_regions,
           href: "https://camiloarguello.xyz/pdf/morphologygraphs.pdf",
           description: `Cette recherche se concentre sur les principes des graphes appliqués au traitement d'images. 
-          En modélisant les relations de voisinage entre les pixels ou les voxels de l’image et en construisant des opérateurs morphologiques. 
+          En modélisant les relations de voisinage entre les pixels ou les voxels de l'image et en construisant des opérateurs morphologiques. 
           Cette théorie fournit une grande applicabilité sur différents domaines tels que le filtrage d'images, la reconstruction d'images, les squelettes, les opérateurs géodésiques, l'étiquetage, etc. Encadrement par: Isabelle Bloch.`,
         },
         {
@@ -455,7 +462,7 @@ import {
           image: analyse_faciale,
           href: "https://camiloarguello.xyz/pdf/analysefaciale.pdf",
           description: `L'objectif de ce recherche est d'analyser plusieurs images associées à un ensemble de points caractéristiques qui sont liés sur la forme du visage. L'idée est que l'algorithme apprend à déplacer ces points pour les positionner correctement sur le visage.
-          Lorsqu’on veut d’extraire des informations d'une image, on peut utiliser les points caractéristiques, qui vont nous indiquer l’information sur la distance entre eux, ainsi que sur les caractéristiques de l'expression du visage. L'objectif est de pouvoir les affiner en fonction de la position et de la taille de la boite englobante.
+          Lorsqu'on veut d'extraire des informations d'une image, on peut utiliser les points caractéristiques, qui vont nous indiquer l'information sur la distance entre eux, ainsi que sur les caractéristiques de l'expression du visage. L'objectif est de pouvoir les affiner en fonction de la position et de la taille de la boite englobante.
           à la fin, nous testons si le modèle a appris à localiser les points caractéristiques, en utilisant un ensemble de données de points aléatoires.        
           `,
         },
@@ -463,7 +470,7 @@ import {
           title: "Les propriétés de modèles déformables dans la segmentation avec la méthode de contours actifs.",
           image: ac_vincent,
           href: "https://camiloarguello.xyz/pdf/modelesdeformables.pdf",
-          description: `La détection de contours dans les images avec de contours actifs « snakes », permet d’un façon semi-interactive de segmenter l’image par un opérateur qui est initialisé dans l’image dans la même région à segmenter et qui finalement par une énergie propre, une énergie potentielle, et une énergie externe va à trouver le contour de l’objet.  
+          description: `La détection de contours dans les images avec de contours actifs « snakes », permet d'un façon semi-interactive de segmenter l'image par un opérateur qui est initialisé dans l'image dans la même région à segmenter et qui finalement par une énergie propre, une énergie potentielle, et une énergie externe va à trouver le contour de l'objet.  
           L'une de ses applications se reflète dans Photoshop, lorsqu'un objet est sélectionné avec «l'outil wand magique», le logiciel calcule la région et les contours en utilisant des contours actifs.
           Ce projet à été développé pour le cours TADI à Sorbonne Université.`,
         },

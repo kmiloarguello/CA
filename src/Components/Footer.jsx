@@ -20,8 +20,8 @@ export default class Footer extends Component{
         location.reload(false);
     }
     render(){
-        const { logo, name, email, cv, linkedin, github} = this.props.data.PersonalInfo;
-        const { legal, contact, siteMap, curriculum } = this.props.data.Legal;
+        const { logo, name, email, linkedin, github} = this.props.data.PersonalInfo;
+        const { legal, contact, siteMap } = this.props.data.Legal;
         const { language, spanish, english, french } = this.props.data.Language;
         const { iconGithub, iconLinkedin } = this.props.data.AdditionalIcons;
 
@@ -47,7 +47,6 @@ export default class Footer extends Component{
                     <div className={styles.information}>
                         <h2>{contact}</h2>
                         <a href={"mailto:" + email +  "?Subject=Hello"} target="_top">{email}</a>
-                        <a href={cv} target="_blank">{curriculum}</a>
                     </div>
                     <div className={styles.structure}>
                         <h2>{siteMap}</h2>

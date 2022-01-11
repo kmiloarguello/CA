@@ -54,7 +54,8 @@ import {
   ac_vincent,
   graphs_regions,
   analyse_faciale,
-  iasi_satellite_stage
+  iasi_satellite_stage,
+  ozone_processus
 } from "./images.js";
 
 import {
@@ -410,8 +411,18 @@ const data = {
     title: "Research",
     papers: [
       {
+        title: "Ozone: Composition and variability in the atmosphere",
+        image: ozone_processus,
+        description: `
+        The objective of this project is to model the possible origins of the increase in the concentration of tropospheric ozone, as well as to validate possible reactions increase the ozone destruction in the stratosphere.
+        Our model considers concentrations linked to the oxidations of VOC gases (CO, SOx, CFCs) with NOx gases and peroxy radicals (OH, HOx, ROx). Comparing two states: high in NOx, and low in NOx, for both atmospheric layers.
+        The results show a considerable importance of NOx gases in the alterations of ozone reactions in the atmosphere. More info soon.
+        `
+      },
+      {
         title: "Smoothing of incomplete air pollution regions of interest from satellite observations",
         image: iasi_satellite_stage,
+        href: "https://camiloarguello.xyz/pdf/smoothing-of-incomplete-air-pollution-regions-of-interest-from-satellite-observations.pdf",
         description: `The objective is to analyze a set of satellite observations in an objective way to identify pollution events, track pollution plumes and their evolution over time, and identify the anthropogenic or natural origin of these plumes.
         This work is made for my internship at Université Paris - LIPADE (Laboratoire d'Informatique Paris DEscartes). Supervision by: Laurent Wendling, Camille Kurtz, Nicole Vincent and Gaëlle Dufour.`
       },
@@ -511,9 +522,7 @@ const data = {
   PersonalInfo: {
     name: "Camilo Argüello",
     job: "Developer and future scientist",
-    age: 25,
     email: "camilo.arguello.rincon@gmail.com",
-    tel: 10010101,
     logo: CALogo,
     logoWhite: CALogoWhite,
     cv: "https://camiloarguello.xyz/cv/cv_camiloarguello.pdf",
@@ -521,7 +530,7 @@ const data = {
     github: "https://github.com/kmiloarguello",
   },
   Legal: {
-    legal: `Currently, I am studying at the master IMA - M2 Sorbonne Univeristé. If you want to work with me, just put in contact with me.`,
+    legal: `Currently, I am studying Physics at Sorbonne Univeristé. If you want to work with me, just put in contact with me.`,
     contact: "Contact",
     siteMap: "Sitemap",
     curriculum: "Curriculum Vitae",

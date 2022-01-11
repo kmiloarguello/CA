@@ -21,6 +21,7 @@ import ac_vincent from "../img/research/activecontours/vincent-segmented.png";
 import graphs_regions from "../img/research/graphs/image-region-graph.jpg";
 import analyse_faciale from "../img/research/analysefaciale/analyse-faciale.png";
 import iasi_satellite_stage from "../img/research/stage/iasi-satellite-observation.png";
+import ozone_processus from "../img/research/ozone-tropo-strato/atmosphere-ozone-processus.jpg"
 
 /**
  * Projects
@@ -167,5 +168,6 @@ module.exports = {
     boulangerie003,
     graphs_regions,
     analyse_faciale,
-    iasi_satellite_stage
+    iasi_satellite_stage,
+    ozone_processus
 }
