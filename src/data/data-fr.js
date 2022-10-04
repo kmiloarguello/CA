@@ -427,6 +427,7 @@ import {
     Legal: {
       legal: `J'ai commencé une licence en Physique à Sorbonne Université. Si vous voulez travailler avec moi, ne hesitez pas à me contacter.`,
       contact: "Contactez moi",
+      consulting: "Veuillez des conseils en tech?",
       siteMap: "Le carte du site",
       curriculum: "Mon CV"
     },
