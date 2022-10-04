@@ -529,6 +529,7 @@ const data_es = {
   Legal: {
     legal: `Actualmente, estoy estudiando Física en la Universidad Sorbonne (Paris - Francia). Estoy a la escucha de nuevas oportunidades. Si deseas trabajar conmigo, contáctame.`,
     contact: "Contacto",
+    consulting: "Obtén una asesoría en tech",
     siteMap: "Mapa del sitio",
     curriculum: "Hoja de vida"
   },

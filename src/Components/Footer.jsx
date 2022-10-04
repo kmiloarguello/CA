@@ -21,7 +21,7 @@ export default class Footer extends Component{
     }
     render(){
         const { logo, name, email, linkedin, github} = this.props.data.PersonalInfo;
-        const { legal, contact, siteMap } = this.props.data.Legal;
+        const { legal, contact, consulting, siteMap } = this.props.data.Legal;
         const { language, spanish, english, french } = this.props.data.Language;
         const { iconGithub, iconLinkedin } = this.props.data.AdditionalIcons;
 
@@ -47,6 +47,10 @@ export default class Footer extends Component{
                     <div className={styles.information}>
                         <h2>{contact}</h2>
                         <a href={"mailto:" + email +  "?Subject=Hello"} target="_top">{email}</a>
+                        <hr />
+                        <div className={styles.informationGumroad}>
+                            <a target="_blank" class="gumroad-button" href="https://kmiloarguello.gumroad.com/l/oedcs" data-gumroad-overlay-checkout="true">{consulting}</a>
+                        </div>
                     </div>
                     <div className={styles.structure}>
                         <h2>{siteMap}</h2>

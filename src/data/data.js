@@ -532,6 +532,7 @@ const data = {
   Legal: {
     legal: `Currently, I am studying Physics at Sorbonne Univeristé. If you want to work with me, just put in contact with me.`,
     contact: "Contact",
+    consulting: "Get a tech consulting on",
     siteMap: "Sitemap",
     curriculum: "Curriculum Vitae",
   },
