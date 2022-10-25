@@ -3,7 +3,7 @@
  */
 import CALogo from "../img/logo-camilo-arguello.png";
 import CALogoWhite from "../img/logo-camilo-arguello-white.png";
-import CAprofile from '../img/camilo-arguello-pf.jpg';
+import CAprofile from '../img/camilo-arguello-pf-2022.jpg';
 //import CAprofile from "../img/Juli-et-moi.jpg";
 
 /**
