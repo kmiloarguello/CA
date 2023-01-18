@@ -62,7 +62,7 @@
     "jest": "23.4.1",
     "jest-mock": "23.2.0",
     "path": "0.12.7",
-    "postcss": "6.0.23",
+    "postcss": "7.0.36",
     "postcss-cli": "5.0.1",
     "postcss-cssnext": "3.1.0",
     "postcss-font-magician": "2.2.1",
