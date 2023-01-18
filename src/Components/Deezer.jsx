@@ -3,7 +3,7 @@ import styles from "../css/index.pcss";
 
 export default class Deezer extends Component {
     renderIframeDeezer() {
-      return (<iframe scrolling="yes" frameBorder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=420&color=EF5466&layout=&size=medium&type=charts&id=user_2173462548&title=kmiloarguello&app_id=1" width="700" height="350"></iframe>)
+      return (<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/10913442742" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write" width="700" height="350"></iframe>)
     }
     render(){
         const { title } = this.props.data;
